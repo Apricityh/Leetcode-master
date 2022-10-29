@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = G$:/Deeping_Learing/C++_Leetcode/cmake-build-debug/
+cmake_ninja_workdir = G$:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target C___Leetcode
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = G$:/Deeping_Learing/C++_Leetcode/cmake-build-debug/
 
 build cmake_object_order_depends_target_C___Leetcode: phony || CMakeFiles/C___Leetcode.dir
 
-build CMakeFiles/C___Leetcode.dir/main.cpp.obj: CXX_COMPILER__C___Leetcode_Debug G$:/Deeping_Learing/C++_Leetcode/main.cpp || cmake_object_order_depends_target_C___Leetcode
+build CMakeFiles/C___Leetcode.dir/main.cpp.obj: CXX_COMPILER__C___Leetcode_Debug G$:/Deeping_Learing/Leetcode-master/C++_Leetcode/main.cpp || cmake_object_order_depends_target_C___Leetcode
   DEP_FILE = CMakeFiles\C___Leetcode.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++1y
   OBJECT_DIR = CMakeFiles\C___Leetcode.dir
@@ -82,7 +82,7 @@ build C___Leetcode.exe: CXX_EXECUTABLE_LINKER__C___Leetcode_Debug CMakeFiles/C__
 
 build cmake_object_order_depends_target_TwoSum: phony || CMakeFiles/TwoSum.dir
 
-build CMakeFiles/TwoSum.dir/leetcode/editor/cn/TwoSum_.cpp.obj: CXX_COMPILER__TwoSum_Debug G$:/Deeping_Learing/C++_Leetcode/leetcode/editor/cn/TwoSum$ .cpp || cmake_object_order_depends_target_TwoSum
+build CMakeFiles/TwoSum.dir/leetcode/editor/cn/TwoSum_.cpp.obj: CXX_COMPILER__TwoSum_Debug G$:/Deeping_Learing/Leetcode-master/C++_Leetcode/leetcode/editor/cn/TwoSum$ .cpp || cmake_object_order_depends_target_TwoSum
   DEP_FILE = CMakeFiles\TwoSum.dir\leetcode\editor\cn\TwoSum_.cpp.obj.d
   FLAGS = -g -std=gnu++1y
   OBJECT_DIR = CMakeFiles\TwoSum.dir
@@ -111,7 +111,7 @@ build TwoSum.exe: CXX_EXECUTABLE_LINKER__TwoSum_Debug CMakeFiles/TwoSum.dir/leet
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D G:\Deeping_Learing\C++_Leetcode\cmake-build-debug && "F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug && "F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -122,7 +122,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D G:\Deeping_Learing\C++_Leetcode\cmake-build-debug && "F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SG:\Deeping_Learing\C++_Leetcode -BG:\Deeping_Learing\C++_Leetcode\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug && "F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SG:\Deeping_Learing\Leetcode-master\C++_Leetcode -BG:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -142,7 +142,7 @@ build TwoSum: phony TwoSum.exe
 # =============================================================================
 
 #############################################
-# Folder: G:/Deeping_Learing/C++_Leetcode/cmake-build-debug
+# Folder: G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug
 
 build all: phony C___Leetcode.exe TwoSum.exe
 

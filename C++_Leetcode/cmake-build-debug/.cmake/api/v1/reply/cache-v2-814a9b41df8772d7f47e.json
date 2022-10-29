@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "g:/Deeping_Learing/C++_Leetcode/cmake-build-debug"
+			"value" : "g:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "G:/Deeping_Learing/C++_Leetcode"
+			"value" : "G:/Deeping_Learing/Leetcode-master/C++_Leetcode"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "G:/Deeping_Learing/C++_Leetcode/cmake-build-debug"
+			"value" : "G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"
 		},
 		{
 			"name" : "C___Leetcode_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "G:/Deeping_Learing/C++_Leetcode"
+			"value" : "G:/Deeping_Learing/Leetcode-master/C++_Leetcode"
 		}
 	],
 	"kind" : "cache",

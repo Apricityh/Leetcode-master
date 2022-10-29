@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "G:/Deeping_Learing/C++_Leetcode/cmake-build-debug",
-		"source" : "G:/Deeping_Learing/C++_Leetcode"
+		"build" : "G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug",
+		"source" : "G:/Deeping_Learing/Leetcode-master/C++_Leetcode"
 	},
 	"version" : 
 	{
