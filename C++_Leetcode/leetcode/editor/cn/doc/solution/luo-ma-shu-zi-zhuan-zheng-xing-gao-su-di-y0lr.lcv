@@ -1,0 +1,65 @@
+**罗马数字转整型**
+本题的提交结果，执行用时是8ms，内存消耗是5.8MB
+
+* 
+
+```
+class Solution {
+public:
+    int romanToInt(string s) {
+        int len = s.length();   //得到字符串的字符个数
+        int arr[len];           //定义同样大小的整型数组
+
+        char em;
+        for (int i = 0; i < len; ++i)
+        {
+            //分别提取罗马数字，将其转换为对应的整型数字
+            em = s[i];
+            switch(em)
+            {
+                case 'I':
+                arr[i] = 1;
+                break;
+                case 'V':
+                arr[i] = 5;
+                break;
+                case 'X':
+                arr[i] = 10;
+                break;
+                case 'L':
+                arr[i] = 50;
+                break;
+                case 'C':
+                arr[i] = 100;
+                break;
+                case 'D':
+                arr[i] = 500;
+                break;
+                case 'M':
+                arr[i] = 1000;
+                break;
+                default:
+                cout << "输入有误" << endl;
+                break;
+            }
+        }
+
+        //res为最终结果
+        int res = 0;
+        if (len == 1) res = arr[0];    //只有一个罗马数字的情况
+        else
+        {
+            for (int i = 0; i < len - 1; ++i)
+            {
+                if (arr[i] < arr[i + 1]) res -= arr[i];
+                else res += arr[i];
+            }
+
+            res += arr[len - 1];
+        }
+
+        return res;
+    }
+};
+```
+

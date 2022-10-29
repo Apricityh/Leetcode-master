@@ -1,0 +1,133 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include",
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include-fixed",
+						"F:/MinGW/mingw32/i686-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2",
+						"F:/MinGW/mingw32/lib/gcc",
+						"F:/MinGW/mingw32/i686-w64-mingw32/lib",
+						"F:/MinGW/mingw32/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"mingw32",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"iconv",
+						"mingw32",
+						"gcc",
+						"moldname",
+						"mingwex"
+					]
+				},
+				"path" : "F:/MinGW/mingw32/bin/gcc.exe",
+				"version" : "4.8.2"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include/c++",
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include/c++/i686-w64-mingw32",
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include/c++/backward",
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include",
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2/include-fixed",
+						"F:/MinGW/mingw32/i686-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"F:/MinGW/mingw32/lib/gcc/i686-w64-mingw32/4.8.2",
+						"F:/MinGW/mingw32/lib/gcc",
+						"F:/MinGW/mingw32/i686-w64-mingw32/lib",
+						"F:/MinGW/mingw32/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"mingw32",
+						"gcc_s",
+						"gcc",
+						"moldname",
+						"mingwex",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"iconv",
+						"mingw32",
+						"gcc_s",
+						"gcc",
+						"moldname",
+						"mingwex"
+					]
+				},
+				"path" : "F:/MinGW/mingw32/bin/c++.exe",
+				"version" : "4.8.2"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "F:/MinGW/mingw32/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

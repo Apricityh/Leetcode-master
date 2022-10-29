@@ -1,0 +1,45 @@
+### 解题思路
+
+此处撰写解题思路
+
+### 代码
+
+* cpp
+
+```cpp
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *start= new ListNode();
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        ListNode* result=start;
+        int carry=0;
+        int val1;
+        int val2;
+        int temp ;
+        ListNode t;
+        while(result){
+            val1=l1?l1->val:0;
+            val2=l2?l2->val:0;
+            temp =val1+val2+carry;
+            carry=temp>9? 1:0;
+            temp =temp%10;
+            result->next=l1||l2||temp? new ListNode(temp):NULL;
+            result=result->next;
+            l1=l1?l1->next:NULL;
+            l2=l2?l2->next:NULL;
+        }
+        return start->next;
+    }
+};
+```
+

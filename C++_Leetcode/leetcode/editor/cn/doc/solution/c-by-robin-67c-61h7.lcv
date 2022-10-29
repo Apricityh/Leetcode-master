@@ -1,0 +1,85 @@
+### 代码
+
+* cpp
+
+```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        int n = s.size();
+        if (n % 2 == 1) {//s的数量为奇数，必定不匹配，故返回false;
+            return false;
+        }
+        unordered_map<char, char> pairs = { //编写一个hash表<key,value>，存放数据；
+            {')', '('}, 
+            {']', '['},
+            {'}', '{'}
+        };
+        stack<char> stk;
+        for (char ch: s) {
+            if (pairs.count(ch)) {//如果新的值可以在pairs的key值中找到，说明是')'、']'、'}'中的一种，即是右括号，所以需要stk中是存在左括号的，那么如果stk为空或者他的栈顶不是左括号，可以直接返回false；
+                if (stk.empty() || stk.top() != pairs[ch]) {//skt是空或者栈顶值不是想找的value值，返回false;
+                    return false;
+                }//不满足上述if，即skt.top()==pairs[ch]，栈顶值是对应的value值
+                else
+                    stk.pop();//不入栈，并且栈顶值弹出
+            }
+            else {//在pairs的key值中找不到，也就是不是右括号，即为左括号，那么此值入栈
+                stk.push(ch);
+            }
+        }
+        return stk.empty();//都循环遍历结束，查看stk栈中是否为空，为空，说明满足条件，返回真，否则，返回假；
+    }
+};
+
+/*
+法1 参考自：官方题解
+作者：LeetCode-Solution
+链接：https://leetcode-cn.com/problems/valid-parentheses/solution/you-xiao-de-gua-hao-by-leetcode-solution/
+*/
+
+//法2 将符号化成ASCII值
+
+class Solution {
+public:
+    bool isValid(string s) {
+        if(s == ""){
+            return true;}
+        stack<char> res;
+        res.push(s[0]);
+        for(int i=1; i<s.size(); i++){
+            if(res.empty() == true){
+                res.push(s[i]);
+            }else if(s[i] - res.top() == 1 || s[i] - res.top() == 2){
+                res.pop();
+            } else {
+                res.push(s[i]);
+            }
+        }
+        return res.empty();
+    }
+};
+/* 法2参考自：官方题解评论区，原代码
+class Solution {
+public:
+    bool isValid(string s) {
+        if(s == ""){
+            return true;
+        }
+        vector<char> stack;
+        stack.push_back(s[0]);
+        for(int i=1; i<s.size(); i++){
+            if(stack.empty() == true){
+                stack.push_back(s[i]);
+            }else if(s[i] - stack.back() == 1 || s[i] - stack.back() == 2){
+                stack.pop_back();
+            } else {
+                stack.push_back(s[i]);
+            }
+        }
+
+        return stack.empty();
+    }
+};*/
+```
+

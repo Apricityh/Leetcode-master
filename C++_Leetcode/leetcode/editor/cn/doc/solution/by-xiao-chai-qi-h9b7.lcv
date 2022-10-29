@@ -1,0 +1,30 @@
+### 解题思路
+
+递归法
+
+### 执行情况
+
+- 执行用时：4 ms, 在所有 C++ 提交中击败了76.89%的用户
+- 内存消耗：10.5 MB, 在所有 C++ 提交中击败了12.29%的用户
+- 通过测试用例：208 / 208
+- 
+
+### 代码
+
+* cpp
+
+```cpp
+class Solution {
+public:
+    int ct=0;//递归返回次数
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        if(head){//节点是否为空
+            head->next=removeNthFromEnd(head->next,n);//继续后移
+            return ++ct == n?head->next:head;//递归返回次数等于n，返回下个节点的指针，否则返回当前节点指针
+        }else{
+            return nullptr;
+        }
+    }
+};
+```
+

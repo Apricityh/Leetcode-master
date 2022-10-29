@@ -1,0 +1,70 @@
+### 解题思路
+
+此处撰写解题思路
+
+### 代码
+
+* cpp
+
+```cpp
+//第一中转化成string,双指针匹配是否对称
+class Solution {
+public:
+    bool isPalindrome(int x) { 
+        if (x < 0) return false;
+
+        string s = to_string(x);
+        int l = 0, r = s.size() - 1;
+        while (l < r) {
+            if (s[l] == s[r]) ++l, --r;
+            else return false;
+        }
+        return true;
+    }
+};
+```
+
+* cpp
+
+```cpp
+//第二种
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if (x < 0) return false;
+
+        long long sum = 0; 翻转可能溢出
+        int aid = x; //尽量不修改原来数据
+        while (aid) {
+            sum = sum * 10 + aid % 10;
+            aid /= 10;
+        }
+        return sum == x;
+    }
+};
+```
+
+* cpp
+
+```cpp
+//第三种
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        //负数和末位为0(除了0)的数都不可能是回文数
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        } 
+
+        int aid = 0;    //这种方法可以解决int溢出的问题
+        while (x > aid) { //这里的x是会变的
+            aid = aid * 10 + x % 10;
+            x /= 10;
+        }
+        //12321 //最终x == 12 aid == 123
+        //奇数的情况aid 需要/10;
+        return x == aid || x == aid / 10;
+    }
+};
+```
+
