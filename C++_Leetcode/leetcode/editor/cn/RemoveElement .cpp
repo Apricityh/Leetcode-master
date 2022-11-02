@@ -1,9 +1,7 @@
 
 
 
-
-
-//给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。 
+//给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。
 //
 // 不要使用额外的数组空间，你必须仅使用 O(1) 额外空间并 原地 修改输入数组。 
 //
@@ -70,8 +68,26 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 public:
-    int removeElement(vector<int>& nums, int val) {
+    int removeElement(vector<int> &nums, int val) {
+        int n = nums.size();
+        if (n == 0)
+            return 0;
+        int lower = 0;
+        int fast = n - 1;
+        while (lower<fast) {
+            if (nums[fast] == val)
+                fast--;
+            else if (nums[lower] == val){
+                nums[lower] = nums[fast];
+                fast--;
+                lower++;}
+            else{
+                lower ++;
+            }
 
+
+        }
+        return nums[fast]== val?fast:fast+1;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
