@@ -25,6 +25,50 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/GenerateParentheses .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/GenerateParentheses .md" />
+              <option name="frontendQuestionId" value="leetcode.cn22" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/GenerateParentheses .cpp" />
+              <option name="titleSlug" value="generate-parentheses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/IntegerToRoman .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/IntegerToRoman .md" />
+              <option name="frontendQuestionId" value="leetcode.cn12" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/IntegerToRoman .cpp" />
+              <option name="titleSlug" value="integer-to-roman" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/LongestPalindromicSubstring .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/LongestPalindromicSubstring .md" />
+              <option name="frontendQuestionId" value="leetcode.cn5" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/LongestPalindromicSubstring .cpp" />
+              <option name="titleSlug" value="longest-palindromic-substring" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/PlusOne .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/PlusOne .md" />
+              <option name="frontendQuestionId" value="leetcode.cn66" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/PlusOne .cpp" />
+              <option name="titleSlug" value="plus-one" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/RemoveDuplicatesFromSortedArray .cpp">
           <value>
             <LeetcodeEditor>
@@ -44,6 +88,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/RemoveElement .cpp" />
               <option name="titleSlug" value="remove-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/SearchInsertPosition .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/SearchInsertPosition .md" />
+              <option name="frontendQuestionId" value="leetcode.cn35" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/SearchInsertPosition .cpp" />
+              <option name="titleSlug" value="search-insert-position" />
             </LeetcodeEditor>
           </value>
         </entry>
