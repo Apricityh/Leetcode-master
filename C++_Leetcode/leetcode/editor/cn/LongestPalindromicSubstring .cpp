@@ -43,6 +43,7 @@ class Solution {
 public:
     string longestPalindrome(string s) {
 
+
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
