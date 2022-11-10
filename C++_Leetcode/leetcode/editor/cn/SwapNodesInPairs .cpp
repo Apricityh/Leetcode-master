@@ -35,7 +35,11 @@
 // 0 <= Node.val <= 100 
 // 
 //
+<<<<<<< HEAD
 // Related Topics 递归 链表 👍 1620 👎 0
+=======
+// Related Topics 递归 链表 👍 1622 👎 0
+>>>>>>> dev
 
 
 #include<bits/stdc++.h>
@@ -59,6 +63,7 @@ struct ListNode {
 class Solution {
 public:
     ListNode *swapPairs(ListNode *head) {
+<<<<<<< HEAD
         ListNode *prev = new ListNode(0);
         prev->next= head;
         ListNode *pre = prev;
@@ -71,6 +76,17 @@ public:
             pre = n1;
         }
         return prev->next;
+=======
+//The second solution 递归
+        if (head == nullptr || head->next == nullptr) {
+            return head;
+        }
+        ListNode *two = head->next;
+        head->next = swapPairs(two->next);
+        two->next = head;
+        return two;
+
+>>>>>>> dev
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
