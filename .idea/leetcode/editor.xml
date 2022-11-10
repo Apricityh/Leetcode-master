@@ -102,6 +102,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/SwapNodesInPairs .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/SwapNodesInPairs .md" />
+              <option name="frontendQuestionId" value="leetcode.cn24" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/SwapNodesInPairs .cpp" />
+              <option name="titleSlug" value="swap-nodes-in-pairs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
