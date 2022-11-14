@@ -58,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/MiddleOfTheLinkedList .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/MiddleOfTheLinkedList .md" />
+              <option name="frontendQuestionId" value="leetcode.cn876" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/MiddleOfTheLinkedList .cpp" />
+              <option name="titleSlug" value="middle-of-the-linked-list" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/PlusOne .cpp">
           <value>
             <LeetcodeEditor>
@@ -88,6 +99,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/RemoveElement .cpp" />
               <option name="titleSlug" value="remove-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/ReverseLinkedList .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/doc/content/ReverseLinkedList .md" />
+              <option name="frontendQuestionId" value="leetcode.cn206" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/C++_Leetcode/leetcode/editor/cn/ReverseLinkedList .cpp" />
+              <option name="titleSlug" value="reverse-linked-list" />
             </LeetcodeEditor>
           </value>
         </entry>
