@@ -45,7 +45,6 @@
 
 
 #include <vector>
-#include <stdio.h>
 #include <unordered_map>
 
 using namespace std;
@@ -53,24 +52,24 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int,int> hashtable;
+    vector<int> twoSum(vector<int> &nums, int target) {
+        unordered_map<int, int> hashtable;
         for (int i = 0; i < nums.size(); ++i) {
-            auto it = hashtable.find(target - nums[i]);
-            if (it != hashtable.end()){
-                return {it->second,i};
+            auto it = hashtable.find(target - nums[i]);//find找的是键而不是值，返回这个键对应的位置。
+            if (it != hashtable.end()) {//若没找到，迭代器类型的it就会一直指向end。
+                return {it->second, i};
 
             }
-            hashtable[nums[i]] = i ;
+            hashtable[nums[i]] = i;   //键为数组的值，数组的索引为其的值value
         }
         return {};
 
 
-
-        }
+    }
 
 
 };
+
 //leetcode submit region end(Prohibit modification and deletion)
 
 
