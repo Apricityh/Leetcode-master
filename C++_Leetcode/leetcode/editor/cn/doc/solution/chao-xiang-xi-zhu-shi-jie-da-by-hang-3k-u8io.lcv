@@ -1,0 +1,30 @@
+### 解题思路
+
+先把不为0的元素都放到数组的前面，剩下的全部为0
+
+### 代码
+
+* java
+
+```java
+class Solution {
+    public void moveZeroes(int[] nums) {
+        //记录下标
+        int k=0;
+        //循环所有的元素
+        for(int i=0;i<nums.length;i++){
+            //如果当前元素不为0，按序插入就可以，先不管为0的元素，先把有值的按序插好，为0的最后补
+            if(nums[i]!=0){
+                nums[k]=nums[i];
+                k++;
+            }
+        }
+        //nums.length-k的值就是后面需要补多少0，k++循环赋值为0就可以
+        while(k!=nums.length){
+            nums[k]=0;
+            k++;
+        }
+    }
+}
+```
+

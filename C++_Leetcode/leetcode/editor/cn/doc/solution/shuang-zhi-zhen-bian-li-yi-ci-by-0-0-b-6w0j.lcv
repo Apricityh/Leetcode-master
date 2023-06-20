@@ -1,0 +1,30 @@
+### 解题思路
+
+![image.png](https://pic.leetcode-cn.com/1621858670-nFaYFD-image.png)
+
+### 代码
+
+* cpp
+
+```cpp
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        //使用双指针，right指针指向的是数组中从前往后不为0的树
+        //left指针指向的是从前往后为0的位置
+        //然后进行交换，如果right指向不为0， 则进行交换，否则right继续寻找不为0的数
+        int left = 0;
+        int right = 0;
+        while(right < nums.size())
+        {
+            if(nums[right])
+            {
+                swap(nums[left], nums[right]);
+                left++;
+            }
+            right++;
+        }
+    }
+};
+```
+
