@@ -92,7 +92,7 @@
 						"mingwex"
 					]
 				},
-				"path" : "F:/MinGW/mingw32/bin/c++.exe",
+				"path" : "F:/MinGW/mingw32/bin/g++.exe",
 				"version" : "4.8.2"
 			},
 			"language" : "CXX",

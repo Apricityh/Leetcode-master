@@ -1,4 +1,4 @@
-The system is: Windows - 10.0.19044 - AMD64
+The system is: Windows - 10.0.19045 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: F:/MinGW/mingw32/bin/gcc.exe 
 Build flags: 
@@ -13,7 +13,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is GNU, found in "G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: F:/MinGW/mingw32/bin/c++.exe 
+Compiler: F:/MinGW/mingw32/bin/g++.exe 
 Build flags: 
 Id flags:  
 
@@ -28,15 +28,18 @@ The CXX compiler identification is GNU, found in "G:/Deeping_Learing/Leetcode-ma
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):F:/Clion/CLion 2022.2.3/bin/ninja/win/ninja.exe cmTC_5340c && [1/2] Building C object CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj
+Run Build Command(s):F:/MinGW/mingw32/bin/mingw32-make.exe -f Makefile cmTC_39367/fast && F:/MinGW/mingw32/bin/mingw32-make.exe  -f CMakeFiles\cmTC_39367.dir\build.make CMakeFiles/cmTC_39367.dir/build
+mingw32-make.exe[1]: Entering directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39367.dir/CMakeCCompilerABI.c.obj
+F:\MinGW\mingw32\bin\gcc.exe   -v -o CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj -c "F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
 Using built-in specs.
 COLLECT_GCC=F:\MinGW\mingw32\bin\gcc.exe
 Target: i686-w64-mingw32
 Configured with: ../../../src/gcc-4.8.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/prerequisites/i686-w64-mingw32-static --with-mpfr=/tmp/prerequisites/i686-w64-mingw32-static --with-mpc=/tmp/prerequisites/i686-w64-mingw32-static --with-isl=/tmp/prerequisites/i686-w64-mingw32-static --with-cloog=/tmp/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/lib -L/tmp/prerequisites/i686-zlib-static/lib -L/tmp/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
 Thread model: win32
 gcc version 4.8.2 (rev0, Built by MinGW-W64 project) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
- f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:/Clion/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\32894\AppData\Local\Temp\ccfh6QOn.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
+ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\32894\AppData\Local\Temp\ccuuQFKb.s
 GNU C (rev0, Built by MinGW-W64 project) version 4.8.2 (i686-w64-mingw32)
 	compiled by GNU C version 4.8.2, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -55,13 +58,17 @@ GNU C (rev0, Built by MinGW-W64 project) version 4.8.2 (i686-w64-mingw32)
 	compiled by GNU C version 4.8.2, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: e8c1c8f59e575b19f1165b5b27a5783c
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
- f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj C:\Users\32894\AppData\Local\Temp\ccfh6QOn.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
+ f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj C:\Users\32894\AppData\Local\Temp\ccuuQFKb.s
 GNU assembler version 2.23.2 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.23.2
 COMPILER_PATH=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../libexec/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../lib/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
-[2/2] Linking C executable cmTC_5340c.exe
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686'
+Linking C executable cmTC_39367.exe
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_39367.dir\link.txt --verbose=1
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_39367.dir/objects.a
+F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\cmTC_39367.dir/objects.a @CMakeFiles\cmTC_39367.dir\objects1.rsp
+F:\MinGW\mingw32\bin\gcc.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_39367.dir/objects.a -Wl,--no-whole-archive -o cmTC_39367.exe -Wl,--out-implib,libcmTC_39367.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=F:\MinGW\mingw32\bin\gcc.exe
 COLLECT_LTO_WRAPPER=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/lto-wrapper.exe
@@ -71,8 +78,9 @@ Thread model: win32
 gcc version 4.8.2 (rev0, Built by MinGW-W64 project) 
 COMPILER_PATH=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../libexec/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../lib/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5340c.exe' '-mtune=generic' '-march=i686'
- f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_5340c.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_5340c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_39367.exe' '-mtune=generic' '-march=i686'
+ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_39367.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. --whole-archive CMakeFiles\cmTC_39367.dir/objects.a --no-whole-archive --out-implib libcmTC_39367.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o
+mingw32-make.exe[1]: Leaving directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
@@ -93,15 +101,18 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):F:/Clion/CLion 2022.2.3/bin/ninja/win/ninja.exe cmTC_5340c && [1/2] Building C object CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [Run Build Command(s):F:/MinGW/mingw32/bin/mingw32-make.exe -f Makefile cmTC_39367/fast && F:/MinGW/mingw32/bin/mingw32-make.exe  -f CMakeFiles\cmTC_39367.dir\build.make CMakeFiles/cmTC_39367.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_39367.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [F:\MinGW\mingw32\bin\gcc.exe   -v -o CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj -c "F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=F:\MinGW\mingw32\bin\gcc.exe]
   ignore line: [Target: i686-w64-mingw32]
   ignore line: [Configured with: ../../../src/gcc-4.8.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/prerequisites/i686-w64-mingw32-static --with-mpfr=/tmp/prerequisites/i686-w64-mingw32-static --with-mpc=/tmp/prerequisites/i686-w64-mingw32-static --with-isl=/tmp/prerequisites/i686-w64-mingw32-static --with-cloog=/tmp/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/lib -L/tmp/prerequisites/i686-zlib-static/lib -L/tmp/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
   ignore line: [Thread model: win32]
   ignore line: [gcc version 4.8.2 (rev0  Built by MinGW-W64 project) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
-  ignore line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:/Clion/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj -version -o C:\Users\32894\AppData\Local\Temp\ccfh6QOn.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
+  ignore line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\32894\AppData\Local\Temp\ccuuQFKb.s]
   ignore line: [GNU C (rev0  Built by MinGW-W64 project) version 4.8.2 (i686-w64-mingw32)]
   ignore line: [	compiled by GNU C version 4.8.2  GMP version 5.1.3  MPFR version 3.1.2  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -120,8 +131,8 @@ Parsed C implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.2  GMP version 5.1.3  MPFR version 3.1.2  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: e8c1c8f59e575b19f1165b5b27a5783c]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
-  ignore line: [ f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj C:\Users\32894\AppData\Local\Temp\ccfh6QOn.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
+  ignore line: [ f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj C:\Users\32894\AppData\Local\Temp\ccuuQFKb.s]
   ignore line: [GNU assembler version 2.23.2 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.23.2]
   ignore line: [COMPILER_PATH=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/]
   ignore line: [f:/mingw/mingw32/bin/../libexec/gcc/]
@@ -132,8 +143,12 @@ Parsed C implicit link information from above output:
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
-  ignore line: [[2/2] Linking C executable cmTC_5340c.exe]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_39367.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i686']
+  ignore line: [Linking C executable cmTC_39367.exe]
+  ignore line: ["F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_39367.dir\link.txt --verbose=1]
+  ignore line: ["F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_39367.dir/objects.a]
+  ignore line: [F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\cmTC_39367.dir/objects.a @CMakeFiles\cmTC_39367.dir\objects1.rsp]
+  ignore line: [F:\MinGW\mingw32\bin\gcc.exe  -v -Wl --whole-archive CMakeFiles\cmTC_39367.dir/objects.a -Wl --no-whole-archive -o cmTC_39367.exe -Wl --out-implib libcmTC_39367.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=F:\MinGW\mingw32\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/lto-wrapper.exe]
@@ -150,15 +165,15 @@ Parsed C implicit link information from above output:
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5340c.exe' '-mtune=generic' '-march=i686']
-  link line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_5340c.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_5340c.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_39367.exe' '-mtune=generic' '-march=i686']
+  link line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_39367.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. --whole-archive CMakeFiles\cmTC_39367.dir/objects.a --no-whole-archive --out-implib libcmTC_39367.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o]
     arg [f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe] ==> ignore
     arg [--sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32] ==> ignore
     arg [-m] ==> ignore
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_5340c.exe] ==> ignore
+    arg [cmTC_39367.exe] ==> ignore
     arg [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
     arg [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o] ==> obj [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o]
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2]
@@ -167,9 +182,11 @@ Parsed C implicit link information from above output:
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib]
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib]
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../..] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../..]
-    arg [CMakeFiles/cmTC_5340c.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_39367.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_5340c.dll.a] ==> ignore
+    arg [libcmTC_39367.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -214,15 +231,18 @@ Parsed C implicit link information from above output:
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):F:/Clion/CLion 2022.2.3/bin/ninja/win/ninja.exe cmTC_dfa5f && [1/2] Building CXX object CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):F:/MinGW/mingw32/bin/mingw32-make.exe -f Makefile cmTC_4aaec/fast && F:/MinGW/mingw32/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4aaec.dir\build.make CMakeFiles/cmTC_4aaec.dir/build
+mingw32-make.exe[1]: Entering directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4aaec.dir/CMakeCXXCompilerABI.cpp.obj
+F:\MinGW\mingw32\bin\g++.exe   -v -o CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj -c "F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
 Using built-in specs.
-COLLECT_GCC=F:\MinGW\mingw32\bin\c++.exe
+COLLECT_GCC=F:\MinGW\mingw32\bin\g++.exe
 Target: i686-w64-mingw32
 Configured with: ../../../src/gcc-4.8.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/prerequisites/i686-w64-mingw32-static --with-mpfr=/tmp/prerequisites/i686-w64-mingw32-static --with-mpc=/tmp/prerequisites/i686-w64-mingw32-static --with-isl=/tmp/prerequisites/i686-w64-mingw32-static --with-cloog=/tmp/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/lib -L/tmp/prerequisites/i686-zlib-static/lib -L/tmp/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
 Thread model: win32
 gcc version 4.8.2 (rev0, Built by MinGW-W64 project) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
- f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1plus.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:/Clion/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\32894\AppData\Local\Temp\ccVYDexX.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1plus.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\32894\AppData\Local\Temp\cclf0Phk.s
 GNU C++ (rev0, Built by MinGW-W64 project) version 4.8.2 (i686-w64-mingw32)
 	compiled by GNU C version 4.8.2, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -247,15 +267,19 @@ GNU C++ (rev0, Built by MinGW-W64 project) version 4.8.2 (i686-w64-mingw32)
 	compiled by GNU C version 4.8.2, GMP version 5.1.3, MPFR version 3.1.2, MPC version 1.0.1
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 64694adb5eea444aae99d08b44a3797c
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
- f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\32894\AppData\Local\Temp\ccVYDexX.s
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\32894\AppData\Local\Temp\cclf0Phk.s
 GNU assembler version 2.23.2 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.23.2
 COMPILER_PATH=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../libexec/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../lib/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
-[2/2] Linking CXX executable cmTC_dfa5f.exe
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686'
+Linking CXX executable cmTC_4aaec.exe
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4aaec.dir\link.txt --verbose=1
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_4aaec.dir/objects.a
+F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\cmTC_4aaec.dir/objects.a @CMakeFiles\cmTC_4aaec.dir\objects1.rsp
+F:\MinGW\mingw32\bin\g++.exe  -v -Wl,--whole-archive CMakeFiles\cmTC_4aaec.dir/objects.a -Wl,--no-whole-archive -o cmTC_4aaec.exe -Wl,--out-implib,libcmTC_4aaec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
-COLLECT_GCC=F:\MinGW\mingw32\bin\c++.exe
+COLLECT_GCC=F:\MinGW\mingw32\bin\g++.exe
 COLLECT_LTO_WRAPPER=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/lto-wrapper.exe
 Target: i686-w64-mingw32
 Configured with: ../../../src/gcc-4.8.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/prerequisites/i686-w64-mingw32-static --with-mpfr=/tmp/prerequisites/i686-w64-mingw32-static --with-mpc=/tmp/prerequisites/i686-w64-mingw32-static --with-isl=/tmp/prerequisites/i686-w64-mingw32-static --with-cloog=/tmp/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/lib -L/tmp/prerequisites/i686-zlib-static/lib -L/tmp/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware'
@@ -263,8 +287,9 @@ Thread model: win32
 gcc version 4.8.2 (rev0, Built by MinGW-W64 project) 
 COMPILER_PATH=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../libexec/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/;f:/mingw/mingw32/bin/../lib/gcc/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/;f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfa5f.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
- f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_dfa5f.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_dfa5f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4aaec.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_4aaec.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. --whole-archive CMakeFiles\cmTC_4aaec.dir/objects.a --no-whole-archive --out-implib libcmTC_4aaec.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o
+mingw32-make.exe[1]: Leaving directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
@@ -291,15 +316,18 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):F:/Clion/CLion 2022.2.3/bin/ninja/win/ninja.exe cmTC_dfa5f && [1/2] Building CXX object CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [Run Build Command(s):F:/MinGW/mingw32/bin/mingw32-make.exe -f Makefile cmTC_4aaec/fast && F:/MinGW/mingw32/bin/mingw32-make.exe  -f CMakeFiles\cmTC_4aaec.dir\build.make CMakeFiles/cmTC_4aaec.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_4aaec.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [F:\MinGW\mingw32\bin\g++.exe   -v -o CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj -c "F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=F:\MinGW\mingw32\bin\c++.exe]
+  ignore line: [COLLECT_GCC=F:\MinGW\mingw32\bin\g++.exe]
   ignore line: [Target: i686-w64-mingw32]
   ignore line: [Configured with: ../../../src/gcc-4.8.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/prerequisites/i686-w64-mingw32-static --with-mpfr=/tmp/prerequisites/i686-w64-mingw32-static --with-mpc=/tmp/prerequisites/i686-w64-mingw32-static --with-isl=/tmp/prerequisites/i686-w64-mingw32-static --with-cloog=/tmp/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/lib -L/tmp/prerequisites/i686-zlib-static/lib -L/tmp/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
   ignore line: [Thread model: win32]
   ignore line: [gcc version 4.8.2 (rev0  Built by MinGW-W64 project) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  ignore line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1plus.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:/Clion/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\32894\AppData\Local\Temp\ccVYDexX.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  ignore line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/cc1plus.exe -quiet -v -iprefix f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/ -U_REENTRANT F:\Clion\CLion 2022.2.3\bin\cmake\win\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i686 -auxbase-strip CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\32894\AppData\Local\Temp\cclf0Phk.s]
   ignore line: [GNU C++ (rev0  Built by MinGW-W64 project) version 4.8.2 (i686-w64-mingw32)]
   ignore line: [	compiled by GNU C version 4.8.2  GMP version 5.1.3  MPFR version 3.1.2  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -324,8 +352,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [	compiled by GNU C version 4.8.2  GMP version 5.1.3  MPFR version 3.1.2  MPC version 1.0.1]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 64694adb5eea444aae99d08b44a3797c]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  ignore line: [ f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj C:\Users\32894\AppData\Local\Temp\ccVYDexX.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  ignore line: [ f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/bin/as.exe -v -o CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\32894\AppData\Local\Temp\cclf0Phk.s]
   ignore line: [GNU assembler version 2.23.2 (i686-w64-mingw32) using BFD version (GNU Binutils) 2.23.2]
   ignore line: [COMPILER_PATH=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/]
   ignore line: [f:/mingw/mingw32/bin/../libexec/gcc/]
@@ -336,10 +364,14 @@ Parsed CXX implicit link information from above output:
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  ignore line: [[2/2] Linking CXX executable cmTC_dfa5f.exe]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_4aaec.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  ignore line: [Linking CXX executable cmTC_4aaec.exe]
+  ignore line: ["F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_4aaec.dir\link.txt --verbose=1]
+  ignore line: ["F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_4aaec.dir/objects.a]
+  ignore line: [F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\cmTC_4aaec.dir/objects.a @CMakeFiles\cmTC_4aaec.dir\objects1.rsp]
+  ignore line: [F:\MinGW\mingw32\bin\g++.exe  -v -Wl --whole-archive CMakeFiles\cmTC_4aaec.dir/objects.a -Wl --no-whole-archive -o cmTC_4aaec.exe -Wl --out-implib libcmTC_4aaec.dll.a -Wl --major-image-version 0 --minor-image-version 0 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=F:\MinGW\mingw32\bin\c++.exe]
+  ignore line: [COLLECT_GCC=F:\MinGW\mingw32\bin\g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/lto-wrapper.exe]
   ignore line: [Target: i686-w64-mingw32]
   ignore line: [Configured with: ../../../src/gcc-4.8.2/configure --host=i686-w64-mingw32 --build=i686-w64-mingw32 --target=i686-w64-mingw32 --prefix=/mingw32 --with-sysroot=/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 --enable-shared --enable-static --enable-targets=all --enable-multilib --enable-languages=ada,c,c++,fortran,objc,obj-c++,lto --enable-libstdcxx-time=yes --enable-threads=win32 --enable-libgomp --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-sjlj-exceptions --disable-isl-version-check --disable-cloog-version-check --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch-32=i686 --with-arch-64=nocona --with-tune-32=generic --with-tune-64=core2 --with-libiconv --with-system-zlib --with-gmp=/tmp/prerequisites/i686-w64-mingw32-static --with-mpfr=/tmp/prerequisites/i686-w64-mingw32-static --with-mpc=/tmp/prerequisites/i686-w64-mingw32-static --with-isl=/tmp/prerequisites/i686-w64-mingw32-static --with-cloog=/tmp/prerequisites/i686-w64-mingw32-static --enable-cloog-backend=isl --with-pkgversion='rev0, Built by MinGW-W64 project' --with-bugurl=http://sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -I/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/include -I/tmp/prerequisites/i686-zlib-static/include -I/tmp/prerequisites/i686-w64-mingw32-static/include' CPPFLAGS= LDFLAGS='-pipe -L/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32/opt/lib -L/tmp/prerequisites/i686-zlib-static/lib -L/tmp/prerequisites/i686-w64-mingw32-static/lib -Wl,--large-address-aware']
@@ -354,15 +386,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/]
   ignore line: [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dfa5f.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  link line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_dfa5f.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_dfa5f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4aaec.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe --sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32 -m i386pe -Bdynamic -o cmTC_4aaec.exe f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2 -Lf:/mingw/mingw32/bin/../lib/gcc -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib -Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../.. --whole-archive CMakeFiles\cmTC_4aaec.dir/objects.a --no-whole-archive --out-implib libcmTC_4aaec.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtend.o]
     arg [f:/mingw/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.8.2/collect2.exe] ==> ignore
     arg [--sysroot=C:/Temp/msys64/tmp/i686-482-win32-sjlj-rt_v3-r0/mingw32] ==> ignore
     arg [-m] ==> ignore
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> search dynamic
     arg [-o] ==> ignore
-    arg [cmTC_dfa5f.exe] ==> ignore
+    arg [cmTC_4aaec.exe] ==> ignore
     arg [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> obj [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib/../lib/crt2.o]
     arg [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o] ==> obj [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/crtbegin.o]
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2]
@@ -371,9 +403,11 @@ Parsed CXX implicit link information from above output:
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../lib]
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/lib]
     arg [-Lf:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../..] ==> dir [f:/mingw/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.8.2/../../..]
-    arg [CMakeFiles/cmTC_dfa5f.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_4aaec.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_dfa5f.dll.a] ==> ignore
+    arg [libcmTC_4aaec.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -419,8 +453,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):F:/Clion/CLion 2022.2.3/bin/ninja/win/ninja.exe cmTC_0f297 && [1/2] Building CXX object CMakeFiles/cmTC_0f297.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_0f297.exe
+Run Build Command(s):F:/MinGW/mingw32/bin/mingw32-make.exe -f Makefile cmTC_7037f/fast && F:/MinGW/mingw32/bin/mingw32-make.exe  -f CMakeFiles\cmTC_7037f.dir\build.make CMakeFiles/cmTC_7037f.dir/build
+mingw32-make.exe[1]: Entering directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7037f.dir/feature_tests.cxx.obj
+F:\MinGW\mingw32\bin\g++.exe   -std=c++1y -o CMakeFiles\cmTC_7037f.dir\feature_tests.cxx.obj -c G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_7037f.exe
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7037f.dir\link.txt --verbose=1
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_7037f.dir/objects.a
+F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\cmTC_7037f.dir/objects.a @CMakeFiles\cmTC_7037f.dir\objects1.rsp
+F:\MinGW\mingw32\bin\g++.exe -Wl,--whole-archive CMakeFiles\cmTC_7037f.dir/objects.a -Wl,--no-whole-archive -o cmTC_7037f.exe -Wl,--out-implib,libcmTC_7037f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7037f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 
