@@ -76,7 +76,22 @@ public:
 //
 //        }
 //        return ans==INT32_MAX? 0:ans;
-
+//滑动窗口，时间复杂度是o(n)
+        int result = INT32_MAX;//暂放最长序列的大小
+        int n = nums.size();
+        int i = 0;//滑动窗口的起始
+        int length = 0;//滑动窗口的大小
+        int sum = 0;
+        for (int j = 0; j < n; ++j) {
+             sum+= nums[j];
+             while(sum>=target)//不断缩小滑动窗口的大小，以及更新其长度
+             {
+              length = j-i+1;
+              result = result>length?length:result;
+              sum-=nums[i++];//更新滑动窗口
+             }
+        }
+        return result==INT32_MAX?0: result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
