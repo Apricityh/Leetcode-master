@@ -47,7 +47,7 @@ using namespace std;
 /**
  * Definition for singly-linked list.
 
- */
+// */
 //struct ListNode {
 //    int val;
 //    ListNode *next;
@@ -63,25 +63,21 @@ class Solution {
 public:
     ListNode *removeElements(ListNode *head, int val) {
         if (head == nullptr) {
-            return NULL;
+            return head;
         }
-        ListNode *start =new ListNode(0) ;
-        start->next = head;
-        ListNode *cur = start;
-        while (cur->next!= nullptr) {
-            if (cur->next->val==val){
+        ListNode *pre = new ListNode(0);
+        pre->next = head;
+        ListNode *cur = pre;
+        while (cur->next != nullptr) {
+            if (cur->next->val == val) {
                 ListNode *node = cur->next;
-                cur->next=cur->next->next;
+                cur->next = cur->next->next;
                 delete node;
-            } else{
-                cur = cur->next ;
-            }
-
+            }else{
+            cur = cur->next;}
         }
-        return start->next;
-
+        return pre->next;
     }
-
 };
 //leetcode submit region end(Prohibit modification and deletion)
 
