@@ -142,7 +142,7 @@ public:
     }
 private:
     int size; //链表长度
-    LinkedNode *_dummyHead; //头节点
+    LinkedNode *_dummyHead; //虚拟头节点
 };
 
 /**
