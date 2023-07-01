@@ -35,11 +35,7 @@
 // 0 <= Node.val <= 100 
 // 
 //
-<<<<<<< HEAD
-// Related Topics 递归 链表 👍 1620 👎 0
-=======
-// Related Topics 递归 链表 👍 1622 👎 0
->>>>>>> dev
+
 
 
 #include<bits/stdc++.h>
@@ -49,25 +45,25 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 
 
-struct ListNode {
-    int val;
-    ListNode *next;
-
-    ListNode() : val(0), next(nullptr) {}
-
-    ListNode(int x) : val(x), next(nullptr) {}
-
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
+//struct ListNode {
+//    int val;
+//    ListNode *next;
+//
+//    ListNode() : val(0), next(nullptr) {}
+//
+//    ListNode(int x) : val(x), next(nullptr) {}
+//
+//    ListNode(int x, ListNode *next) : val(x), next(next) {}
+//};
 
 class Solution {
 public:
     ListNode *swapPairs(ListNode *head) {
-<<<<<<< HEAD
-        ListNode *prev = new ListNode(0);
-        prev->next= head;
-        ListNode *pre = prev;
-        while(pre->next!=nullptr && prev->next->next!= nullptr){
+//时间复杂度0（n） 空间o(1)
+        ListNode *pre = new ListNode(0);
+        ListNode *temp = pre;
+        pre->next = head;
+        while(pre->next != nullptr && pre->next->next != nullptr) {
             ListNode *n1 = pre->next;
             ListNode *n2 = pre->next->next;
             pre->next = n2;
@@ -75,18 +71,16 @@ public:
             n2->next = n1;
             pre = n1;
         }
-        return prev->next;
-=======
+        return temp->next;
 //The second solution 递归
-        if (head == nullptr || head->next == nullptr) {
-            return head;
-        }
-        ListNode *two = head->next;
-        head->next = swapPairs(two->next);
-        two->next = head;
-        return two;
-
->>>>>>> dev
+//        if (head== nullptr||head->next== nullptr){
+//            return head;
+//        }
+//        ListNode *next = head->next;
+//        head->next = swapPairs(next->next);
+//        next->next = head;
+//        return next;
+//    }
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
