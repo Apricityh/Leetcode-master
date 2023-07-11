@@ -85,7 +85,7 @@ public:
         while(fast!= nullptr&&fast->next!= nullptr){
             fast = fast->next->next;
             low = low->next;
-            if (fast==low){//检查到回环
+            if (fast==low){//检查到回环，使用快慢指针
                 ListNode *x = head;   //指向开头
                 ListNode *z = fast;   //指向相遇处
                 while(x!=z){
