@@ -53,17 +53,17 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int> &nums, int target) {
-        unordered_map<int, int> hashtable;
+        unordered_map<int, int > hashmap;
         for (int i = 0; i < nums.size(); ++i) {
-            auto it = hashtable.find(target - nums[i]);//find找的是键而不是值，返回这个键对应的位置。
-            if (it != hashtable.end()) {//若没找到，迭代器类型的it就会一直指向end。
-                return {it->second, i};
-
+            int temp = target - nums[i];
+            auto it = hashmap.find(temp);
+            if (it!=hashmap.end()){
+                return {it->second,i};
             }
-            hashtable[nums[i]] = i;   //键为数组的值，数组的索引为其的值value
+            hashmap[nums[i]] = i;//以数组值作为hashmap的索引，让其数组的位置作为hashmap的值
+
         }
         return {};
-
 
     }
 

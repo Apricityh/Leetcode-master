@@ -1,9 +1,7 @@
 
 
 
-
-
-//给定两个数组 nums1 和 nums2 ，返回 它们的交集 。输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。 
+//给定两个数组 nums1 和 nums2 ，返回 它们的交集 。输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。
 //
 // 
 //
@@ -41,17 +39,32 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 public:
-    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-    unordered_set<int> result;
-    unordered_set<int> num(nums1.begin(),nums2.end());
-    for(int i:nums2){
-        if (num.find(i)!= num.end()){
-            result.insert(i);
+    vector<int> intersection(vector<int> &nums1, vector<int> &nums2) {
+//        //纯hashset方法，无序，去重，查找快  o(logn)
+//    unordered_set<int> result;
+//    unordered_set<int> num(nums1.begin(),nums1.end());
+//    for(int i:nums2){
+//        if (num.find(i)!= num.end()){
+//            result.insert(i);
+//        }
+//    }
+//    return vector<int>(result.begin(),result.end()) ;
+//数组
+        unordered_set<int> result;
+        int arry[1001] = {0};//数组初始化
+        for (int num: nums1) {
+            arry[num] = 1;
         }
-    }
-    return vector<int>(num.begin(),num.end()) ;
+        for (int num: nums2) {
+            if (arry[num] == 1) {
+                result.insert(num);//有了就不会插进去了
+            }
 
+        }
+        return vector<int>(result.begin(), result.end());
     }
+    //std::unordered_set的底层实现是哈希表， 使用unordered_set 读写效率是最高的，
+    // 并不需要对数据进行排序，而且还不要让数据重复，所以选择unordered_set。
 };
 //leetcode submit region end(Prohibit modification and deletion)
 
