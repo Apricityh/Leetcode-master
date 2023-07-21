@@ -1,9 +1,7 @@
 
 
 
-
-
-//给你一个字符串 s ，请你反转字符串中 单词 的顺序。 
+//给你一个字符串 s ，请你反转字符串中 单词 的顺序。
 //
 // 单词 是由非空格字符组成的字符串。s 中使用至少一个空格将字符串中的 单词 分隔开。 
 //
@@ -62,9 +60,39 @@ using namespace std;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-public:
-    string reverseWords(string s) {
+public://整体思路：首先是将s里面的数据处理成首尾都没有空格，再处理中间部分，只保留一个空格。用双指针，之后再对每一个单词进行反转。
+    void reverse(string &s, int start, int end) {//反转每个单词的顺序
+        while (start < end) {
+            swap(s[start++], s[end--]);
+        }
+    }
 
+    void moveSpace(string &s) {
+        int start = 0;
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] != ' ' ){//去除所有空格，之后需要添加，首先给出一个条件是保证不是第一个字符
+                if (start!=0){s[start++]=' ';}
+                while (i<s.size()&&s[i]!=' '){
+                    s[start++] =s[i++];
+                }
+            }
+        }
+        s.resize(start);
+    }
+
+    string reverseWords(string s) {
+        moveSpace(s);
+        reverse(s,0,s.size()-1);
+        int start =0;
+        for (int i = 0; i <= s.size(); ++i) {//反转每一个小部分
+            if (i==s.size()||s[i]==' '){
+                reverse(s,start,i-1);
+                start = i+1;//这儿不能放到外面去
+            }
+
+
+        }
+        return s;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
