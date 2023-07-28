@@ -57,33 +57,25 @@ class Solution {
 public:
     bool isValid(string s) {
         stack<char> C;
-        unordered_map<char, char> Map = {
-                {'}', '{'},
-                {')', '('},
-                {']', '['}
-        };/***定义一个hashtable   以右括号来查找栈中是否有左括号  最先遇到的右括号一定先解决最近的左括号
+        /***定义一个hashtable   以右括号来查找栈中是否有左括号  最先遇到的右括号一定先解决最近的左括号
 不会出现 {（}）的情况
  ***/
- //key value
+        //key value
         int n = s.size();//length()/size() 都可以
-        if (n % 2 == 1) {
+        if (n % 2 !=0) {
             return false;    //若符号的个数是奇数则不匹配
         }
-        for (char x: s) {    //遍历字符串的方式
-            if (Map.count(x)) {    //  通过Key来确定栈里是否有左括号的存在，如果栈为空或者栈顶不为空则Push
-                if (C.empty() || C.top() != Map[x]) {
-                    return false;
-                }
-                else{   //有则消除   pop the string
-                    C.pop();}}
-            else{
-                    C.push(x);   //插入左括号
-                }
-
-
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == '(') C.push(')');
+            else if (s[i] == '{') C.push('}');
+            else if (s[i] == '[') C.push(']');
+             else if(C.empty()||C.top()!=s[i]){
+                return false;
+            } else{
+                C.pop();//右括号和左括号相等，弹出
+            }
         }
-        return C.empty();  //处理完只需要判断是否栈为空就行。
-
+        return C.empty();
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
