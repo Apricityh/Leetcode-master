@@ -1,0 +1,39 @@
+总结与心得
+
+* 
+
+```
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root) {
+        queue<TreeNode*>que;
+        if(root) que.push(root);
+        while(!que.empty())
+        {
+            TreeNode*node=que.front();
+            que.pop();
+            if(node->left) que.push(node->left);
+            if(node->right) que.push(node->right);
+            swap(node->left,node->right);
+        }
+        return root;
+    }
+};
+```
+
+与先前几道有关层序遍历题目不同的是：
+1.没有用到接收结点值的数组vec
+2.没有设置size 分批次进行循环
+原因：我们的目的只是对结点的左右指针进行交换操作，并不需要把节点值传递
+size 的目的实际上是让同层的出现在同一个接收数组中，不同层的出现在不同的接收数组中。
