@@ -61,7 +61,7 @@ public:
         else if (left== nullptr&&right == nullptr) return true;
         else if (left->val!=right->val)return false;
         bool outside = compare(left->left,right->right);//分为内层和外层数据
-        bool inside = compare(left->right,right->left);
+        bool inside = compare(left->right,right->left);//内侧
         return outside&&inside;
     }
     bool isSymmetric(TreeNode* root) {
