@@ -91,6 +91,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/BinaryTreePaths .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/BinaryTreePaths .md" />
+              <option name="frontendQuestionId" value="leetcode.cn257" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/BinaryTreePaths .cpp" />
+              <option name="titleSlug" value="binary-tree-paths" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/BinaryTreePostorderTraversal .cpp">
           <value>
             <LeetcodeEditor>
@@ -165,6 +176,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/EvaluateReversePolishNotation .cpp" />
               <option name="titleSlug" value="evaluate-reverse-polish-notation" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/FindBottomLeftTreeValue .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/FindBottomLeftTreeValue .md" />
+              <option name="frontendQuestionId" value="leetcode.cn513" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/FindBottomLeftTreeValue .cpp" />
+              <option name="titleSlug" value="find-bottom-left-tree-value" />
             </LeetcodeEditor>
           </value>
         </entry>
