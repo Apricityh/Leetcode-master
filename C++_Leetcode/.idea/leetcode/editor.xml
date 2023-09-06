@@ -443,6 +443,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/PathSum .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/PathSum .md" />
+              <option name="frontendQuestionId" value="leetcode.cn112" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/PathSum .cpp" />
+              <option name="titleSlug" value="path-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/PopulatingNextRightPointersInEachNode .cpp">
           <value>
             <LeetcodeEditor>
@@ -627,6 +638,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/StringToIntegerAtoi .cpp" />
               <option name="titleSlug" value="string-to-integer-atoi" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/SumOfLeftLeaves .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/SumOfLeftLeaves .md" />
+              <option name="frontendQuestionId" value="leetcode.cn404" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/SumOfLeftLeaves .cpp" />
+              <option name="titleSlug" value="sum-of-left-leaves" />
             </LeetcodeEditor>
           </value>
         </entry>

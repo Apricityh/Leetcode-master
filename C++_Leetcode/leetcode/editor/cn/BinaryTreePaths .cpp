@@ -70,7 +70,7 @@ public:
         }
         if(root->right){
             Travsal(root->right,path,result);
-            result.pop_back();//回溯
+            path.pop_back();//回溯 清除路径
         }
     }
     vector<string> binaryTreePaths(TreeNode *root) {
