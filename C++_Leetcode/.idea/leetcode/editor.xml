@@ -146,6 +146,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/ConstructBinaryTreeFromInorderAndPostorderTraversal .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/ConstructBinaryTreeFromInorderAndPostorderTraversal .md" />
+              <option name="frontendQuestionId" value="leetcode.cn106" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/ConstructBinaryTreeFromInorderAndPostorderTraversal .cpp" />
+              <option name="titleSlug" value="construct-binary-tree-from-inorder-and-postorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/ConstructBinaryTreeFromPreorderAndInorderTraversal .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/ConstructBinaryTreeFromPreorderAndInorderTraversal .md" />
+              <option name="frontendQuestionId" value="leetcode.cn105" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/ConstructBinaryTreeFromPreorderAndInorderTraversal .cpp" />
+              <option name="titleSlug" value="construct-binary-tree-from-preorder-and-inorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/CountCompleteTreeNodes .cpp">
           <value>
             <LeetcodeEditor>
