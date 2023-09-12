@@ -82,6 +82,7 @@ public:
         if (root== nullptr){
             return root;
         }
+        //一直找到最右端的数据，以此为基础进行累加
         traversal(root->right);
         root->val += pre;
         pre = root->val;
@@ -89,6 +90,7 @@ public:
         return root;
 
     }
+
     TreeNode* convertBST(TreeNode* root) {
         pre = 0;
         return traversal(root);
