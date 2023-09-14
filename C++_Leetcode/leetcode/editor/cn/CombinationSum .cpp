@@ -55,9 +55,35 @@ using namespace std;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+private:
+    vector<int> path;
+    vector<vector<int>> result;
 public:
+    void backTracking(vector<int> &candidates,int target,int sum,int index){
+        //当符合和大于的时候停止回溯
+        if (sum>target){
+            return;
+        }
+        if (sum==target){
+            result.push_back(path);
+            return;
+        }
+        //首先当index为0 时处理完整字串  当 i++后作为第二个字串的起始位置。
+        for (int i = index; i < candidates.size() ; ++i) {
+            sum+=candidates[i];
+            path.push_back(candidates[i]);
+            backTracking(candidates,target,sum,i);
+            //回溯
+            sum-=candidates[i];
+            path.pop_back();
+        }
+
+    }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        
+        path.clear();
+        result.clear();
+        backTracking(candidates,target,0,0);
+        return result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
