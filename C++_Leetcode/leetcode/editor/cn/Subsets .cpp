@@ -47,12 +47,13 @@ private:
     vector<int> path;
 public:
     void backTracking(vector<int> &nums, int index) {
-        result.push_back(path);
+
         if (index >= nums.size()) {
             return;
         }
         for (int i = index; i < nums.size(); ++i) {
             path.push_back(nums[i]);
+            result.push_back(path);
             backTracking(nums, i+1);
             path.pop_back();
 
@@ -62,6 +63,7 @@ public:
     vector<vector<int>> subsets(vector<int> &nums) {
         result.clear();
         path.clear();
+        result.push_back(path);
         backTracking(nums, 0);
         return result;
     }
