@@ -8,9 +8,15 @@
             <Statistics>
               <option name="easy" value="45" />
               <option name="hard" value="1" />
+<<<<<<< HEAD
               <option name="medium" value="44" />
               <option name="questionTotal" value="3250" />
               <option name="solvedTotal" value="90" />
+=======
+              <option name="medium" value="43" />
+              <option name="questionTotal" value="3246" />
+              <option name="solvedTotal" value="89" />
+>>>>>>> e131d3dd4945700d5a4780620a59d7d1fffc62c6
             </Statistics>
           </value>
         </entry>
