@@ -1,0 +1,28 @@
+* 
+
+```
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        if(s.size()==0) return true;
+        string newS;
+        for(auto ch:s){
+            if((ch<='z'&&ch>='a')||(ch<='9'&&ch>='0')||(ch<='Z'&&ch>='A')){
+                newS += tolower(ch);
+            }
+        }
+        //cout<<newS;// 检查转换后的字符串正确性
+        int left = 0;
+        int right = newS.size()-1;
+        while(left<right){
+            if(newS[left]!=newS[right]){
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+};
+```
+

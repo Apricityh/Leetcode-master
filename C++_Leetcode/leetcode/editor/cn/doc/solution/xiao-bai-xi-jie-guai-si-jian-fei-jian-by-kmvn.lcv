@@ -1,0 +1,82 @@
+> Problem[125. 验证回文串](/problems/valid-palindrome/)
+
+[TOC]
+
+# 思路
+
+- **两个指针**分别指向字符串前、后端，向中间移动。
+- 移动过程中大写字母转小写。
+- 当指向非字母数字元素时，向后移动，直到指向字母数字。
+
+# 解题要点
+
+（根据本题所写代码，不同代码细节上有差别）
+
+> 1. 特殊情况：字符串长度为1，整个字符串没有字母数字。
+> 2. 循环结束的条件，因为可能有大量非字母数字符号，因此 i<s.size() 为结束条件，而非 i<s.size()/2。
+> 3. 规定的前后指针 forward = s[i];backward = s[s.size() - k]; 在整个计算过程中需统一，码代码时要检查。
+> 4. 前后指针分别对应 i、k 计数，递增时刻：非字母数字向后移动之后、两指针判断相等后。
+> 5. 以免跳不出循环，当 i + k >= s.size() 时，字符串中所有元素被取过，结束循环。
+>    （另，虽然称“前、后指针”，但实际是记录该下标的字符串数组元素，因此指针的地址功能用不上。例如5.判断元素遍历完了，可以通过前、后指针指向同一地址判断。）
+
+# 相似题目
+
+同为细节怪的 [56. 合并区间](/problems/merge-intervals/) ，相信只要找到合适的方法，会豁然开朗。
+
+# 语法
+
+- s[i] = tolower(s[i]);//转小写
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        if (s.size() == 1) {
+            return true;
+        }
+        else {
+            char forward;
+            char backward;
+            int k = 0;
+            for (int i = 0; i < s.size(); ) {
+                s[i] = tolower(s[i]);//转小写
+                s[s.size() - k] = tolower(s[s.size() - k]);
+                //直接前、后两个指针
+                forward = s[i];
+                backward = s[s.size() - k];
+                while (!((forward >= 'a' && forward <= 'z') || (forward >= '0' && forward <= '9'))) {
+                    i++;
+                    s[i] = tolower(s[i]);
+                    forward = s[i];
+                    if (i == s.size() - 1) {//整个string没有字母数字
+                        return true;
+                        break;
+                    }
+                }
+                while (!((backward >= 'a' && backward <= 'z') || (backward >= '0' && backward <= '9'))) {
+                    k++;
+                    s[s.size() - k] = tolower(s[s.size() - k]);
+                    backward = s[s.size() - k];
+                }
+                if (forward != backward) {
+                    return false;
+                    break;
+                }
+                else {
+                    i++;
+                    k++;
+                }
+                if (i + k >= s.size()) {
+                    return true;
+                }
+            }
+            return true;
+        }
+    }
+};
+```
+

@@ -58,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/BestTimeToBuyAndSellStockIi .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/BestTimeToBuyAndSellStockIi .md" />
+              <option name="frontendQuestionId" value="leetcode.cn122" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/BestTimeToBuyAndSellStockIi .cpp" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/BinarySearch .cpp">
           <value>
             <LeetcodeEditor>
@@ -520,6 +531,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/MaximumSubarray .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/MaximumSubarray .md" />
+              <option name="frontendQuestionId" value="leetcode.cn53" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/MaximumSubarray .cpp" />
+              <option name="titleSlug" value="maximum-subarray" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/MergeTwoBinaryTrees .cpp">
           <value>
             <LeetcodeEditor>
@@ -979,6 +1001,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/ValidAnagram .cpp" />
               <option name="titleSlug" value="valid-anagram" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/ValidPalindrome .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/ValidPalindrome .md" />
+              <option name="frontendQuestionId" value="leetcode.cn125" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/ValidPalindrome .cpp" />
+              <option name="titleSlug" value="valid-palindrome" />
             </LeetcodeEditor>
           </value>
         </entry>
