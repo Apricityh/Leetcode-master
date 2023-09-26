@@ -63,7 +63,7 @@ public:
         int nextCover = 0;
         for (int i = 0; i < nums.size(); ++i) {
             nextCover = max(i + nums[i], nextCover);
-            if (i == curCover) {
+            if (i == curCover) {//
                 ans++;
                 curCover = nextCover;
                 if (curCover >= nums.size() - 1) {
