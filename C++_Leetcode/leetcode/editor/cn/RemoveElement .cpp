@@ -69,24 +69,32 @@ using namespace std;
 class Solution {
 public:
     int removeElement(vector<int> &nums, int val) {
-//第二次解答
-        int tail = nums.size()-1;
-        int start = 0;
-        if (nums.size()==0){
-            return 0;
-        }
-        while(start<tail){
-            if (nums[tail] == val){
-                tail--;
-            }else if(nums[start] == val){
-                nums[start] = nums[tail];
-                start++;
-                tail--;
-            } else {
-                start++;
+//第二次解答    原地只能覆盖，而不能直接删除
+//        int tail = nums.size()-1;
+//        int start = 0;
+//        if (nums.size()==0){
+//            return 0;
+//        }
+//        while(start<tail){
+//            if (nums[tail] == val){
+//                tail--;
+//            }else if(nums[start] == val){
+//                nums[start] = nums[tail];
+//                start++;
+//                tail--;
+//            } else {
+//                start++;
+//            }
+//        }
+//        return nums[tail]==val?tail:tail+1;
+        int slowIndex = 0;
+        for (int fastIndex = 0; fastIndex < nums.size(); ++fastIndex) {
+            if (nums[fastIndex]!=val){
+                nums[slowIndex] = nums[fastIndex];
+                slowIndex++;
             }
         }
-        return nums[tail]==val?tail:tail+1;
+        return slowIndex;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
