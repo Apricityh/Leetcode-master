@@ -69,25 +69,24 @@ using namespace std;
 class Solution {
 public:
     int removeElement(vector<int> &nums, int val) {
-        int n = nums.size();
-        if (n == 0)
+//第二次解答
+        int tail = nums.size()-1;
+        int start = 0;
+        if (nums.size()==0){
             return 0;
-        int lower = 0;
-        int fast = n - 1;
-        while (lower<fast) {
-            if (nums[fast] == val)
-                fast--;
-            else if (nums[lower] == val){
-                nums[lower] = nums[fast];
-                fast--;
-                lower++;}
-            else{
-                lower ++;
-            }
-
-
         }
-        return nums[fast]== val?fast:fast+1;
+        while(start<tail){
+            if (nums[tail] == val){
+                tail--;
+            }else if(nums[start] == val){
+                nums[start] = nums[tail];
+                start++;
+                tail--;
+            } else {
+                start++;
+            }
+        }
+        return nums[tail]==val?tail:tail+1;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

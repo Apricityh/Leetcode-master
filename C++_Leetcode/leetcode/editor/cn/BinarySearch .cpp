@@ -47,9 +47,8 @@ public:
                 return middle;
             } else if (nums[middle] < target) {
                 begin = middle+1;
-
             } else{
-                tail =middle-1 ;
+                tail = middle-1 ;
             }
         }
         return -1;
