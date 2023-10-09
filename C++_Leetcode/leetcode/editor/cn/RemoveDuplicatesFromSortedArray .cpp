@@ -66,37 +66,21 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 public:
-    int removeDuplicates(vector<int> &nums){//原地删除 不产生新得内存空间
-//        int n = nums.size();
-//        if(n == 0){
-//            return 0;
-//        }
-//        int fast = 1;//双指针
-//        int lower = 1;
-//        for(int i = 1; i < n ;i++){
-//            if(nums[fast]!=nums[fast-1]){   //
-//            nums[lower] = nums[fast];
-//            lower++;
-//            }
-//            fast++;
-//        }
-//        return lower;
-        int n = nums.size();
-        if (n== 0){
+    int removeDuplicates(vector<int> &nums) {//原地删除 不产生新得内存空间
+        //第二次复习
+        if (nums.size() == 0) {
             return 0;
         }
-        int fast = 1;
-        int lower = 1;
-        for (int i = 1; i <n ; ++i) {
-            if (nums[fast]!=nums[fast-1]){  //lower作为更新完后的最后一位，而fast不断向前去找新的数据。
-                nums[lower] = nums[fast];
-                lower++;
+        int slowIndex = 1;
+        for (int fastIndex = 1; fastIndex < nums.size(); ++fastIndex) {
+            if (nums[fastIndex - 1] != nums[fastIndex]) {
+                nums[slowIndex] = nums[fastIndex];
+                slowIndex++;
             }
-            fast++;
-        }
-        return lower;
-       }
 
+        }
+        return slowIndex;
+        }
 };
 //leetcode submit region end(Prohibit modification and deletion)
 
