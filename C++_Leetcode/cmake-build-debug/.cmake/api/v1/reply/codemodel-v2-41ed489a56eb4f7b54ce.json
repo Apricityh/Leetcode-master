@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "C___Leetcode",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -43,13 +41,6 @@
 					"id" : "C___Leetcode::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-C___Leetcode-Debug-e6519c9a6847d1b5f6d2.json",
 					"name" : "C___Leetcode",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "TwoSum::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TwoSum-Debug-fd6c5cbc84019e6e70dd.json",
-					"name" : "TwoSum",
 					"projectIndex" : 0
 				}
 			]

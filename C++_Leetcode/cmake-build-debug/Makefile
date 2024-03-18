@@ -128,43 +128,6 @@ C___Leetcode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/build
 .PHONY : C___Leetcode/fast
 
-#=============================================================================
-# Target rules for targets named TwoSum
-
-# Build rule for target.
-TwoSum: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TwoSum
-.PHONY : TwoSum
-
-# fast build rule for target.
-TwoSum/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TwoSum.dir\build.make CMakeFiles/TwoSum.dir/build
-.PHONY : TwoSum/fast
-
-leetcode/editor/cn/TwoSum_.obj: leetcode/editor/cn/TwoSum_.cpp.obj
-.PHONY : leetcode/editor/cn/TwoSum_.obj
-
-# target to build an object file
-leetcode/editor/cn/TwoSum_.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TwoSum.dir\build.make CMakeFiles/TwoSum.dir/leetcode/editor/cn/TwoSum_.cpp.obj
-.PHONY : leetcode/editor/cn/TwoSum_.cpp.obj
-
-leetcode/editor/cn/TwoSum_.i: leetcode/editor/cn/TwoSum_.cpp.i
-.PHONY : leetcode/editor/cn/TwoSum_.i
-
-# target to preprocess a source file
-leetcode/editor/cn/TwoSum_.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TwoSum.dir\build.make CMakeFiles/TwoSum.dir/leetcode/editor/cn/TwoSum_.cpp.i
-.PHONY : leetcode/editor/cn/TwoSum_.cpp.i
-
-leetcode/editor/cn/TwoSum_.s: leetcode/editor/cn/TwoSum_.cpp.s
-.PHONY : leetcode/editor/cn/TwoSum_.s
-
-# target to generate assembly for a file
-leetcode/editor/cn/TwoSum_.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TwoSum.dir\build.make CMakeFiles/TwoSum.dir/leetcode/editor/cn/TwoSum_.cpp.s
-.PHONY : leetcode/editor/cn/TwoSum_.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -198,10 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C___Leetcode
-	@echo ... TwoSum
-	@echo ... leetcode/editor/cn/TwoSum_.obj
-	@echo ... leetcode/editor/cn/TwoSum_.i
-	@echo ... leetcode/editor/cn/TwoSum_.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

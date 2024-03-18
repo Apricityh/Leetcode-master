@@ -1,4 +1,3 @@
 G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/C___Leetcode.dir
-G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/TwoSum.dir
 G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/edit_cache.dir
 G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -6,4 +6,3 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(C___Leetcode main.cpp)
 
-add_executable(TwoSum  "leetcode/editor/cn/TwoSum .cpp")

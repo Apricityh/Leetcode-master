@@ -53,18 +53,16 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int> &nums, int target) {
-        unordered_map<int, int > hashmap;
+        unordered_map<int, int> map;
         for (int i = 0; i < nums.size(); ++i) {
             int temp = target - nums[i];
-            auto it = hashmap.find(temp);
-            if (it!=hashmap.end()){
+            auto it = map.find(temp);
+            if(it != map.end()){
                 return {it->second,i};
             }
-            hashmap[nums[i]] = i;//以数组值作为hashmap的索引，让其数组的位置作为hashmap的值
-
+            map[nums[i]] = i;
         }
         return {};
-
     }
 
 

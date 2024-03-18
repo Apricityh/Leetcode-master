@@ -59,48 +59,6 @@
 					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="TwoSum">
-				<Option output="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/TwoSum.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include/c++"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include/c++/i686-w64-mingw32"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include/c++/backward"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include-fixed"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 TwoSum"/>
-					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TwoSum/fast">
-				<Option output="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/TwoSum.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include/c++"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include/c++/i686-w64-mingw32"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include/c++/backward"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/include-fixed"/>
-					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 TwoSum/fast"/>
-					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"/>
 				<Option type="4"/>
@@ -122,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/leetcode/editor/cn/TwoSum .cpp">
-			<Option target="TwoSum"/>
-		</Unit>
 		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/main.cpp">
 			<Option target="C___Leetcode"/>
 		</Unit>
