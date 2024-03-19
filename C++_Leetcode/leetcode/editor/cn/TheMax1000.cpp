@@ -1,3 +1,6 @@
+//
+// Created by 32894 on 2024-03-19.
+//
 //实现从20亿中选取最大的1000个数，采用小顶堆
 #include <vector>
 #include <iostream>
@@ -6,6 +9,7 @@
 using namespace std;
 std::vector<int> findMaxNum(const std::vector<int> &num, int k) {
     std::priority_queue<int, std::vector<int>, std::greater<int>> minHap;
+    //std::priority_queue<int> maxHap; 大顶堆
     for (int i = 0; i < k; ++i) {
         minHap.push(num[i]);
     }

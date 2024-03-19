@@ -4,5 +4,9 @@ project(C___Leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(C___Leetcode main.cpp)
+add_executable(C___Leetcode main.cpp )
 
+
+add_executable(main main.cpp)
+
+add_executable(TheMax1000 leetcode/editor/cn/TheMax1000.cpp)

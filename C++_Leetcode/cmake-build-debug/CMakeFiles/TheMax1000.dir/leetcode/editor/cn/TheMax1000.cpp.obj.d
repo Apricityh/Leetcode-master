@@ -1,5 +1,5 @@
-CMakeFiles/C___Leetcode.dir/main.cpp.obj: \
- G:\Deeping_Learing\Leetcode-master\C++_Leetcode\main.cpp \
+CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj: \
+ G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\TheMax1000.cpp \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\vector \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\bits\stl_algobase.h \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\i686-w64-mingw32\bits\c++config.h \

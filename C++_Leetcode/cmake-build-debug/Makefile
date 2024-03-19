@@ -128,12 +128,63 @@ C___Leetcode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/build
 .PHONY : C___Leetcode/fast
 
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named TheMax1000
+
+# Build rule for target.
+TheMax1000: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TheMax1000
+.PHONY : TheMax1000
+
+# fast build rule for target.
+TheMax1000/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/build
+.PHONY : TheMax1000/fast
+
+leetcode/editor/cn/TheMax1000.obj: leetcode/editor/cn/TheMax1000.cpp.obj
+.PHONY : leetcode/editor/cn/TheMax1000.obj
+
+# target to build an object file
+leetcode/editor/cn/TheMax1000.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj
+.PHONY : leetcode/editor/cn/TheMax1000.cpp.obj
+
+leetcode/editor/cn/TheMax1000.i: leetcode/editor/cn/TheMax1000.cpp.i
+.PHONY : leetcode/editor/cn/TheMax1000.i
+
+# target to preprocess a source file
+leetcode/editor/cn/TheMax1000.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.i
+.PHONY : leetcode/editor/cn/TheMax1000.cpp.i
+
+leetcode/editor/cn/TheMax1000.s: leetcode/editor/cn/TheMax1000.cpp.s
+.PHONY : leetcode/editor/cn/TheMax1000.s
+
+# target to generate assembly for a file
+leetcode/editor/cn/TheMax1000.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.s
+.PHONY : leetcode/editor/cn/TheMax1000.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -142,6 +193,7 @@ main.i: main.cpp.i
 # target to preprocess a source file
 main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,6 +202,7 @@ main.s: main.cpp.s
 # target to generate assembly for a file
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -161,6 +214,11 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... C___Leetcode
+	@echo ... TheMax1000
+	@echo ... main
+	@echo ... leetcode/editor/cn/TheMax1000.obj
+	@echo ... leetcode/editor/cn/TheMax1000.i
+	@echo ... leetcode/editor/cn/TheMax1000.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

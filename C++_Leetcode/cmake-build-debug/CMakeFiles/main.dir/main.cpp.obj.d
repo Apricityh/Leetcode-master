@@ -1,4 +1,4 @@
-CMakeFiles/C___Leetcode.dir/main.cpp.obj: \
+CMakeFiles/main.dir/main.cpp.obj: \
  G:\Deeping_Learing\Leetcode-master\C++_Leetcode\main.cpp \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\vector \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\bits\stl_algobase.h \

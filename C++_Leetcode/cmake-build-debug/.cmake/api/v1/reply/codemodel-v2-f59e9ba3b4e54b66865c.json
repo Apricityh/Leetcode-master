@@ -15,7 +15,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -30,7 +32,9 @@
 					"name" : "C___Leetcode",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -41,6 +45,20 @@
 					"id" : "C___Leetcode::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-C___Leetcode-Debug-e6519c9a6847d1b5f6d2.json",
 					"name" : "C___Leetcode",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TheMax1000::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TheMax1000-Debug-a0e610786c19bad91fd9.json",
+					"name" : "TheMax1000",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-ae47be4e458241c53111.json",
+					"name" : "main",
 					"projectIndex" : 0
 				}
 			]
