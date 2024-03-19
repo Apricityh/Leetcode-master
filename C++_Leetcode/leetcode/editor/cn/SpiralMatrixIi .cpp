@@ -66,7 +66,7 @@ public:
             y++;
             offset++;
         }
-        if (n%2){
+        if (n/2){
             int mid = n/2;
             result[mid][mid] = count++;
         }
