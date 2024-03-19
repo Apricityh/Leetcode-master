@@ -40,36 +40,67 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
-    vector<vector<int>> result(n,vector<int>(n,0));
-    int startx = 0; //记录第一个元素的位置
-    int starty = 0;
-    int loop = n/2;//记录圈数，每一圈缩小一半的数量
-    int offset = 1;//为了不处理最后这个元素。   （选择左闭右开）
-    int count = 1;
-    int i,j;
-    while(loop--){
-        i = startx;
-        j = starty;
-        for ( j = starty; j < n-offset  ; ++j) {
-            result[startx][j] = count++;
+        vector<vector<int>> result(n,vector<int>(n,0));
+        int x = 0;
+        int y = 0;
+        int offset = 1;
+        int count = 1;
+        int loop = n/2;
+        int i,j;
+        while(loop--){
+            i = x;
+            j = y;
+            for (; j< n-offset; ++j) {
+                result[i][j] = count++;
+            }
+            for (;i < n-offset; ++i) {
+                result[i][j] = count++;
+            }
+            for (; j > y ; j--) {
+                result[i][j] = count++;
+            }
+            for (; i > x; --i) {
+                result[i][j] = count++;
+            }
+            x++;
+            y++;
+            offset++;
         }
-        for ( i = startx ; i < n-offset ; ++i) {
-            result[i][j] = count++;
-        }
-        for (;j>starty;j--) {
-            result[i][j] = count++;
-        }
-        for ( ; i > startx ; i--) {
-            result[i][j] = count++;
-        }
-        startx++;
-        starty++;
-        offset+=1;//这里没想到，因为第二个循环需要往前进一个位置
-    }
-        if (n%2!=0){
-            result[n/2][n/2] = count++;
+        if (n%2){
+            int mid = n/2;
+            result[mid][mid] = count++;
         }
         return result;
+//    vector<vector<int>> result(n,vector<int>(n,0));
+//    int startx = 0; //记录第一个元素的位置
+//    int starty = 0;
+//    int loop = n/2;//记录圈数，每一圈缩小一半的数量
+//    int offset = 1;//为了不处理最后这个元素。   （选择左闭右开）
+//    int count = 1;
+//    int i,j;
+//    while(loop--){
+//        i = startx;
+//        j = starty;
+//        for ( j = starty; j < n-offset  ; ++j) {
+//            result[startx][j] = count++;
+//        }
+//        for ( i = startx ; i < n-offset ; ++i) {
+//            result[i][j] = count++;
+//        }
+//        for (;j>starty;j--) {
+//            result[i][j] = count++;
+//        }
+//        for ( ; i > startx ; i--) {
+//            result[i][j] = count++;
+//        }
+//        startx++;
+//        starty++;
+//        offset+=1;//这里没想到，因为第二个循环需要往前进一个位置
+//    }
+//        if (n%2!=0){
+//            result[n/2][n/2] = count++;
+//        }
+//        return result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

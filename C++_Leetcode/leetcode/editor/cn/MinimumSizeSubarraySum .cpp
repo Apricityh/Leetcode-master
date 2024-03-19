@@ -1,9 +1,7 @@
 
 
 
-
-
-//给定一个含有 n 个正整数的数组和一个正整数 target 。 
+//给定一个含有 n 个正整数的数组和一个正整数 target 。
 //
 // 找出该数组中满足其和 ≥ target 的长度最小的 连续子数组 [numsl, numsl+1, ..., numsr-1, numsr] ，并返回其长
 //度。如果不存在符合条件的子数组，返回 0 。 
@@ -61,37 +59,42 @@ using namespace std;
 //暴力破解是不行
 class Solution {
 public:
-    int minSubArrayLen(int target, vector<int>& nums) {
-//        int n = nums.size();
-//        int ans = INT32_MAX;
-//        for (int i = 0; i < n  ; ++i) {
-//            int sum = 0;
-//            for (int j = i  ; j < n; ++j) {
-//                sum+= nums[j];
-//                if (sum>=target){
-//                    ans = min(ans,j-i+1);
-//                    break;
-//                }
-//            }
-//
-//        }
-//        return ans==INT32_MAX? 0:ans;
-//滑动窗口，时间复杂度是o(n)
-        int result = INT32_MAX;//暂放最长序列的大小
-        int n = nums.size();
-        int i = 0;//滑动窗口的起始
-        int length = 0;//滑动窗口的大小
+    int minSubArrayLen(int target, vector<int> &nums) {
+        int result = INT32_MAX;
+        int i = 0;
         int sum = 0;
-        for (int j = 0; j < n; ++j) {
-             sum+= nums[j];
-             while(sum>=target)//不断缩小滑动窗口的大小，以及更新其长度
-             {
-              length = j-i+1;
-              result = result>length?length:result;
-              sum-=nums[i++];//更新滑动窗口
-             }
+        for (int j = 0; j < nums.size(); ++j) {
+            sum+=nums[j];
+            while(sum>=target){
+                result = min(result,j-i+1);
+                sum-=nums[i++];
+            }
+
         }
-        return result==INT32_MAX?0: result;
+        return result==INT32_MAX?0:result;
+
+
+
+
+
+
+
+
+ //滑动窗口，时间复杂度是o(n)
+//        int result = INT32_MAX;//暂放最长序列的大小
+//        int n = nums.size();
+//        int i = 0;//滑动窗口的起始
+//        int length = 0;//滑动窗口的大小
+//        int sum = 0;
+//        for (int j = 0; j < n; ++j) {
+//             sum+= nums[j];
+//             while(sum>=target)//不断缩小滑动窗口的大小，以及更新其长度
+//             {
+//              result = min(result,j-i+1);
+//              sum-=nums[i++];//更新滑动窗口
+//             }
+//        }
+//        return result==INT32_MAX?0: result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
