@@ -69,18 +69,75 @@
 using namespace std;
 
 //leetcode submit region begin(Prohibit modification and deletion)
+struct DLinkedNode{
+    int key,val;
+    DLinkedNode *pre;
+    DLinkedNode *next;
+    DLinkedNode():key(0),val(0),pre(nullptr),next(nullptr){}
+    DLinkedNode(int _key,int _val):key(_key),val(_val),pre(nullptr),next(nullptr){}
+};
 class LRUCache {
+private:
+    unordered_map<int,DLinkedNode*> cache;
+    DLinkedNode* head;
+    DLinkedNode* tail;
+    int _capacity;
+    int _size;
 public:
     LRUCache(int capacity) {
-
+        _capacity = capacity;
+        _size = 0;
+        head = new DLinkedNode();
+        tail = new DLinkedNode();
+        head->next = tail;
+        tail->pre = head;
     }
     
     int get(int key) {
-
+        if (!cache.count(key)) {
+            return -1;
+        }
+        DLinkedNode *node = cache[key];//key为int 而cache[key]为DLinkedNode类型
+        moveToHead(node);
+        return node->val;
     }
-    
     void put(int key, int value) {
-
+        if (!cache.count(key)){
+            DLinkedNode *node = new DLinkedNode(key,value);
+            cache[key] = node;
+            addToHead(node);
+            ++_size;
+            if (_size>_capacity){
+                DLinkedNode *removed = moveTail();
+                cache.erase(removed->key);
+                delete removed;
+                _size--;
+            }
+        }
+        else{
+            DLinkedNode* node = cache[key];
+            node->val = value;
+            moveToHead(node);
+        }
+    }
+    void addToHead(DLinkedNode* node){
+        node->pre = head;
+        node->next = head->next;
+        head->next->pre = node;
+        head->next = node;
+    }
+    void removeNode(DLinkedNode* node){
+        node->next->pre = node->pre;
+        node->pre->next = node->next;
+    }
+    void moveToHead(DLinkedNode *node){
+        removeNode(node);
+        addToHead(node);//管你在不在里面，先移除，再加在前面去
+    }
+    DLinkedNode* moveTail(){
+        DLinkedNode* node = tail->pre;
+        removeNode(node);
+        return node;
     }
 };
 
