@@ -70,13 +70,43 @@ public:
         ListNode *cur = pre;
         while (cur->next != nullptr) {
             if (cur->next->val == val) {
-                ListNode *node = cur->next;
+                ListNode *temp = cur->next;
                 cur->next = cur->next->next;
-                delete node;
-            }else{
-            cur = cur->next;}
+                delete temp;
+            } else {
+                cur = cur->next;
+            }
+
         }
         return pre->next;
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        if (head == nullptr) {
+//            return head;
+//        }
+//        ListNode *pre = new ListNode(0);
+//        pre->next = head;
+//        ListNode *cur = pre;
+//        while (cur->next != nullptr) {
+//            if (cur->next->val == val) {
+//                ListNode *node = cur->next;
+//                cur->next = cur->next->next;
+//                delete node;
+//            }else{
+//            cur = cur->next;}
+//        }
+//        return pre->next;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
