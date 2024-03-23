@@ -454,6 +454,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/IntegerBreak .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/IntegerBreak .md" />
+              <option name="frontendQuestionId" value="leetcode.cn343" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/IntegerBreak .cpp" />
+              <option name="titleSlug" value="integer-break" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/IntersectionOfTwoArrays .cpp">
           <value>
             <LeetcodeEditor>
@@ -1100,6 +1111,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/UniquePaths .cpp" />
               <option name="titleSlug" value="unique-paths" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/UniquePathsIi .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/UniquePathsIi .md" />
+              <option name="frontendQuestionId" value="leetcode.cn63" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/UniquePathsIi .cpp" />
+              <option name="titleSlug" value="unique-paths-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
