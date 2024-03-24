@@ -154,6 +154,46 @@ TheMax1000/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/build
 .PHONY : TheMax1000/fast
 
+#=============================================================================
+# Target rules for targets named 0.1_bug
+
+# Build rule for target.
+0.1_bug: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 0.1_bug
+.PHONY : 0.1_bug
+
+# fast build rule for target.
+0.1_bug/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/build
+.PHONY : 0.1_bug/fast
+
+leetcode/editor/cn/0.1_bug.obj: leetcode/editor/cn/0.1_bug.cpp.obj
+.PHONY : leetcode/editor/cn/0.1_bug.obj
+
+# target to build an object file
+leetcode/editor/cn/0.1_bug.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/leetcode/editor/cn/0.1_bug.cpp.obj
+.PHONY : leetcode/editor/cn/0.1_bug.cpp.obj
+
+leetcode/editor/cn/0.1_bug.i: leetcode/editor/cn/0.1_bug.cpp.i
+.PHONY : leetcode/editor/cn/0.1_bug.i
+
+# target to preprocess a source file
+leetcode/editor/cn/0.1_bug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/leetcode/editor/cn/0.1_bug.cpp.i
+.PHONY : leetcode/editor/cn/0.1_bug.cpp.i
+
+leetcode/editor/cn/0.1_bug.s: leetcode/editor/cn/0.1_bug.cpp.s
+.PHONY : leetcode/editor/cn/0.1_bug.s
+
+# target to generate assembly for a file
+leetcode/editor/cn/0.1_bug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/leetcode/editor/cn/0.1_bug.cpp.s
+.PHONY : leetcode/editor/cn/0.1_bug.cpp.s
+
 leetcode/editor/cn/TheMax1000.obj: leetcode/editor/cn/TheMax1000.cpp.obj
 .PHONY : leetcode/editor/cn/TheMax1000.obj
 
@@ -213,9 +253,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... 0.1_bug
 	@echo ... C___Leetcode
 	@echo ... TheMax1000
 	@echo ... main
+	@echo ... leetcode/editor/cn/0.1_bug.obj
+	@echo ... leetcode/editor/cn/0.1_bug.i
+	@echo ... leetcode/editor/cn/0.1_bug.s
 	@echo ... leetcode/editor/cn/TheMax1000.obj
 	@echo ... leetcode/editor/cn/TheMax1000.i
 	@echo ... leetcode/editor/cn/TheMax1000.s
