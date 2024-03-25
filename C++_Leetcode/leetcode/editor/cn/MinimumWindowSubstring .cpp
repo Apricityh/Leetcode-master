@@ -1,9 +1,7 @@
 
 
 
-
-
-//给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。 
+//给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
 //
 // 
 //
@@ -66,6 +64,44 @@ using namespace std;
 class Solution {
 public:
     string minWindow(string s, string t) {
+        unordered_map<char, int> windows, need;
+        int left = 0;
+        int right = 0;
+        int valid = 0;
+        int lens = INT32_MAX;
+        int start = 0;
+        for (char c: t) {
+            need[c]++;
+        }
+        while (right < s.size()) {
+            char c = s[right];
+            right++;
+            if (need.count(c)) {
+                windows[c]++;
+                if (need[c] == windows[c])
+                    valid++;
+
+            }
+            //判断收缩
+            while (valid == need.size()) {
+                if ((right - left) < lens) {
+                    lens = right - left;
+                    start = left;  //记录起始位置
+                }
+
+                char temp = s[left];
+                left++;
+                //更新窗口
+                if (need.count(temp)) {
+                    if (windows[temp] == need[temp]) {
+                        valid--;
+                    }
+                    windows[temp]--;
+                }
+            }
+        }
+        return lens == INT32_MAX ? "" : s.substr(start, lens);
+
 
     }
 };
