@@ -50,7 +50,38 @@ using namespace std;
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
-
+        unordered_map<char ,int> need,windows;
+        int left = 0;
+        int right  = 0;
+        int valid = 0;
+        vector<int> result;
+        for (char c:p) {
+            need[c]++;
+        }
+        while(right<s.size()){
+            char temp = s[right];
+            right++;
+            if (need.count(temp)){
+                windows[temp]++;
+                if (need[temp]==windows[temp]){
+                    valid++;
+                }
+            }
+            while((right-left)>=p.size()){
+                if (valid==need.size()){
+                    result.push_back(left);
+                }
+                char c = s[left];
+                left++;
+                if (need.count(c)){
+                    if (windows[c]==need[c]){
+                        valid--;
+                    }
+                    windows[c]--;
+                }
+            }
+        }
+        return result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
