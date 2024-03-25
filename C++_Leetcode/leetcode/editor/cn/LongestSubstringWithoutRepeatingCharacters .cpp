@@ -1,8 +1,6 @@
 
 
 
-
-
 //给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度。
 //
 // 
@@ -46,28 +44,31 @@
 
 #include<bits/stdc++.h>
 #include<unordered_map>
+
 using namespace std;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-    unordered_set<char> occ;
-    int n = s.size();
-    int begin = -1;
-    int num = 0;    // 暂放数目
-    for (int i = 0; i < n; i++){
-        if (i!= 0){//从1开始的
-            occ.erase(s[i-1]);
-        }
-        while(begin+1<n && !occ.count(s[begin+1])){
-            occ.insert(s[begin+1]);
-            ++begin;
-        }
-        num = max(num,begin-i+1);
+        unordered_map<char, int> windows;
+        int right = 0;
+        int left = 0;
+        int lens = 0;
+        while (right < s.size()) {
+            char c = s[right];
+            right++;
+            windows[c]++;
+            while (windows[c] > 1) {
+                char temp = s[left];
+                left++;
+                windows[temp]--;
+            }
+            lens = max(lens, right - left);
 
-    }
-    return num;
+        }
+        return  lens;
+
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
