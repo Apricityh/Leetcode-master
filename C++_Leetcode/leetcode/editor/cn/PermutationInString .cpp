@@ -49,6 +49,7 @@ public:
         int valid = 0;
         for(char c : s1){
             need[c]++;
+            
         }
         for (auto i:need) {
             cout<<i.first<<i.second<<endl;

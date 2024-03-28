@@ -69,8 +69,9 @@ public:
 
         }
         vector<int> result;
-        for (int i = k-1; i >=0 ; --i) {
+        for (int i = 0; i < k  ; i++) {
             result.push_back(pri_que.top().first);
+            cout<<pri_que.top().first<<endl;
             pri_que.pop();
         }
         reverse(result.begin(),result.end());

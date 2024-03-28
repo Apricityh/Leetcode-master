@@ -64,6 +64,7 @@ private:
             while (!que.empty()&&val > que.back()) {   //将小于插入元素的值都弹出，保证队头是最大的数。
                 que.pop_back();
 
+
             }
             que.push_back(val);
         }
