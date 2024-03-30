@@ -1158,6 +1158,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/TargetSum .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/TargetSum .md" />
+              <option name="frontendQuestionId" value="leetcode.cn494" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/TargetSum .cpp" />
+              <option name="titleSlug" value="target-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/ThreeSum .cpp">
           <value>
             <LeetcodeEditor>
