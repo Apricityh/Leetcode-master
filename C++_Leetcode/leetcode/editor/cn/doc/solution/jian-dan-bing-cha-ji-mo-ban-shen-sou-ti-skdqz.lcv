@@ -1,0 +1,123 @@
+> Problem: [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/)
+
+[TOC]
+
+# 思路
+
+> 讲述看到这一题的思路
+> 这道题我用了两种办法实现，一种是并查集，这个很容易想到，且实现简单
+> 另外一种也不难，但是想回溯的过程感觉要比并查集难一点。然后总结了下这种
+> 岛屿问题的模板。
+
+# 解题方法
+
+> 描述你的解题方法
+> 并查集：
+> 这种就是直接将二维投影成一维的，然后初始化这个并查集数组。后面靠记忆化map
+> 来辅助这个祖先是否被记录过即可。
+> 深搜dfs：
+> 这个就是直接四面八方去记忆化搜索，固然有一个辅助数组来记录是否被搜索过，
+> 然后将每一块新的岛屿记录到sum中，不断进行++即可
+
+# 复杂度
+
+时间复杂度:
+
+> 添加时间复杂度, 示例： $O(n)$
+> 两者都是O(MN)
+
+空间复杂度:
+
+> 添加空间复杂度, 示例： $O(n)$
+
+# Code
+
+* []
+
+```C++
+深搜：
+int dfs(vector<vector<char>>& grid,char (&arr)[300][300],int i,int j,int m,int n)
+{ //要考虑出边界的结果
+    if(arr[i][j]=='0'&&grid[i][j]=='1')
+        {  //向四周遍历
+            arr[i][j]='1';
+            int dx[4]={-1,0,1,0};int dy[4]={0,1,0,-1}; //遍历方向
+            for(int k=0;k<4;k++)
+            {
+                int x=i+dx[k];int y=j+dy[k];
+                if(x>=0&&x<m&&y>=0&&y<n)
+                    dfs(grid,arr,x,y,m,n);
+            }
+            return 1;
+        }
+    return 0;
+}
+class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        int sum=0;int m=grid.size();int n=grid[0].size();
+        char arr[300][300];
+        for(int i=0;i<m;i++)
+            for(int j=0;j<n;j++)
+                arr[i][j]='0';
+        for(int i=0;i<m;i++)
+            for(int j=0;j<n;j++)
+                sum+=dfs(grid,arr,i,j,m,n);
+        return sum;
+    }
+};
+//注意：这个只包括竖直方向和水平方向的,可以设置一个辅助数组，然后去标记
+//找到一个1之后就往四周去不断递归遍历
+
+并查集：
+class Solution {
+    int find(vector<int>&arr,int x)
+    {
+        if(arr[x]==x)
+            return x;
+        return arr[x]=find(arr,arr[x]); //尾递归减少栈的开销,就没有用下面那一个了
+        // if(arr[x]!=x)arr[x]=find(arr,arr[x]);
+        // return arr[x];
+    }
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        vector<int> arr(grid.size()*grid[0].size());
+        unordered_map<int,int> map;
+        for(int i=0;i<arr.size();i++) arr[i]=i;
+        //下面开始合并集合
+        for(int i=0;i<grid.size();i++)
+        {
+            for(int j=0;j<grid[0].size();j++)
+            {
+                int dx[2]={-1,0};int dy[2]={0,-1};
+                for(int z=0;z<2;z++)
+                {
+                    int x=j+dx[z];
+                    int y=i+dy[z];
+                    int m=grid.size(),n=grid[0].size();
+                    if(x<0||x>=n||y<0||y>=m||grid[y][x]=='0'||grid[i][j]=='0')
+                        continue;
+                    //下面让当前的和移动的那个进行连通
+                    arr[find(arr,i*n+j)]=find(arr,y*n+x);
+                }
+            }
+        }
+        //连通完毕之后，进行判定
+        int sum=0;
+        for(int i=0;i<grid.size();i++)
+        {
+            for(int j=0;j<grid[0].size();j++)
+            {
+                if(map[find(arr,i*grid[0].size()+j)]!=0||grid[i][j]=='0')
+                    continue;
+                sum++;
+                map[find(arr,i*grid[0].size()+j)]=1;
+            }
+        }
+        return sum;
+    }
+};
+
+
+```
+

@@ -1,0 +1,35 @@
+> Problem: [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/description/)
+
+[TOC]
+
+# 思路
+
+遍历图中所有的位置，如果该位置为$1$，则向外扩展将与之相连的$1$全部变为$0$，记录需要进行扩展的$1$的个数。
+
+# Code
+
+* []
+
+```Python
+class Solution:
+    def numIslands(self, grid: List[List[str]]) -> int:
+        row = len(grid)
+        col = len(grid[0])
+        ans = 0
+
+        def DFS(i,j):
+            grid[i][j] = "0"
+            for x,y in [[0,1],[1,0],[0,-1],[-1,0]]:
+                tmp_i = i + x
+                tmp_j = j + y
+                if 0 <= tmp_i < row and 0 <= tmp_j < col and grid[tmp_i][tmp_j] == "1":
+                    DFS(tmp_i,tmp_j)
+        
+        for i in range(row):
+            for j in range(col):
+                if grid[i][j] == "1":
+                    DFS(i,j)
+                    ans += 1
+        return ans
+```
+
