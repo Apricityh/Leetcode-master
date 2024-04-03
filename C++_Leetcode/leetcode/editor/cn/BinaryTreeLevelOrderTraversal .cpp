@@ -73,13 +73,10 @@ public:
                 vec.push_back(node->val);
                 if (node->left){que.push(node->left);}
                 if (node->right){que.push(node->right);}
-
             }
             result.push_back(vec);
         }
         return result;
-
-
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
