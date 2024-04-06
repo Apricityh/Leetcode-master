@@ -443,6 +443,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/FindMinimumInRotatedSortedArray .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/FindMinimumInRotatedSortedArray .md" />
+              <option name="frontendQuestionId" value="leetcode.cn153" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/FindMinimumInRotatedSortedArray .cpp" />
+              <option name="titleSlug" value="find-minimum-in-rotated-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/FindTheIndexOfTheFirstOccurrenceInAString .cpp">
           <value>
             <LeetcodeEditor>
@@ -880,6 +891,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/NonDecreasingSubsequences .cpp" />
               <option name="titleSlug" value="non-decreasing-subsequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/NumberOfEnclaves .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/NumberOfEnclaves .md" />
+              <option name="frontendQuestionId" value="leetcode.cn1020" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/NumberOfEnclaves .cpp" />
+              <option name="titleSlug" value="number-of-enclaves" />
             </LeetcodeEditor>
           </value>
         </entry>
