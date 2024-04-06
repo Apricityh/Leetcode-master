@@ -1,0 +1,49 @@
+> Problem: [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/description/)
+
+[TOC]
+
+# 思路
+
+一开始斟酌了半天，想着想着是不是得分几种情况来进行判断，然后发现不用想得那么复杂。直接将小于`nums[0]`的数都加上最大值，然后就能得到一个有序的数组。
+例：
+**nums = [ 4,5,6,7,0,1,2]
+target = 0**
+
+那么就将所有小于4的数都加上10001（`num[i]`的最大值），得到
+**nums = [ 4,5,6,7,10001,10002,10003]
+target = 10001**
+
+**接下来进行二分查找即可**
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        int n = nums.size();
+        int begin = nums[0], end = nums[n-1];
+        int left = 0, right = n -1;
+
+        if(target < nums[0]) target+=10001;
+
+        while(left <= right)
+        {
+            int mid = (left + right) /2;
+            if(nums[mid] < begin) 
+            {
+                nums[mid] += 10001;
+            }
+            if(nums[mid] == target) return mid;
+            if(nums[mid] > target) right = mid - 1;
+            else left = mid + 1;
+        }
+        return -1;
+    }
+};
+```
+
+**初次写题解，不喜勿喷，蟹蟹**
+
