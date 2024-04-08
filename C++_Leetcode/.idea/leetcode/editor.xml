@@ -344,6 +344,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/DailyTemperatures .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/DailyTemperatures .md" />
+              <option name="frontendQuestionId" value="leetcode.cn739" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/DailyTemperatures .cpp" />
+              <option name="titleSlug" value="daily-temperatures" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/DeleteNodeInABst .cpp">
           <value>
             <LeetcodeEditor>
@@ -880,6 +891,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/NQueens .cpp" />
               <option name="titleSlug" value="n-queens" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/NextGreaterElementI .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/NextGreaterElementI .md" />
+              <option name="frontendQuestionId" value="leetcode.cn496" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/NextGreaterElementI .cpp" />
+              <option name="titleSlug" value="next-greater-element-i" />
             </LeetcodeEditor>
           </value>
         </entry>
