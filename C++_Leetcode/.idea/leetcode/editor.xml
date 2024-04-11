@@ -531,6 +531,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/HouseRobber .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/HouseRobber .md" />
+              <option name="frontendQuestionId" value="leetcode.cn198" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/HouseRobber .cpp" />
+              <option name="titleSlug" value="house-robber" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/HouseRobberIi .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/HouseRobberIi .md" />
+              <option name="frontendQuestionId" value="leetcode.cn213" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/HouseRobberIi .cpp" />
+              <option name="titleSlug" value="house-robber-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/HouseRobberIii .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/HouseRobberIii .md" />
+              <option name="frontendQuestionId" value="leetcode.cn337" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/HouseRobberIii .cpp" />
+              <option name="titleSlug" value="house-robber-iii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/ImplementQueueUsingStacks .cpp">
           <value>
             <LeetcodeEditor>
@@ -971,6 +1004,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/PacificAtlanticWaterFlow .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/PacificAtlanticWaterFlow .md" />
+              <option name="frontendQuestionId" value="leetcode.cn417" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/PacificAtlanticWaterFlow .cpp" />
+              <option name="titleSlug" value="pacific-atlantic-water-flow" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/PalindromeNumber .cpp">
           <value>
             <LeetcodeEditor>
@@ -1089,6 +1133,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/PopulatingNextRightPointersInEachNodeIi .cpp" />
               <option name="titleSlug" value="populating-next-right-pointers-in-each-node-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/PowerOfTwo .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/PowerOfTwo .md" />
+              <option name="frontendQuestionId" value="leetcode.cn231" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/PowerOfTwo .cpp" />
+              <option name="titleSlug" value="power-of-two" />
             </LeetcodeEditor>
           </value>
         </entry>
