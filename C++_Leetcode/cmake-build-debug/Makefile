@@ -167,6 +167,43 @@ TheMax1000/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/build
 .PHONY : 0.1_bug/fast
 
+#=============================================================================
+# Target rules for targets named 16To10
+
+# Build rule for target.
+16To10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 16To10
+.PHONY : 16To10
+
+# fast build rule for target.
+16To10/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/build
+.PHONY : 16To10/fast
+
+NiuKe/16To10.obj: NiuKe/16To10.cpp.obj
+.PHONY : NiuKe/16To10.obj
+
+# target to build an object file
+NiuKe/16To10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj
+.PHONY : NiuKe/16To10.cpp.obj
+
+NiuKe/16To10.i: NiuKe/16To10.cpp.i
+.PHONY : NiuKe/16To10.i
+
+# target to preprocess a source file
+NiuKe/16To10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.i
+.PHONY : NiuKe/16To10.cpp.i
+
+NiuKe/16To10.s: NiuKe/16To10.cpp.s
+.PHONY : NiuKe/16To10.s
+
+# target to generate assembly for a file
+NiuKe/16To10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.s
+.PHONY : NiuKe/16To10.cpp.s
+
 leetcode/editor/cn/0.1_bug.obj: leetcode/editor/cn/0.1_bug.cpp.obj
 .PHONY : leetcode/editor/cn/0.1_bug.obj
 
@@ -254,9 +291,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 0.1_bug
+	@echo ... 16To10
 	@echo ... C___Leetcode
 	@echo ... TheMax1000
 	@echo ... main
+	@echo ... NiuKe/16To10.obj
+	@echo ... NiuKe/16To10.i
+	@echo ... NiuKe/16To10.s
 	@echo ... leetcode/editor/cn/0.1_bug.obj
 	@echo ... leetcode/editor/cn/0.1_bug.i
 	@echo ... leetcode/editor/cn/0.1_bug.s

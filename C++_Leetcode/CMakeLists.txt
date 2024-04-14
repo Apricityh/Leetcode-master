@@ -11,3 +11,4 @@ add_executable(main main.cpp)
 
 add_executable(TheMax1000 leetcode/editor/cn/TheMax1000.cpp leetcode/editor/cn/0.1_bug.cpp)
 add_executable(0.1_bug leetcode/editor/cn/0.1_bug.cpp)
+add_executable(16To10 NiuKe/16To10.cpp)

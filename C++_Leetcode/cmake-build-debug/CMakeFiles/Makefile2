@@ -66,6 +66,7 @@ all: CMakeFiles/C___Leetcode.dir/all
 all: CMakeFiles/main.dir/all
 all: CMakeFiles/TheMax1000.dir/all
 all: CMakeFiles/0.1_bug.dir/all
+all: CMakeFiles/16To10.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -77,6 +78,7 @@ clean: CMakeFiles/C___Leetcode.dir/clean
 clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/TheMax1000.dir/clean
 clean: CMakeFiles/0.1_bug.dir/clean
+clean: CMakeFiles/16To10.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -86,7 +88,7 @@ clean: CMakeFiles/0.1_bug.dir/clean
 CMakeFiles/C___Leetcode.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target C___Leetcode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target C___Leetcode"
 .PHONY : CMakeFiles/C___Leetcode.dir/all
 
 # Build rule for subdir invocation for target.
@@ -112,7 +114,7 @@ CMakeFiles/C___Leetcode.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=8,9 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=10,11 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -138,7 +140,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/TheMax1000.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=5,6,7 "Built target TheMax1000"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=7,8,9 "Built target TheMax1000"
 .PHONY : CMakeFiles/TheMax1000.dir/all
 
 # Build rule for subdir invocation for target.
@@ -182,6 +184,32 @@ CMakeFiles/0.1_bug.dir/rule: cmake_check_build_system
 CMakeFiles/0.1_bug.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/clean
 .PHONY : CMakeFiles/0.1_bug.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/16To10.dir
+
+# All Build rule for target.
+CMakeFiles/16To10.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target 16To10"
+.PHONY : CMakeFiles/16To10.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/16To10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/16To10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/16To10.dir/rule
+
+# Convenience name for target.
+16To10: CMakeFiles/16To10.dir/rule
+.PHONY : 16To10
+
+# clean rule for target.
+CMakeFiles/16To10.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/clean
+.PHONY : CMakeFiles/16To10.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
