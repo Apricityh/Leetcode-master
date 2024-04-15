@@ -1,0 +1,62 @@
+> Problem: [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/description/)
+
+顺时针遍历m行n列矩阵的步数规律（即前进的次数）：
+n-1 -> m-1 -> n-1 -> m-2 -> n-2 ->....
+
+且对应的遍历方向是（横向左到右为正，竖向上到下为正）
+正 -> 正 -> 负 -> 负 -> 正 -> 正 ->...
+
+故得每次从竖向遍历转到横向遍历时（m 到 n），方向要取反
+从横向遍历转到竖向遍历时（n到m），遍历的步数要减一
+
+并且第一次的行遍历要特殊处理，第一次行遍历走完后不能把遍历步数减一
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+       vector<int> res; 
+       int m = matrix.size();   //行
+       int n = matrix[0].size();    //列
+       int dir = 1; //1为向前遍历，-1为向后遍历
+       bool isM = false;    //负责记录当前是在行上还是列上遍历遍历（即竖着在列上）
+       int x = 0, y= 0, z = 0;  //x , y 是坐标， z 是每次step要减去的值
+       int step = n - 1;    //每次行进的步数计数。第一次是 n - 1
+       
+       res.push_back(matrix[0][0]); //特殊处理第一个元素
+       
+       while(res.size() < m * n )
+       {
+           if(step<=0)  //当步数耗尽
+           {
+               if(isM)  //如果曾经在列上遍历完成
+               {
+                   step = n - z;    //重新设定为 行数 - z
+                   dir *= -1;       //方向取反
+               }
+               else //如果曾经在行上完成的遍历
+               {
+                   z++;             //z自增
+                   step = m - z;    //重新设定为 列数 - z
+               }
+               isM = !isM;  //改变为新的遍历方向
+           }
+           
+           if(isM)          //按照isM和dir得出的x，y进行遍历
+               x += dir;
+           else
+               y += dir;
+           
+           res.push_back(matrix[x][y]); //推入当前遍历的节点
+           step--;  //步数减一
+       }
+       
+       return res;
+    }
+};
+```
+
