@@ -1,9 +1,7 @@
 
 
 
-
-
-//给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。 
+//给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
 //
 // 注意：若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异位词。 
 //
@@ -54,27 +52,21 @@ public:
 //        sort(t.begin(),t.end());
 //        return s==t;
 //hash表
-        if (s.length()!=t.length()){
-            return false;
+        vector<int> res(26,0);
+        for (int i = 0; i < s.size(); ++i) {
+            res[s[i] - 'a']++;
         }
-        vector<int> alp(26,0);
-        for(auto &ch:s){
-//            for (auto it = s.begin(); it != s.end(); ++it) {
-//                auto& ch = *it;
-//                // 循环体的正常可以这样写
-//            }
-
-            alp[ch-'a']++;
-
+        for (int i = 0; i < t.size(); ++i) {
+            res[t[i]-'a']--;
         }
-        for(auto &ch:t){
-            alp[ch-'a']--;
-            if (alp[ch-'a']<0){
+        for (int i = 0; i < res.size(); ++i) {
+            if (res[i]!=0){
                 return false;
             }
         }
         return true;
-        }
+
+    }
 };
 /*
  *在这段代码中，我们正在处理字符串中的字符，并且通过将字符减去字符 'a' 来计算它在 alp 数组中的索引位置。假设我们有一个字符串 s，其中包含小写字母 'a' 到 'z'，并且我们希望统计每个字母出现的次数。

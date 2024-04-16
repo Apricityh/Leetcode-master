@@ -66,7 +66,7 @@ all: CMakeFiles/C___Leetcode.dir/all
 all: CMakeFiles/main.dir/all
 all: CMakeFiles/TheMax1000.dir/all
 all: CMakeFiles/0.1_bug.dir/all
-all: CMakeFiles/16To10.dir/all
+all: CMakeFiles/AnyConvert.dir/all
 all: CMakeFiles/set.dir/all
 .PHONY : all
 
@@ -79,7 +79,7 @@ clean: CMakeFiles/C___Leetcode.dir/clean
 clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/TheMax1000.dir/clean
 clean: CMakeFiles/0.1_bug.dir/clean
-clean: CMakeFiles/16To10.dir/clean
+clean: CMakeFiles/AnyConvert.dir/clean
 clean: CMakeFiles/set.dir/clean
 .PHONY : clean
 
@@ -188,30 +188,30 @@ CMakeFiles/0.1_bug.dir/clean:
 .PHONY : CMakeFiles/0.1_bug.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/16To10.dir
+# Target rules for target CMakeFiles/AnyConvert.dir
 
 # All Build rule for target.
-CMakeFiles/16To10.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target 16To10"
-.PHONY : CMakeFiles/16To10.dir/all
+CMakeFiles/AnyConvert.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target AnyConvert"
+.PHONY : CMakeFiles/AnyConvert.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/16To10.dir/rule: cmake_check_build_system
+CMakeFiles/AnyConvert.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/16To10.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/AnyConvert.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/16To10.dir/rule
+.PHONY : CMakeFiles/AnyConvert.dir/rule
 
 # Convenience name for target.
-16To10: CMakeFiles/16To10.dir/rule
-.PHONY : 16To10
+AnyConvert: CMakeFiles/AnyConvert.dir/rule
+.PHONY : AnyConvert
 
 # clean rule for target.
-CMakeFiles/16To10.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/clean
-.PHONY : CMakeFiles/16To10.dir/clean
+CMakeFiles/AnyConvert.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/clean
+.PHONY : CMakeFiles/AnyConvert.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/set.dir

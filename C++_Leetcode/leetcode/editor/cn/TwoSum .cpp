@@ -53,12 +53,12 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int> &nums, int target) {
-        unordered_map<int, int> map;
+        unordered_map<int,int> map;
+        vector<int> res;
         for (int i = 0; i < nums.size(); ++i) {
             int temp = target - nums[i];
-            auto it = map.find(temp);
-            if(it != map.end()){
-                return {it->second,i};
+            if (map.count(temp)){
+               return {map[temp],i};
             }
             map[nums[i]] = i;
         }

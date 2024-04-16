@@ -185,8 +185,8 @@
 					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="16To10">
-				<Option output="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/16To10.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="AnyConvert">
+				<Option output="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/AnyConvert.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -200,14 +200,14 @@
 					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 16To10"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 AnyConvert"/>
 					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="16To10/fast">
-				<Option output="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/16To10.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="AnyConvert/fast">
+				<Option output="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/AnyConvert.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -221,7 +221,7 @@
 					<Add directory="f:\mingw\mingw32\bin\../lib/gcc/i686-w64-mingw32/4.8.2/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 16To10/fast"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 AnyConvert/fast"/>
 					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;G:/Deeping_Learing/Leetcode-master/C++_Leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -290,8 +290,8 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/NiuKe/16To10.cpp">
-			<Option target="16To10"/>
+		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/NiuKe/AnyConvert.cpp">
+			<Option target="AnyConvert"/>
 		</Unit>
 		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/NiuKe/set.cpp">
 			<Option target="set"/>

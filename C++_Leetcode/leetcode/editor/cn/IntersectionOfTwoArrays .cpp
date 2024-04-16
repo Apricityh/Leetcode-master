@@ -50,21 +50,32 @@ public:
 //    }
 //    return vector<int>(result.begin(),result.end()) ;
 //数组
-        unordered_set<int> result;
-        int arry[1001] = {0};//数组初始化
-        for (int num: nums1) {
-            arry[num] = 1;
-        }
-        for (int num: nums2) {
-            if (arry[num] == 1) {
-                result.insert(num);//有了就不会插进去了
-            }
+//        unordered_set<int> result;
+//        int arry[1001] = {0};//数组初始化
+//        for (int num: nums1) {
+//            arry[num] = 1;
+//        }
+//        for (int num: nums2) {
+//            if (arry[num] == 1) {
+//                result.insert(num);//有了就不会插进去了
+//            }
+//
+//        }
+//        return vector<int>(result.begin(), result.end());
+//    }
+//    //std::unordered_set的底层实现是哈希表， 使用unordered_set 读写效率是最高的，
+//    // 并不需要对数据进行排序，而且还不要让数据重复，所以选择unordered_set。
+        unordered_set<int> set(nums1.begin(),nums1.end());
+        unordered_set<int>  res;
 
+        for (int i = 0; i < nums2.size(); ++i) {
+            if (set.count(nums2[i])) {
+                res.insert(nums2[i]);
+            }
         }
-        return vector<int>(result.begin(), result.end());
+        return vector<int>(res.begin(),res.end());
+
     }
-    //std::unordered_set的底层实现是哈希表， 使用unordered_set 读写效率是最高的，
-    // 并不需要对数据进行排序，而且还不要让数据重复，所以选择unordered_set。
 };
 //leetcode submit region end(Prohibit modification and deletion)
 

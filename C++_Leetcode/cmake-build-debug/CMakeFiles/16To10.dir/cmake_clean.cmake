@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "16To10.exe"
   "16To10.exe.manifest"
   "16To10.pdb"
-  "CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj"
-  "CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj.d"
+  "CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj"
+  "CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj.d"
   "lib16To10.dll.a"
 )
 

@@ -168,17 +168,17 @@ TheMax1000/fast:
 .PHONY : 0.1_bug/fast
 
 #=============================================================================
-# Target rules for targets named 16To10
+# Target rules for targets named AnyConvert
 
 # Build rule for target.
-16To10: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 16To10
-.PHONY : 16To10
+AnyConvert: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 AnyConvert
+.PHONY : AnyConvert
 
 # fast build rule for target.
-16To10/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/build
-.PHONY : 16To10/fast
+AnyConvert/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/build
+.PHONY : AnyConvert/fast
 
 #=============================================================================
 # Target rules for targets named set
@@ -193,29 +193,29 @@ set/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/build
 .PHONY : set/fast
 
-NiuKe/16To10.obj: NiuKe/16To10.cpp.obj
-.PHONY : NiuKe/16To10.obj
+NiuKe/AnyConvert.obj: NiuKe/AnyConvert.cpp.obj
+.PHONY : NiuKe/AnyConvert.obj
 
 # target to build an object file
-NiuKe/16To10.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj
-.PHONY : NiuKe/16To10.cpp.obj
+NiuKe/AnyConvert.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/NiuKe/AnyConvert.cpp.obj
+.PHONY : NiuKe/AnyConvert.cpp.obj
 
-NiuKe/16To10.i: NiuKe/16To10.cpp.i
-.PHONY : NiuKe/16To10.i
+NiuKe/AnyConvert.i: NiuKe/AnyConvert.cpp.i
+.PHONY : NiuKe/AnyConvert.i
 
 # target to preprocess a source file
-NiuKe/16To10.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.i
-.PHONY : NiuKe/16To10.cpp.i
+NiuKe/AnyConvert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/NiuKe/AnyConvert.cpp.i
+.PHONY : NiuKe/AnyConvert.cpp.i
 
-NiuKe/16To10.s: NiuKe/16To10.cpp.s
-.PHONY : NiuKe/16To10.s
+NiuKe/AnyConvert.s: NiuKe/AnyConvert.cpp.s
+.PHONY : NiuKe/AnyConvert.s
 
 # target to generate assembly for a file
-NiuKe/16To10.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.s
-.PHONY : NiuKe/16To10.cpp.s
+NiuKe/AnyConvert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/NiuKe/AnyConvert.cpp.s
+.PHONY : NiuKe/AnyConvert.cpp.s
 
 NiuKe/set.obj: NiuKe/set.cpp.obj
 .PHONY : NiuKe/set.obj
@@ -328,14 +328,14 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 0.1_bug
-	@echo ... 16To10
+	@echo ... AnyConvert
 	@echo ... C___Leetcode
 	@echo ... TheMax1000
 	@echo ... main
 	@echo ... set
-	@echo ... NiuKe/16To10.obj
-	@echo ... NiuKe/16To10.i
-	@echo ... NiuKe/16To10.s
+	@echo ... NiuKe/AnyConvert.obj
+	@echo ... NiuKe/AnyConvert.i
+	@echo ... NiuKe/AnyConvert.s
 	@echo ... NiuKe/set.obj
 	@echo ... NiuKe/set.i
 	@echo ... NiuKe/set.s

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "16To10.exe"
+			"path" : "AnyConvert.exe"
 		},
 		{
-			"path" : "16To10.pdb"
+			"path" : "AnyConvert.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "16To10::@6890427a1f51a3e7e1df",
+	"id" : "AnyConvert::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "16To10",
-	"nameOnDisk" : "16To10.exe",
+	"name" : "AnyConvert",
+	"nameOnDisk" : "AnyConvert.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "NiuKe/16To10.cpp",
+			"path" : "NiuKe/AnyConvert.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

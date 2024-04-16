@@ -55,24 +55,22 @@ public:
     int getNum(int n){
         int sum = 0;
         while(n){
-            sum += (n%10)*(n%10);//取余，如果是÷就会丢失个位数
-            n/=10;
-
+            sum+= (n%10) * (n%10);
+            n = n/10;
         }
         return sum;
     }
     bool isHappy(int n) {
-        unordered_set<int> result_set;
-        while(1){
+        unordered_set<int> res;
+        while(true){
             int sum = getNum(n);
-            if (sum==1){
+            if (sum == 1){
                 return true;
-            }
-            if (result_set.find(sum)!=result_set.end()){
+            }else if(res.count(sum)){
                 return false;
             }
-            result_set.insert(sum);
-            n = sum;  //更新n的值
+            res.insert(sum);
+            n = sum;
         }
     }
 };

@@ -68,28 +68,28 @@ include CMakeFiles/16To10.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/16To10.dir/flags.make
 
-CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj: CMakeFiles/16To10.dir/flags.make
-CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj: ../NiuKe/16To10.cpp
-CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj: CMakeFiles/16To10.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj -MF CMakeFiles\16To10.dir\NiuKe\16To10.cpp.obj.d -o CMakeFiles\16To10.dir\NiuKe\16To10.cpp.obj -c G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\16To10.cpp
+CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj: CMakeFiles/16To10.dir/flags.make
+CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj: ../NiuKe/AnyConvert.cpp
+CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj: CMakeFiles/16To10.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj"
+	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj -MF CMakeFiles\16To10.dir\NiuKe\AnyConvert.cpp.obj.d -o CMakeFiles\16To10.dir\NiuKe\AnyConvert.cpp.obj -c G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\AnyConvert.cpp
 
-CMakeFiles/16To10.dir/NiuKe/16To10.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/16To10.dir/NiuKe/16To10.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\16To10.cpp > CMakeFiles\16To10.dir\NiuKe\16To10.cpp.i
+CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.i"
+	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\AnyConvert.cpp > CMakeFiles\16To10.dir\NiuKe\AnyConvert.cpp.i
 
-CMakeFiles/16To10.dir/NiuKe/16To10.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/16To10.dir/NiuKe/16To10.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\16To10.cpp -o CMakeFiles\16To10.dir\NiuKe\16To10.cpp.s
+CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.s"
+	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\AnyConvert.cpp -o CMakeFiles\16To10.dir\NiuKe\AnyConvert.cpp.s
 
 # Object files for target 16To10
 16To10_OBJECTS = \
-"CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj"
+"CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj"
 
 # External object files for target 16To10
 16To10_EXTERNAL_OBJECTS =
 
-16To10.exe: CMakeFiles/16To10.dir/NiuKe/16To10.cpp.obj
+16To10.exe: CMakeFiles/16To10.dir/NiuKe/AnyConvert.cpp.obj
 16To10.exe: CMakeFiles/16To10.dir/build.make
 16To10.exe: CMakeFiles/16To10.dir/linklibs.rsp
 16To10.exe: CMakeFiles/16To10.dir/objects1.rsp
