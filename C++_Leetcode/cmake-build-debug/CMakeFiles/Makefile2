@@ -67,6 +67,7 @@ all: CMakeFiles/main.dir/all
 all: CMakeFiles/TheMax1000.dir/all
 all: CMakeFiles/0.1_bug.dir/all
 all: CMakeFiles/16To10.dir/all
+all: CMakeFiles/set.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -79,6 +80,7 @@ clean: CMakeFiles/main.dir/clean
 clean: CMakeFiles/TheMax1000.dir/clean
 clean: CMakeFiles/0.1_bug.dir/clean
 clean: CMakeFiles/16To10.dir/clean
+clean: CMakeFiles/set.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -210,6 +212,32 @@ CMakeFiles/16To10.dir/rule: cmake_check_build_system
 CMakeFiles/16To10.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/clean
 .PHONY : CMakeFiles/16To10.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/set.dir
+
+# All Build rule for target.
+CMakeFiles/set.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=12,13 "Built target set"
+.PHONY : CMakeFiles/set.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/set.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/set.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/set.dir/rule
+
+# Convenience name for target.
+set: CMakeFiles/set.dir/rule
+.PHONY : set
+
+# clean rule for target.
+CMakeFiles/set.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/clean
+.PHONY : CMakeFiles/set.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

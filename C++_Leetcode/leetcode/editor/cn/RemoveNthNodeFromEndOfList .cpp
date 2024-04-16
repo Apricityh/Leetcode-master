@@ -52,25 +52,26 @@ using namespace std;
 
 
 
-struct ListNode {
-    int val;
-    ListNode *next;
-
-    ListNode() : val(0), next(nullptr) {}
-
-    ListNode(int x) : val(x), next(nullptr) {}
-
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
+//struct ListNode {
+//    int val;
+//    ListNode *next;
+//
+//    ListNode() : val(0), next(nullptr) {}
+//
+//    ListNode(int x) : val(x), next(nullptr) {}
+//
+//    ListNode(int x, ListNode *next) : val(x), next(next) {}
+//};
 
 class Solution {
 public:
     int GetLength(ListNode *head) {
-        int length = 0;
-        while (head) {
-            ++length;
-            head = head->next;
-        }
+       int len = 0;
+       while(head){
+           len++;
+           head = head->next;
+       }
+       return len;
     }
 
     ListNode *removeNthFromEnd(ListNode *head, int n) {
@@ -91,15 +92,15 @@ public:
 //        pre->next = head->next;
 //        delete head;
 //        return prev;
-        ListNode *dummy = new ListNode(0, head);
+        ListNode *dumm = new ListNode(0);
+        dumm->next = head;
+        ListNode *cur = dumm;
         int length = GetLength(head);
-        ListNode *cur = dummy;
-        for (int i = 1; i < length - n + 1; ++i) {
+        for (int i = 1; i < length-n+1; ++i) {
             cur = cur->next;
         }
         cur->next = cur->next->next;
-        return dummy->next;
-
+        return dumm->next;  //虚拟节点很重要，可以防止删除头结点的情况
     }
 
 };

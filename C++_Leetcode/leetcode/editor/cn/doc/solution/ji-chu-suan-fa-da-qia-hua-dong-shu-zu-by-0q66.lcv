@@ -1,0 +1,22 @@
+# Code
+
+* []
+
+```Go
+func minSubArrayLen(target int, nums []int) int {
+	l, sum, ans := 0, 0, len(nums)+1 // 初始化 ans 应该 数组长度+1
+	for r, x := range nums {         // 滑动数组 r 为结尾
+		sum += x            // 滑动数组向右扩展
+		for sum >= target { // 题中的大于等于
+			ans = min(ans, r-l+1)
+			sum -= nums[l]
+			l++
+		}
+	}
+	if ans > len(nums) { // 如果ans没有变化证明数组中所有值加到一起 < target
+		return 0
+	}
+	return ans
+}
+```
+

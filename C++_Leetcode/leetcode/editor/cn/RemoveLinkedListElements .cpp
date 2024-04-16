@@ -62,25 +62,40 @@ using namespace std;
 class Solution {
 public:
     ListNode *removeElements(ListNode *head, int val) {
-        if (head == nullptr) {
-            return head;
+//        if (head == nullptr) {
+//            return head;
+//        }
+//        ListNode *pre = new ListNode(0);
+//        pre->next = head;
+//        ListNode *cur = pre;
+//        while (cur->next != nullptr) {
+//            if (cur->next->val == val) {
+//                ListNode *temp = cur->next;
+//                cur->next = cur->next->next;
+//                delete temp;
+//            } else {
+//                cur = cur->next;
+//            }
+//
+//        }
+//        return pre->next;
+        if(head== nullptr){
+            return nullptr;
         }
-        ListNode *pre = new ListNode(0);
+        ListNode* pre = new ListNode(0);
         pre->next = head;
-        ListNode *cur = pre;
-        while (cur->next != nullptr) {
-            if (cur->next->val == val) {
-                ListNode *temp = cur->next;
+        ListNode* cur = pre;
+        while(cur->next){
+            if (cur->next->val==val){
+                ListNode * temp = cur->next;
                 cur->next = cur->next->next;
                 delete temp;
-            } else {
+            }else{
                 cur = cur->next;
             }
 
         }
         return pre->next;
-
-
 
 
 

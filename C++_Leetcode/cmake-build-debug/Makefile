@@ -180,6 +180,19 @@ TheMax1000/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/build
 .PHONY : 16To10/fast
 
+#=============================================================================
+# Target rules for targets named set
+
+# Build rule for target.
+set: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 set
+.PHONY : set
+
+# fast build rule for target.
+set/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/build
+.PHONY : set/fast
+
 NiuKe/16To10.obj: NiuKe/16To10.cpp.obj
 .PHONY : NiuKe/16To10.obj
 
@@ -203,6 +216,30 @@ NiuKe/16To10.s: NiuKe/16To10.cpp.s
 NiuKe/16To10.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\16To10.dir\build.make CMakeFiles/16To10.dir/NiuKe/16To10.cpp.s
 .PHONY : NiuKe/16To10.cpp.s
+
+NiuKe/set.obj: NiuKe/set.cpp.obj
+.PHONY : NiuKe/set.obj
+
+# target to build an object file
+NiuKe/set.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/NiuKe/set.cpp.obj
+.PHONY : NiuKe/set.cpp.obj
+
+NiuKe/set.i: NiuKe/set.cpp.i
+.PHONY : NiuKe/set.i
+
+# target to preprocess a source file
+NiuKe/set.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/NiuKe/set.cpp.i
+.PHONY : NiuKe/set.cpp.i
+
+NiuKe/set.s: NiuKe/set.cpp.s
+.PHONY : NiuKe/set.s
+
+# target to generate assembly for a file
+NiuKe/set.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/NiuKe/set.cpp.s
+.PHONY : NiuKe/set.cpp.s
 
 leetcode/editor/cn/0.1_bug.obj: leetcode/editor/cn/0.1_bug.cpp.obj
 .PHONY : leetcode/editor/cn/0.1_bug.obj
@@ -295,9 +332,13 @@ help:
 	@echo ... C___Leetcode
 	@echo ... TheMax1000
 	@echo ... main
+	@echo ... set
 	@echo ... NiuKe/16To10.obj
 	@echo ... NiuKe/16To10.i
 	@echo ... NiuKe/16To10.s
+	@echo ... NiuKe/set.obj
+	@echo ... NiuKe/set.i
+	@echo ... NiuKe/set.s
 	@echo ... leetcode/editor/cn/0.1_bug.obj
 	@echo ... leetcode/editor/cn/0.1_bug.i
 	@echo ... leetcode/editor/cn/0.1_bug.s

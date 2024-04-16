@@ -65,36 +65,51 @@ using namespace std;
 //双指针法
 class Solution {
 public:
-    ListNode *reverseList1(ListNode *head) {
-        ListNode *temp;//用于保存断链后，后续的结点的暂存头结点
-        ListNode *cur = head;//处理结点
-        ListNode *pre = nullptr;//为了让其第一次初始化的时候头节点指向null;
-        while (cur) {
-            //先记录后面的结点
+    ListNode *reverseList(ListNode *head) {
+//        ListNode *temp;//用于保存断链后，后续的结点的暂存头结点
+//        ListNode *cur = head;//处理结点
+//        ListNode *pre = nullptr;//为了让其第一次初始化的时候头节点指向null;
+//        while (cur) {
+//            //先记录后面的结点
+//            temp = cur->next;
+//            //然后开始处理cur的指向
+//            cur->next = pre;
+//            //更新结点
+//            pre = cur;
+//            cur = temp;
+//        }
+//        //跳出条件是cur为空，那么上一次的cur就不为空，那么结点直接赋给pre了
+//        return pre;
+
+        ListNode* temp;
+        ListNode* cur = head;
+        ListNode* pre = nullptr;
+        while(cur){
             temp = cur->next;
-            //然后开始处理cur的指向
             cur->next = pre;
-            //更新结点
             pre = cur;
             cur = temp;
         }
-        //跳出条件是cur为空，那么上一次的cur就不为空，那么结点直接赋给pre了
         return pre;
 
-    }
 
-    ListNode *reverse(ListNode *pre, ListNode *cur) {
-        if (cur == nullptr) {
-            return pre;   //终止条件
-        }
-        ListNode *temp = cur->next; //迭代的第二个参数的保留
-        cur->next = pre;  //更新结点
-        return reverse(cur, temp);
-    }
 
-    ListNode *reverseList(ListNode *head) {
-        return reverse(nullptr, head); //开始迭代
+
+
     }
+//
+//    ListNode *reverse(ListNode *pre, ListNode *cur) {
+//        if (cur == nullptr) {
+//            return pre;   //终止条件
+//        }
+//        ListNode *temp = cur->next; //迭代的第二个参数的保留
+//        cur->next = pre;  //更新结点
+//        return reverse(cur, temp);
+//    }
+//
+//    ListNode *reverseList(ListNode *head) {
+//        return reverse(nullptr, head); //开始迭代
+//    }
 };
 //leetcode submit region end(Prohibit modification and deletion)
 

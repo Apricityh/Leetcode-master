@@ -1,0 +1,53 @@
+> Problem: [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/description/)
+
+[TOC]
+
+# 思路
+
+> 很经典的一到滑动窗口题，通过left和right来控制窗口大小，看似时间复杂度为n2，实际上只走了2n。
+
+# 复杂度
+
+时间复杂度:
+
+> $O(n)$
+
+空间复杂度:
+
+> $O(1)$
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int sum = 0, left = 0, right = 0, n = nums.size();
+        int ret = 0;
+        bool flag = false;
+        while (left < n) {
+            while (sum < target) {
+                if (right < n) {
+                    sum += nums[right++];
+                } else {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag)
+                break;
+            if (!ret) {
+                ret = right - left;
+            } else {
+                ret = min(ret, (right - left));
+            }
+            sum -= nums[left];
+            left++;
+        }
+        return ret == 0x3f3f3f3f ? 0 : ret;
+    }
+};
+```
+
