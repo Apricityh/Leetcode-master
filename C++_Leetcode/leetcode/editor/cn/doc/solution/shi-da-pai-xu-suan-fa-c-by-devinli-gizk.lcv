@@ -1,0 +1,347 @@
+### 题目：
+
+&nbsp;&nbsp;&nbsp;&nbsp;给你一个整数数组nums，请你将该数组升序排列。
+&nbsp;&nbsp;&nbsp;&nbsp;**注：有关排序算法的具体讲解解析，初学者可观看LeetCode官方的Leetbook[《排序算法全解析》](https://leetcode-cn.com/leetbook/detail/sort-algorithms/)**
+
+### 一、时间复杂度O(n²)的排序算法
+
+&nbsp;&nbsp;&nbsp;&nbsp;由于时间复杂度太高，下述三个排序方法提交LeetCode均会超时。
+**冒泡排序，空间复杂度O(1)**
+&nbsp;&nbsp;&nbsp;&nbsp;冒泡排序是最基本的排序算法，排序思路如下：
+&nbsp;&nbsp;&nbsp;&nbsp;1.一边比较一边向后两两交换，将最大值冒泡到最后一位。
+&nbsp;&nbsp;&nbsp;&nbsp;2.循环该过程n-1次(n为数组长度)，数组此时为升序排列。
+
+* 
+
+```
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        //冒泡排序
+        int n=nums.size();
+        for(int i=0;i<n-1;i++)
+        {
+            for(int j=1;j<n-i;j++)
+            {
+                if(nums[j]<nums[j-1])
+                {
+                    int temp=nums[j];
+                    nums[j]=nums[j-1];
+                    nums[j-1]=temp;
+                }
+            }
+        }
+        return nums;
+    }
+};
+
+```
+
+**选择排序，空间复杂度O(1)**
+&nbsp;&nbsp;&nbsp;&nbsp;思想如下：
+&nbsp;&nbsp;&nbsp;&nbsp;1.找到数组未排序部分的最小值交换至数组未排序部分首位。
+&nbsp;&nbsp;&nbsp;&nbsp;2.与冒泡排序相同，循环该过程n-1次(n为数组长度)，数组此时为升序排列。
+
+* 
+
+```
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        //选择排序
+        int n=nums.size();
+        for(int i=0;i<n-1;i++)
+        {
+            int min=i;
+            for(int j=i+1;j<n;j++)
+            {
+                if(nums[min]>nums[j])
+                    min=j;
+            }
+            if(min!=i)
+                swap(nums[i],nums[min]);
+        }
+        return nums;
+    }
+};
+```
+
+**插入排序，空间复杂度O(1)**
+&nbsp;&nbsp;&nbsp;&nbsp;假设一个数组，在其内部，数已经按照升序排列，此时有一个新的数`a`要加入数组，那么数组内大于`a`的数字需不断地向后腾出位置，直到`a`找到自己的位置，就可以将`a`插入该位置，此时原数组仍保持升序排列。
+&nbsp;&nbsp;&nbsp;&nbsp;同理，插入排序就是将已排序部分当成一个小数组，未排序部分将一个一个插入到小数组当中，循环插入，直至排序完成。
+
+* 
+
+```
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        //插入排序
+        int n=nums.size();
+        for(int i=1;i<n;i++)
+        {
+            int flag=nums[i];
+            int j=i-1;
+            while(j>=0&&flag<nums[j])
+            {
+                nums[j+1]=nums[j];
+                j--;
+            }
+            nums[j+1]=flag;
+        }
+        return nums;
+    }
+};
+```
+
+### 二、介于时间复杂度O(n²)到时间复杂度O(nlogn)的排序算法——希尔排序
+
+&nbsp;&nbsp;&nbsp;&nbsp;希尔排序，即高级插入排序，是对插入排序的优化，思路如下：
+&nbsp;&nbsp;&nbsp;&nbsp;1.将一个长数组按照相同的间隔`h`分为多个小数组，每个小数组分别进行插入排序。
+&nbsp;&nbsp;&nbsp;&nbsp;2.将间隔h缩小，并继续排序，直至间隔为1。
+&nbsp;&nbsp;&nbsp;&nbsp;可以证明出当间隔`h=3*h+1`时，希尔排序平均时间复杂度最优，推理过程此处省略，有兴趣的读者可自行查询。
+
+* 
+
+```
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        //希尔排序（高级插入排序）
+        int n=nums.size();
+        int h=1;
+        while(h<n/3)
+            h=3*h+1;
+        while(h>0)
+        {
+            for(int i=h;i<n;i++)
+            {
+                int j=i-h;
+                int flag=nums[i];
+                while(j>=0&&flag<nums[j])
+                {
+                    nums[j+h]=nums[j];
+                    j=j-h;
+                }
+                nums[j+h]=flag;
+            }
+            h=h/3;
+        }
+        return nums;
+    }
+};
+```
+
+### 三、时间复杂度O(nlogn)的排序算法
+
+**快速排序，由于快排最差时间复杂度仍趋于O(n²)，此处采用随机化的快速排序**
+&nbsp;&nbsp;&nbsp;&nbsp;随机化的快速排序，即随机选择排序区间中的某值，将其与nums[left]互换后，将nums[left]设为pivot值，进行一次快速排序。
+
+* 
+
+```
+class Solution {
+    int sort(vector<int>& nums,int left,int right)
+    {
+        int pivot=rand()%(right-left+1)+left;
+        int temp=nums[left];
+        nums[left]=nums[pivot];
+        nums[pivot]=temp;
+        pivot=nums[left];
+        while(left<right)
+        {
+            while(left<right&&nums[right]>=pivot)
+                right--;
+            nums[left]=nums[right];
+            while(left<right&&nums[left]<=pivot)
+                left++;
+            nums[right]=nums[left];
+        }
+        nums[left]=pivot;
+        return left;
+    }   
+    void quick_sort(vector<int>& nums,int left,int right)
+    {
+        if(left>=right)
+            return;
+        int mid=sort(nums,left,right);
+        quick_sort(nums,left,mid-1);
+        quick_sort(nums,mid+1,right);
+    }
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        quick_sort(nums,0,nums.size()-1);
+        return nums;
+    }
+};
+```
+
+**归并排序**
+
+* 
+
+```
+class Solution {
+    void merge(vector<int>& nums,int left,int right,vector<int>& ans)
+    {
+        int mid=(right-left)/2+left;
+        int i=left,j=mid+1,k=0;
+        while(i<=mid&&j<=right)
+        {
+            if(nums[i]<=nums[j])
+                ans[k++]=nums[i++];
+            else ans[k++]=nums[j++];
+        }
+        while(i<=mid)
+        {
+            ans[k++]=nums[i++];
+        }
+        while(j<=right)
+            ans[k++]=nums[j++];
+        for(int i=left;i<=right;i++)
+            nums[i]=ans[i-left];
+    }
+    void mergeSort(vector<int>& nums,int left,int right,vector<int>& ans)
+    {
+        if(left>=right)
+            return ;
+        int mid=(right-left)/2+left;
+        mergeSort(nums,left,mid,ans);
+        mergeSort(nums,mid+1,right,ans);
+        merge(nums,left,right,ans);
+    }
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        vector <int> ans(nums.size());
+        mergeSort(nums,0,nums.size()-1,ans);
+        return nums;
+    }
+};
+```
+
+**堆排序**
+
+* 
+
+```
+class Solution {
+    void head_down(int i,int size,vector<int>& nums)
+    {
+        while(i<size)
+        {
+            int left=2*i+1,right=2*i+2;
+            int max=i;
+            if(left<size&&nums[left]>nums[max])
+                max=left;
+            if(right<size&&nums[right]>nums[max])
+                max=right;
+            if(max==i)
+                break;
+            swap(nums[i],nums[max]);
+            i=max;
+        }
+    }
+    void maxHeapity(vector<int>& nums,int size)
+    {
+        for(int i=size/2-1;i>=0;i--)
+            head_down(i,size,nums);
+    }
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int n=nums.size();
+        maxHeapity(nums,n);
+        swap(nums[0],nums[n-1]);
+        for(int i=n-2;i>0;i--)
+        {
+            n--;
+            head_down(0,n,nums);
+            swap(nums[0],nums[i]);
+        }
+        return nums;
+    }
+};
+```
+
+### 四、时间复杂度O(n)的排序算法
+
+&nbsp;&nbsp;&nbsp;&nbsp;**计数排序与基数排序均为桶排序的特殊方法**
+**计数排序**
+
+* 
+
+```
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int n=nums.size();
+        int max=nums[0],min=nums[0];
+        for(int i=1;i<n;i++)
+        {
+            if(nums[i]>max)
+                max=nums[i];
+            if(nums[i]<min)
+                min=nums[i];
+        }
+        vector<int> count(max-min+1,0);
+        for(int i=0;i<n;i++)
+            count[nums[i]-min]++;
+        int k=0;
+        for(int i=0;i<max-min+1;i++)
+        {
+            while(count[i]--)
+            {
+                nums[k++]=i+min;
+            }
+        }
+        return nums;
+    }
+};
+```
+
+**基数排序**
+
+* 
+
+```
+class Solution {
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        int n=nums.size();
+        int max=abs(nums[0]);
+        for(int i=1;i<n;i++)
+        {
+            if(max<abs(nums[i]))
+                max=abs(nums[i]);
+        }
+        int w=0;
+        while(max>0)
+        {
+            max/=10;
+            w++;
+        }
+        int flag=1;
+        vector<int> ans(n);
+        for(int i=0;i<w;i++)
+        {
+            vector<int> bucket(19,0);
+            for(int j=0;j<n;j++)
+            {
+                int temp=nums[j]/flag%10+9;
+                bucket[temp]++;
+            }
+            for(int j=1;j<19;j++)
+                bucket[j]+=bucket[j-1];
+            for(int j=n-1;j>=0;j--)
+            {
+                int temp=nums[j]/flag%10+9;
+                ans[--bucket[temp]]=nums[j];
+            }
+            nums.swap(ans);
+            flag*=10;
+        }
+        return nums;
+    }
+};
+```
+
+**更多算法题解请看**[CSDN主页](https://blog.csdn.net/weixin_46494983?spm=1001.2101.3001.5343&type=blog)

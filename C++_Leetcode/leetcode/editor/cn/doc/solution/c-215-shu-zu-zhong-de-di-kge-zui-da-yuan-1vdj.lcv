@@ -1,0 +1,21 @@
+> Problem: [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/description/)
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int,vector<int>,greater<int>> q;
+        for(auto t : nums){
+            q.push(t);
+            if(q.size() > k) q.pop();
+        }
+
+        return q.top();
+    }
+};
+```
+
