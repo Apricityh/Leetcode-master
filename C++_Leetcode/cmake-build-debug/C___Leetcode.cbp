@@ -293,15 +293,14 @@
 		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/NiuKe/AnyConvert.cpp">
 			<Option target="AnyConvert"/>
 		</Unit>
+		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/NiuKe/TheMax1000.cpp">
+			<Option target="TheMax1000"/>
+		</Unit>
 		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/NiuKe/set.cpp">
 			<Option target="set"/>
 		</Unit>
 		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/leetcode/editor/cn/0.1_bug.cpp">
-			<Option target="TheMax1000"/>
 			<Option target="0.1_bug"/>
-		</Unit>
-		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/leetcode/editor/cn/TheMax1000.cpp">
-			<Option target="TheMax1000"/>
 		</Unit>
 		<Unit filename="G:/Deeping_Learing/Leetcode-master/C++_Leetcode/main.cpp">
 			<Option target="C___Leetcode"/>

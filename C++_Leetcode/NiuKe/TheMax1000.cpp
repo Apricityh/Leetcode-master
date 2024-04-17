@@ -11,23 +11,29 @@
 #include <algorithm>
 using namespace std;
 std::vector<int> findMaxNum(const std::vector<int> &num, int k) {
-    std::priority_queue<int, std::vector<int>, std::greater<int>> minHap;
+    std::priority_queue<int, std::vector<int>> minHap;//´ó¶¥¶Ñ
     //std::priority_queue<int> maxHap; ´ó¶¥¶Ñ
-    for (int i = 0; i < k; ++i) {
+    for (int i = 0; i < num.size(); ++i) {
         minHap.push(num[i]);
     }
-    for (int i = k; i < num.size(); ++i) {
-        if (num[i] > minHap.top()) {
-            minHap.pop();
-            minHap.push(num[i]);
-        }
-    }
+//    for (int i = k; i < num.size(); ++i) {
+//        if (num[i] > minHap.top()) {
+//            minHap.pop();
+//            minHap.push(num[i]);
+//        }
+//    }
     std::vector<int> result;
-    while (!minHap.empty()) {
+    for(int i =0;i<k;i++) {
         int temp = minHap.top();
         result.push_back(temp);
         minHap.pop();
     }
+
+//    while (!minHap.empty()) {
+//        int temp = minHap.top();
+//        result.push_back(temp);
+//        minHap.pop();
+//    }
     return result;
 }
 

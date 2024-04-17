@@ -56,20 +56,35 @@ using namespace std;
 class Solution {
 public:
     int fourSumCount(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4) {
-    unordered_map<int,int> hashmap;//key 为前两个数组的a+b的各种值，而value放其出现的次数
-    for(int a:nums1){
-        for(int b:nums2){
-            hashmap[a+b]++;
-        }
-    }
-    int sum = 0;//初始化结果
-    for(int c:nums3){
-        for(int d:nums4){
-            if (hashmap.find(0-(c+d))!=hashmap.end()){ //找到匹配的数
-                sum+=hashmap[0-(c+d)];//加上合适的组和的次数
+//    unordered_map<int,int> hashmap;//key 为前两个数组的a+b的各种值，而value放其出现的次数
+//    for(int a:nums1){
+//        for(int b:nums2){
+//            hashmap[a+b]++;
+//        }
+//    }
+//    int sum = 0;//初始化结果
+//    for(int c:nums3){
+//        for(int d:nums4){
+//            if (hashmap.find(0-(c+d))!=hashmap.end()){ //找到匹配的数
+//                sum+=hashmap[0-(c+d)];//加上合适的组和的次数
+//            }
+//        }
+//    }
+//        return sum;
+    unordered_map<int,int> map;
+        for (int i:nums1) {
+            for (int j :nums2) {
+                map[i+j]++;
             }
         }
-    }
+        int sum = 0;
+        for (int i:nums3) {
+            for (int j:nums4) {
+                if(map.find((0-i-j))!=map.end()){
+                    sum+=map[0-i-j];
+                }
+            }
+        }
         return sum;
     }
 };

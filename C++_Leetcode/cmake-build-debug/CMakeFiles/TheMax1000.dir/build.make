@@ -68,49 +68,33 @@ include CMakeFiles/TheMax1000.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TheMax1000.dir/flags.make
 
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj: CMakeFiles/TheMax1000.dir/flags.make
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj: ../leetcode/editor/cn/TheMax1000.cpp
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj: CMakeFiles/TheMax1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj -MF CMakeFiles\TheMax1000.dir\leetcode\editor\cn\TheMax1000.cpp.obj.d -o CMakeFiles\TheMax1000.dir\leetcode\editor\cn\TheMax1000.cpp.obj -c G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\TheMax1000.cpp
+CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj: CMakeFiles/TheMax1000.dir/flags.make
+CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj: ../NiuKe/TheMax1000.cpp
+CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj: CMakeFiles/TheMax1000.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj"
+	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj -MF CMakeFiles\TheMax1000.dir\NiuKe\TheMax1000.cpp.obj.d -o CMakeFiles\TheMax1000.dir\NiuKe\TheMax1000.cpp.obj -c G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\TheMax1000.cpp
 
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\TheMax1000.cpp > CMakeFiles\TheMax1000.dir\leetcode\editor\cn\TheMax1000.cpp.i
+CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.i"
+	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\TheMax1000.cpp > CMakeFiles\TheMax1000.dir\NiuKe\TheMax1000.cpp.i
 
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\TheMax1000.cpp -o CMakeFiles\TheMax1000.dir\leetcode\editor\cn\TheMax1000.cpp.s
-
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj: CMakeFiles/TheMax1000.dir/flags.make
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj: ../leetcode/editor/cn/0.1_bug.cpp
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj: CMakeFiles/TheMax1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj -MF CMakeFiles\TheMax1000.dir\leetcode\editor\cn\0.1_bug.cpp.obj.d -o CMakeFiles\TheMax1000.dir\leetcode\editor\cn\0.1_bug.cpp.obj -c G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\0.1_bug.cpp
-
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\0.1_bug.cpp > CMakeFiles\TheMax1000.dir\leetcode\editor\cn\0.1_bug.cpp.i
-
-CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\Deeping_Learing\Leetcode-master\C++_Leetcode\leetcode\editor\cn\0.1_bug.cpp -o CMakeFiles\TheMax1000.dir\leetcode\editor\cn\0.1_bug.cpp.s
+CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.s"
+	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\TheMax1000.cpp -o CMakeFiles\TheMax1000.dir\NiuKe\TheMax1000.cpp.s
 
 # Object files for target TheMax1000
 TheMax1000_OBJECTS = \
-"CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj" \
-"CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj"
+"CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj"
 
 # External object files for target TheMax1000
 TheMax1000_EXTERNAL_OBJECTS =
 
-TheMax1000.exe: CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj
-TheMax1000.exe: CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj
+TheMax1000.exe: CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj
 TheMax1000.exe: CMakeFiles/TheMax1000.dir/build.make
 TheMax1000.exe: CMakeFiles/TheMax1000.dir/linklibs.rsp
 TheMax1000.exe: CMakeFiles/TheMax1000.dir/objects1.rsp
 TheMax1000.exe: CMakeFiles/TheMax1000.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TheMax1000.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TheMax1000.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TheMax1000.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

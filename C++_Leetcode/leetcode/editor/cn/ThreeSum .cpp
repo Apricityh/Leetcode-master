@@ -61,32 +61,52 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int> &nums) {
-        //放答案的三元组
-        vector<vector<int>> result;
-        sort(nums.begin(), nums.end());
+//        //放答案的三元组
+//        vector<vector<int>> result;
+//        sort(nums.begin(), nums.end());
+//        for (int i = 0; i < nums.size(); ++i) {
+//            if (nums[i] > 0) {
+//                return result;
+//            }
+//            if (i > 0 && nums[i] == nums[i - 1]) {
+//                continue;   //跳过，因为与i-1相等的情况下，合适的元组已经被挑选出来了
+//            }
+//            int left = i + 1;
+//            int right = nums.size() - 1;
+//            while (left < right) {
+//                if (nums[i] + nums[left] + nums[right] < 0) left++;
+//                else if (nums[i] + nums[left] + nums[right] > 0) right--;
+//                else {
+//                    result.push_back(vector<int>{nums[i], nums[left], nums[right]});//将结果压入二元组
+//                    while (right > left && nums[left] == nums[left + 1]) { left++; } //去重
+//                    while (right > left && nums[right] == nums[right - 1]) { right--; }//去重
+//                    left++;
+//                    right--;
+//                }
+//            }
+//
+//        }
+//        return result;
+        vector<vector<int>> res;
+        sort(nums.begin(),nums.end());
         for (int i = 0; i < nums.size(); ++i) {
-            if (nums[i] > 0) {
-                return result;
-            }
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;   //跳过，因为与i-1相等的情况下，合适的元组已经被挑选出来了
-            }
-            int left = i + 1;
-            int right = nums.size() - 1;
-            while (left < right) {
-                if (nums[i] + nums[left] + nums[right] < 0) left++;
-                else if (nums[i] + nums[left] + nums[right] > 0) right--;
+            if (nums[i]>0)return res;
+            if (i>0&&nums[i]==nums[i-1])continue;
+            int left = i+1;
+            int right = nums.size()-1;
+            while(left<right){
+                if (nums[i]+nums[left]+nums[right]>0) right--;
+                else if (nums[i]+nums[left]+nums[right]<0) left++;
                 else {
-                    result.push_back(vector<int>{nums[i], nums[left], nums[right]});//将结果压入二元组
-                    while (right > left && nums[left] == nums[left + 1]) { left++; } //去重
-                    while (right > left && nums[right] == nums[right - 1]) { right--; }//去重
+                    res.push_back(vector<int>{nums[i], nums[left], nums[right]});
+                    while (left<right&&nums[left] == nums[left + 1])left++;
+                    while (left<right&&nums[right] == nums[right -1]) right--;
                     left++;
                     right--;
                 }
             }
-
         }
-        return result;
+        return res;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

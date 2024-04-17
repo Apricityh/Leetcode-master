@@ -63,19 +63,18 @@ public:
 //                return false;
 //        }
 //        return true;
-        unordered_map<int, int> map;
-        if (ransomNote.size() > magazine.size())
-            return false;
+        unordered_map<int,int> map;
         for (int i = 0; i < magazine.size(); ++i) {
-            map[magazine[i]-'a']+=1;
+            map[magazine[i]-'a']++;
         }
         for (int i = 0; i < ransomNote.size(); ++i) {
-            map[ransomNote[i]-'a']--;
-            if (map[ransomNote[i]-'a']<0){
-                return false;
-            }
+                map[ransomNote[i]-'a']--;
+                if(map[ransomNote[i]-'a']<0){
+                    return false;
+                }
         }
         return true;
+
 
     }
 };

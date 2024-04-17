@@ -217,6 +217,30 @@ NiuKe/AnyConvert.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/NiuKe/AnyConvert.cpp.s
 .PHONY : NiuKe/AnyConvert.cpp.s
 
+NiuKe/TheMax1000.obj: NiuKe/TheMax1000.cpp.obj
+.PHONY : NiuKe/TheMax1000.obj
+
+# target to build an object file
+NiuKe/TheMax1000.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.obj
+.PHONY : NiuKe/TheMax1000.cpp.obj
+
+NiuKe/TheMax1000.i: NiuKe/TheMax1000.cpp.i
+.PHONY : NiuKe/TheMax1000.i
+
+# target to preprocess a source file
+NiuKe/TheMax1000.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.i
+.PHONY : NiuKe/TheMax1000.cpp.i
+
+NiuKe/TheMax1000.s: NiuKe/TheMax1000.cpp.s
+.PHONY : NiuKe/TheMax1000.s
+
+# target to generate assembly for a file
+NiuKe/TheMax1000.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/NiuKe/TheMax1000.cpp.s
+.PHONY : NiuKe/TheMax1000.cpp.s
+
 NiuKe/set.obj: NiuKe/set.cpp.obj
 .PHONY : NiuKe/set.obj
 
@@ -246,7 +270,6 @@ leetcode/editor/cn/0.1_bug.obj: leetcode/editor/cn/0.1_bug.cpp.obj
 
 # target to build an object file
 leetcode/editor/cn/0.1_bug.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/leetcode/editor/cn/0.1_bug.cpp.obj
 .PHONY : leetcode/editor/cn/0.1_bug.cpp.obj
 
@@ -255,7 +278,6 @@ leetcode/editor/cn/0.1_bug.i: leetcode/editor/cn/0.1_bug.cpp.i
 
 # target to preprocess a source file
 leetcode/editor/cn/0.1_bug.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/leetcode/editor/cn/0.1_bug.cpp.i
 .PHONY : leetcode/editor/cn/0.1_bug.cpp.i
 
@@ -264,33 +286,8 @@ leetcode/editor/cn/0.1_bug.s: leetcode/editor/cn/0.1_bug.cpp.s
 
 # target to generate assembly for a file
 leetcode/editor/cn/0.1_bug.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/0.1_bug.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\0.1_bug.dir\build.make CMakeFiles/0.1_bug.dir/leetcode/editor/cn/0.1_bug.cpp.s
 .PHONY : leetcode/editor/cn/0.1_bug.cpp.s
-
-leetcode/editor/cn/TheMax1000.obj: leetcode/editor/cn/TheMax1000.cpp.obj
-.PHONY : leetcode/editor/cn/TheMax1000.obj
-
-# target to build an object file
-leetcode/editor/cn/TheMax1000.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.obj
-.PHONY : leetcode/editor/cn/TheMax1000.cpp.obj
-
-leetcode/editor/cn/TheMax1000.i: leetcode/editor/cn/TheMax1000.cpp.i
-.PHONY : leetcode/editor/cn/TheMax1000.i
-
-# target to preprocess a source file
-leetcode/editor/cn/TheMax1000.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.i
-.PHONY : leetcode/editor/cn/TheMax1000.cpp.i
-
-leetcode/editor/cn/TheMax1000.s: leetcode/editor/cn/TheMax1000.cpp.s
-.PHONY : leetcode/editor/cn/TheMax1000.s
-
-# target to generate assembly for a file
-leetcode/editor/cn/TheMax1000.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/leetcode/editor/cn/TheMax1000.cpp.s
-.PHONY : leetcode/editor/cn/TheMax1000.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -336,15 +333,15 @@ help:
 	@echo ... NiuKe/AnyConvert.obj
 	@echo ... NiuKe/AnyConvert.i
 	@echo ... NiuKe/AnyConvert.s
+	@echo ... NiuKe/TheMax1000.obj
+	@echo ... NiuKe/TheMax1000.i
+	@echo ... NiuKe/TheMax1000.s
 	@echo ... NiuKe/set.obj
 	@echo ... NiuKe/set.i
 	@echo ... NiuKe/set.s
 	@echo ... leetcode/editor/cn/0.1_bug.obj
 	@echo ... leetcode/editor/cn/0.1_bug.i
 	@echo ... leetcode/editor/cn/0.1_bug.s
-	@echo ... leetcode/editor/cn/TheMax1000.obj
-	@echo ... leetcode/editor/cn/TheMax1000.i
-	@echo ... leetcode/editor/cn/TheMax1000.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

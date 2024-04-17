@@ -9,7 +9,7 @@ add_executable(C___Leetcode main.cpp )
 
 add_executable(main main.cpp)
 
-add_executable(TheMax1000 leetcode/editor/cn/TheMax1000.cpp leetcode/editor/cn/0.1_bug.cpp)
+add_executable(TheMax1000 NiuKe/TheMax1000.cpp)
 add_executable(0.1_bug leetcode/editor/cn/0.1_bug.cpp)
 add_executable(AnyConvert NiuKe/AnyConvert.cpp)
 add_executable(set NiuKe/set.cpp)
