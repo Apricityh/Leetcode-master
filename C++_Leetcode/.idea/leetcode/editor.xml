@@ -399,6 +399,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/DiameterOfBinaryTree .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/DiameterOfBinaryTree .md" />
+              <option name="frontendQuestionId" value="leetcode.cn543" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/DiameterOfBinaryTree .cpp" />
+              <option name="titleSlug" value="diameter-of-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/EditDistance .cpp">
           <value>
             <LeetcodeEditor>
@@ -1584,6 +1595,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/StringToIntegerAtoi .cpp" />
               <option name="titleSlug" value="string-to-integer-atoi" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/SubarraySumEqualsK .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/SubarraySumEqualsK .md" />
+              <option name="frontendQuestionId" value="leetcode.cn560" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/SubarraySumEqualsK .cpp" />
+              <option name="titleSlug" value="subarray-sum-equals-k" />
             </LeetcodeEditor>
           </value>
         </entry>

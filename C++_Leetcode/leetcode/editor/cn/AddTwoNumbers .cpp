@@ -44,20 +44,21 @@
 
 #include <iostream>
 #include "vector"
+
 using namespace std;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
-struct ListNode {
-    int val;
-    ListNode *next;
-
-    ListNode() : val(0), next(nullptr) {}
-
-    ListNode(int x) : val(x), next(nullptr) {}
-
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
+//struct ListNode {
+//    int val;
+//    ListNode *next;
+//
+//    ListNode() : val(0), next(nullptr) {}
+//
+//    ListNode(int x) : val(x), next(nullptr) {}
+//
+//    ListNode(int x, ListNode *next) : val(x), next(next) {}
+//};
 
 
 
@@ -65,47 +66,35 @@ struct ListNode {
 class Solution {
 public:
     ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-        {
-            ListNode *head =  nullptr;
-            ListNode *tail = nullptr;
-            int carry = 0;
-            while (l1 || l2) {
-                int n1 = l1?l1->val:0;
-                int n2 = l2?l2->val:0;
-                int sum = n1 + n2 + carry;
-                if(!head ) {
-                    head = tail->next = new ListNode(sum%10);
 
-                }
+        ListNode *head = nullptr, *tail = nullptr;
+        int carry = 0;
+        while (l1 || l2) {
+            int n1 = l1 ? l1->val : 0;
+            int n2 = l2 ? l2->val : 0;
+            int sum = n1 + n2 + carry;
+            if (!head) { head = tail = new ListNode(sum % 10); }
             else {
-                    tail->next = new ListNode(sum%10);
-                    tail= tail->next;
-
+                tail->next = new ListNode(sum % 10);
+                tail = tail->next;
             }
-            carry = sum/10;
-            if(l1){
-            l1 = l1->next;
-            }
-            if(l2){
-            l2 = l2->next;
-            }
-
-            }
-            if(carry > 0){
-                tail->next = new ListNode(carry);}
-            return head;
+            carry = sum / 10;
+            if (l1) { l1 = l1->next; }
+            if (l2) { l2 = l2->next; }
         }
+        if (carry > 0) { tail->next = new ListNode(carry); }
+        return head;
+
     }
 };
 
 //leetcode submit region end(Prohibit modification and deletion)
 
 
-int main()
-{
+int main() {
     Solution s;
     vector<int> data{7, 1, 5, 3, 6, 4};
     //vector<int> ans = s.twoSum(data,11);
     //cout << ans[0]<<ans[1]<<endl;
-    cout<<"Hello LeetCode"<<endl;
+    cout << "Hello LeetCode" << endl;
 }
