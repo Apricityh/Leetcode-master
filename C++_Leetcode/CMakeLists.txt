@@ -13,3 +13,5 @@ add_executable(TheMax1000 NiuKe/TheMax1000.cpp)
 add_executable(0.1_bug leetcode/editor/cn/0.1_bug.cpp)
 add_executable(AnyConvert NiuKe/AnyConvert.cpp)
 add_executable(set NiuKe/set.cpp)
+
+add_executable(Single NiuKe/Single.cpp)

@@ -1,9 +1,7 @@
 
 
 
-
-
-//给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。 
+//给出由小写字母组成的字符串 S，重复项删除操作会选择两个相邻且相同的字母，并删除它们。
 //
 // 在 S 上反复执行重复项删除操作，直到无法继续删除。 
 //
@@ -40,23 +38,22 @@ using namespace std;
 class Solution {
 public:
     string removeDuplicates(string s) {
-        stack<int> C;
-        for (int i = 0; i <s.size() ; ++i) {
-            if (C.empty()||C.top()!=s[i]){
-                C.push(s[i]);
-            } else{
-                C.pop();
+        stack<char> st;
+        for (int i = 0; i < s.size(); ++i) {
+            if (st.empty() || s[i] != st.top())
+                st.push(s[i]);
+            else {
+                st.pop();
             }
-
         }
         string result = "";
-        while (!C.empty()) { // 将栈中元素放到result字符串汇总
-            result += C.top();
-            C.pop();
+        while(!st.empty()){
+            char s = st.top();
+            result+=s;
+            st.pop();
         }
         reverse(result.begin(),result.end());
         return result;
-
     }
 
 };

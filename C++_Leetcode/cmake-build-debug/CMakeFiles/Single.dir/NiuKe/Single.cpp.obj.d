@@ -1,5 +1,5 @@
-CMakeFiles/C___Leetcode.dir/main.cpp.obj: \
- G:\Deeping_Learing\Leetcode-master\C++_Leetcode\main.cpp \
+CMakeFiles/Single.dir/NiuKe/Single.cpp.obj: \
+ G:\Deeping_Learing\Leetcode-master\C++_Leetcode\NiuKe\Single.cpp \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\iostream \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\i686-w64-mingw32\bits\c++config.h \
  f:\mingw\mingw32\lib\gcc\i686-w64-mingw32\4.8.2\include\c++\i686-w64-mingw32\bits\os_defines.h \

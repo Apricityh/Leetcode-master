@@ -193,6 +193,19 @@ set/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/build
 .PHONY : set/fast
 
+#=============================================================================
+# Target rules for targets named Single
+
+# Build rule for target.
+Single: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Single
+.PHONY : Single
+
+# fast build rule for target.
+Single/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/build
+.PHONY : Single/fast
+
 NiuKe/AnyConvert.obj: NiuKe/AnyConvert.cpp.obj
 .PHONY : NiuKe/AnyConvert.obj
 
@@ -216,6 +229,30 @@ NiuKe/AnyConvert.s: NiuKe/AnyConvert.cpp.s
 NiuKe/AnyConvert.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AnyConvert.dir\build.make CMakeFiles/AnyConvert.dir/NiuKe/AnyConvert.cpp.s
 .PHONY : NiuKe/AnyConvert.cpp.s
+
+NiuKe/Single.obj: NiuKe/Single.cpp.obj
+.PHONY : NiuKe/Single.obj
+
+# target to build an object file
+NiuKe/Single.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/NiuKe/Single.cpp.obj
+.PHONY : NiuKe/Single.cpp.obj
+
+NiuKe/Single.i: NiuKe/Single.cpp.i
+.PHONY : NiuKe/Single.i
+
+# target to preprocess a source file
+NiuKe/Single.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/NiuKe/Single.cpp.i
+.PHONY : NiuKe/Single.cpp.i
+
+NiuKe/Single.s: NiuKe/Single.cpp.s
+.PHONY : NiuKe/Single.s
+
+# target to generate assembly for a file
+NiuKe/Single.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/NiuKe/Single.cpp.s
+.PHONY : NiuKe/Single.cpp.s
 
 NiuKe/TheMax1000.obj: NiuKe/TheMax1000.cpp.obj
 .PHONY : NiuKe/TheMax1000.obj
@@ -327,12 +364,16 @@ help:
 	@echo ... 0.1_bug
 	@echo ... AnyConvert
 	@echo ... C___Leetcode
+	@echo ... Single
 	@echo ... TheMax1000
 	@echo ... main
 	@echo ... set
 	@echo ... NiuKe/AnyConvert.obj
 	@echo ... NiuKe/AnyConvert.i
 	@echo ... NiuKe/AnyConvert.s
+	@echo ... NiuKe/Single.obj
+	@echo ... NiuKe/Single.i
+	@echo ... NiuKe/Single.s
 	@echo ... NiuKe/TheMax1000.obj
 	@echo ... NiuKe/TheMax1000.i
 	@echo ... NiuKe/TheMax1000.s
