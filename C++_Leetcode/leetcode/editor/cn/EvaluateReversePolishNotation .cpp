@@ -86,31 +86,51 @@ using namespace std;
 class Solution {
 public:
     int evalRPN(vector<string> &tokens) {
-        stack<long long> C;
+//        stack<long long> C;
+//        for (int i = 0; i < tokens.size(); ++i) {
+//            if (tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/") { //注意其出栈运算的数字顺序
+//                long long nums1 = C.top();
+//                C.pop();
+//                long long nums2 = C.top();
+//                C.pop();
+//                if (tokens[i] == "+") {
+//                    C.push(nums2 + nums1);
+//                }
+//                if (tokens[i] == "-") {
+//                    C.push(nums2 - nums1);
+//                }
+//                if (tokens[i] == "*") {
+//                    C.push(nums2 * nums1);
+//                }
+//                if (tokens[i] == "/") {
+//                    C.push(nums2 / nums1);
+//                }
+//            } else {
+//                C.push(stoll(tokens[i]));//sto + ll  str to long long
+//            }
+//
+//        }
+//        return C.top();
+    stack<long long > st;
         for (int i = 0; i < tokens.size(); ++i) {
-            if (tokens[i] == "+" || tokens[i] == "-" || tokens[i] == "*" || tokens[i] == "/") { //注意其出栈运算的数字顺序
-                long long nums1 = C.top();
-                C.pop();
-                long long nums2 = C.top();
-                C.pop();
-                if (tokens[i] == "+") {
-                    C.push(nums2 + nums1);
-                }
-                if (tokens[i] == "-") {
-                    C.push(nums2 - nums1);
-                }
-                if (tokens[i] == "*") {
-                    C.push(nums2 * nums1);
-                }
-                if (tokens[i] == "/") {
-                    C.push(nums2 / nums1);
-                }
-            } else {
-                C.push(stoll(tokens[i]));//sto + ll  str to long long
+            if (tokens[i]=="/"||tokens[i]=="+"||tokens[i]=="-"||tokens[i]=="*"){
+                long long num2 = st.top();
+                st.pop();
+                long long num1 = st.top();
+                st.pop();
+                if (tokens[i]=="/")
+                    st.push(num1/num2);
+                else if (tokens[i]=="+")
+                    st.push(num1+num2);
+                else if (tokens[i]=="-")
+                    st.push(num1-num2);
+                else if (tokens[i]=="*")
+                    st.push(num1*num2);
+            }else  {
+                st.push(stoll(tokens[i]));
             }
 
-        }
-        return C.top();
+        }return st.top();
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
