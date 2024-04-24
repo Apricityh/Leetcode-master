@@ -67,29 +67,40 @@ using namespace std;
 
 class Solution {
 public:
-    bool traversal(TreeNode* root,int count){
-        //递归出口
-        if (!root->left&&!root->right&&count==0){return true;}
-        if (!root->left&&!root->right){return false;}
-        //左
-        if (root->left){
-            count -= root->left->val;
-            if( traversal(root->left,count)){return true;}
-            count +=root->left->val;
+//    bool traversal(TreeNode* root,int count){
+//        if (!root->left&&!root->right&&count==0){return true;}
+//        if (!root->left&&!root->right) return false;
+//        if (root->left){
+//            count-= root->left->val;
+//            if (traversal(root->left,count)) return true;
+//            count+=root->left->val;
+//        }  if (root->right){
+//            count-= root->right->val;
+//            if (traversal(root->right,count)) return true;
+//            count+=root->right->val;
+//        }
+//        return false;
+//    }
+//    bool hasPathSum(TreeNode* root, int targetSum) {
+//        return traversal(root,targetSum-root->val);
+//    }
+    bool ret = 0;
+    int tar;
+    void dfs(TreeNode* root, int sum){
+        if (root== nullptr||ret)return;
+        if (root->left== nullptr&&root->right== nullptr){
+            sum+=root->val;
+            if (sum==tar) ret=1;
+            return;
         }
-        //右
-        if (root->right){
-            count -= root->right->val;
-            if( traversal(root->right,count)){return true;}
-            count +=root->right->val;
-        }
-        return false;
+        dfs(root->left,sum+root->val);
+        dfs(root->right,sum+root->val);
     }
-    bool hasPathSum(TreeNode* root, int targetSum) {
-        if (root== nullptr){return false;}
-        return traversal(root,targetSum-root->val);//去除自己的val数据
-
-    }
+    bool hasPathSum(TreeNode* root, int targetSum){
+    tar = targetSum;
+        dfs(root,0);
+        return ret;
+}
 };
 //leetcode submit region end(Prohibit modification and deletion)
 

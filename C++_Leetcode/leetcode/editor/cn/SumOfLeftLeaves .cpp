@@ -1,9 +1,7 @@
 
 
 
-
-
-//给定二叉树的根节点 root ，返回所有左叶子之和。 
+//给定二叉树的根节点 root ，返回所有左叶子之和。
 //
 // 
 //
@@ -45,29 +43,33 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 
 ////  Definition for a binary tree node.
-//  struct TreeNode {
-//      int val;
-//      TreeNode *left;
-//      TreeNode *right;
-//      TreeNode() : val(0), left(nullptr), right(nullptr) {}
-//      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-//      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-//  };
+//struct TreeNode {
+//    int val;
+//    TreeNode *left;
+//    TreeNode *right;
+//
+//    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+//
+//    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+//
+//    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+//};
 
 class Solution {
 public:
+    int res=0;
+    void dfs(TreeNode *root){
+        if (root== nullptr)return;
+        if (root->left != nullptr && root->left->left == nullptr && root->left->right == nullptr)
+        res+=root->left->val;
+        dfs(root->left);
+        dfs(root->right);
+
+    }
     //按照左右中的方式进行遍历
-    int sumOfLeftLeaves(TreeNode* root) {
-        //递归出口
-        if (root== nullptr)return 0;
-        if (root->left== nullptr&&root->right== nullptr){return 0;}
-        int leftValue = sumOfLeftLeaves(root->left);//左孩子的最左侧结点
-        if (root->left!= nullptr&&root->left->left== nullptr&&root->left->right== nullptr){
-            leftValue = root->left->val;
-        }
-        int rightValue = sumOfLeftLeaves(root->right);
-        int sum = rightValue + leftValue;
-        return sum;
+    int sumOfLeftLeaves(TreeNode *root) {
+        dfs(root);
+        return res;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

@@ -52,34 +52,62 @@ using namespace std;
 
 class Solution {
 public:
-    void Travsal(TreeNode *root, vector<int> &path, vector<string> &result) {
-        path.push_back(root->val);//将目前这个父节点加入path;
-        //递归终止条件
-        if (root->left== nullptr&&root->right== nullptr){
-            string spath;
+//    void Travsal(TreeNode *root, vector<int> &path, vector<string> &result) {
+//        path.push_back(root->val);//将目前这个父节点加入path;
+//        //递归终止条件
+//        if (root->left== nullptr&&root->right== nullptr){
+//            string spath;
+//            for (int i = 0; i < path.size()-1; ++i) {
+//                spath += to_string(path[i]);
+//                spath +="->";
+//            }
+//            spath +=to_string(path[path.size()-1]);//因为上面的->缘故，最后不需->，最后叶子结点单独处理
+//            result.push_back(spath);
+//        }
+//        if (root->left){
+//            Travsal(root->left,path,result);
+//            path.pop_back();//递归回溯在一起，一次递归一次回溯清空。
+//        }
+//        if(root->right){
+//            Travsal(root->right,path,result);
+//            path.pop_back();//回溯 清除路径
+//        }
+//    }
+//    vector<string> binaryTreePaths(TreeNode *root) {
+//        vector<int> path;
+//        vector<string> result;
+//        if (root == nullptr) { return result; }
+//        Travsal(root, path, result);
+//        return result;
+//    }
+        void trace(TreeNode *root,vector<int> &path,vector<string> &res){
+        path.push_back(root->val);
+        if (root->left== nullptr&&root->right==nullptr){
+            string temp;
             for (int i = 0; i < path.size()-1; ++i) {
-                spath += to_string(path[i]);
-                spath +='->';
+                temp+=to_string(path[i]);
+                temp+="->";
             }
-            spath +=to_string(path[path.size()-1]);//因为上面的->缘故，最后不需->，最后叶子结点单独处理
-            result.push_back(spath);
+            temp+=to_string(path[path.size()-1]);
+            res.push_back(temp);
         }
         if (root->left){
-            Travsal(root->left,path,result);
-            path.pop_back();//递归回溯在一起，一次递归一次回溯清空。
+            trace(root->left,path,res);
+            path.pop_back();
         }
-        if(root->right){
-            Travsal(root->right,path,result);
-            path.pop_back();//回溯 清除路径
+        if (root->right){
+            trace(root->right,path,res);
+            path.pop_back();
         }
+
+
     }
-    vector<string> binaryTreePaths(TreeNode *root) {
-        vector<int> path;
-        vector<string> result;
-        if (root == nullptr) { return result; }
-        Travsal(root, path, result);
-        return result;
-    }
+        vector<string> binaryTreePaths(TreeNode *root){
+            vector<int> path;
+            vector<string> res;
+            trace(root,path,res);
+            return res;
+        }
 };
 //leetcode submit region end(Prohibit modification and deletion)
 

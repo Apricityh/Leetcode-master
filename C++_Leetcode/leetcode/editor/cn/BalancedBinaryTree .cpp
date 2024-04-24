@@ -65,24 +65,39 @@ using namespace std;
 
 class Solution {
 public:
-    int getHight(TreeNode *root) {//需要用后序
-        if (root == nullptr)
+//    int getHight(TreeNode *root) {//需要用后序
+//        if (root == nullptr)
+//            return 0;
+//        int leftHight = getHight(root->left);
+//        if (leftHight == -1) {//左
+//            return -1;
+//        }
+//        int rightHight = getHight(root->right);
+//        if (rightHight == -1) {  //右
+//            return -1;
+//        }
+//        //中
+//        return abs(leftHight-rightHight)>1?-1: max(leftHight,rightHight)+1;//加1的原因是因为树结点的高度是从1开始计算的
+//        //这是为了保存当前节点的高度，左子树以及右子树的最高的+1
+//    }
+//
+//    bool isBalanced(TreeNode *root) {
+//        return getHight(root)==-1? false: true;
+//    }
+    int getHight(TreeNode *root) {
+        if (root == nullptr ){
             return 0;
-        int leftHight = getHight(root->left);
-        if (leftHight == -1) {//左
-            return -1;
         }
-        int rightHight = getHight(root->right);
-        if (rightHight == -1) {  //右
-            return -1;
-        }
-        //中
-        return abs(leftHight-rightHight)>1?-1: max(leftHight,rightHight)+1;//加1的原因是因为树结点的高度是从1开始计算的
-        //这是为了保存当前节点的高度，左子树以及右子树的最高的+1
+        int lHeight = getHight(root->left);
+        if (lHeight==-1)return -1;
+        int rHeight = getHight(root->right);
+        if (rHeight==-1) return -1;
+        return abs(lHeight-rHeight)>1?-1:max(lHeight,rHeight)+1;
     }
 
     bool isBalanced(TreeNode *root) {
-        return getHight(root)==-1? false: true;
+        int res  = getHight(root);
+        return res==-1?false:true;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

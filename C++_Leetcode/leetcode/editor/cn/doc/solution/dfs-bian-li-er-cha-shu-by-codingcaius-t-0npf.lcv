@@ -1,0 +1,44 @@
+> Problem: [404. 左叶子之和](https://leetcode.cn/problems/sum-of-left-leaves/description/)
+
+[TOC]
+
+# 思路
+
+> 这个题本质就是 dfs 遍历二叉树，至于是先序，中序还是后序都无所谓，然后就是在 dfs 过程中找到符合要求的节点。
+
+# Code
+
+* []
+
+```C++
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int res = 0;
+    int sumOfLeftLeaves(TreeNode* root) {
+        dfs(root);
+        return res;
+    }
+    void dfs(TreeNode* root) {
+        if (root == nullptr) {
+            return;
+        }
+        if (root->left != nullptr && root->left->left == nullptr && root->left->right == nullptr) {
+            res += root->left->val;
+        }
+        dfs(root->left);
+        dfs(root->right);
+    }
+};
+```
+

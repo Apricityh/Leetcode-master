@@ -57,36 +57,54 @@ using namespace std;
 
 class Solution {
 public:
-    TreeNode* traversal(vector<int>&inorder,vector<int> &postorder){
+//    TreeNode* traversal(vector<int>&inorder,vector<int> &postorder){
+//        if (postorder.size()==0)return nullptr;
+//        int nodeValue= postorder[postorder.size()-1];
+//        TreeNode *node = new TreeNode(nodeValue);
+//        if (postorder.size()==1){return node;}
+//        //重新定义后续数组的长度
+//        postorder.resize(postorder.size()-1);
+//        //找到后续最后一个数在中序数组里面的位置，便于分割中序数组
+//        int nodeIndex;
+//        for ( nodeIndex = 0; nodeIndex <inorder.size() ; ++nodeIndex) {
+//            if (inorder[nodeIndex]==nodeValue) break;
+//        }
+//        //分割中序数组
+//        vector<int> leftInorder(inorder.begin(),inorder.begin()+nodeIndex);
+//        vector<int> rightInorder(inorder.begin()+nodeIndex+1,inorder.end());
+//
+//        //分割后续数组
+//        vector<int> leftPostorder(postorder.begin(),postorder.begin()+nodeIndex);
+//        vector<int> rightPostorder(postorder.begin()+nodeIndex,postorder.end());
+//        //递归
+//        node->left = traversal(leftInorder,leftPostorder);
+//        node->right = traversal(rightInorder,rightPostorder);
+//        return node;
+//
+//    }
+    TreeNode* trace(vector<int>& inorder, vector<int>& postorder){
         if (postorder.size()==0)return nullptr;
-        int nodeValue= postorder[postorder.size()-1];
+        int nodeValue = postorder[postorder.size()-1];
         TreeNode *node = new TreeNode(nodeValue);
-        if (postorder.size()==1){return node;}
-        //重新定义后续数组的长度
+        if (postorder.size()==1) return node;
         postorder.resize(postorder.size()-1);
-        //找到后续最后一个数在中序数组里面的位置，便于分割中序数组
-        int nodeIndex;
-        for ( nodeIndex = 0; nodeIndex <inorder.size() ; ++nodeIndex) {
-            if (inorder[nodeIndex]==nodeValue) break;
+        int indexInorder;
+        for (indexInorder = 0; indexInorder < inorder.size() ; ++indexInorder) {
+            if (inorder[indexInorder]==nodeValue)break;
         }
-        //分割中序数组
-        vector<int> leftInorder(inorder.begin(),inorder.begin()+nodeIndex);
-        vector<int> rightInorder(inorder.begin()+nodeIndex+1,inorder.end());
-
-        //分割后续数组
-        vector<int> leftPostorder(postorder.begin(),postorder.begin()+nodeIndex);
-        vector<int> rightPostorder(postorder.begin()+nodeIndex,postorder.end());
-        //递归
-        node->left = traversal(leftInorder,leftPostorder);
-        node->right = traversal(rightInorder,rightPostorder);
+        vector<int> inorderLeft(inorder.begin(),inorder.begin()+indexInorder);
+        vector<int> inorderRight(inorder.begin()+indexInorder+1,inorder.end());
+        vector<int> postorderLeft(postorder.begin(),postorder.begin()+indexInorder);
+        vector<int> postorderRight(postorder.begin()+indexInorder,postorder.end());
+        node->left = trace(inorderLeft,postorderLeft);
+        node->right = trace(inorderRight,postorderRight);
         return node;
-
-    }
+}
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
         if (inorder.size()==0||postorder.size()==0){
             return nullptr;
         }
-        return traversal(inorder,postorder);
+        return trace(inorder,postorder);
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

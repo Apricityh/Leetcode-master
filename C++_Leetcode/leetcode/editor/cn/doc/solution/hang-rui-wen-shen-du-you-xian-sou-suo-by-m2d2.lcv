@@ -1,0 +1,60 @@
+> Problem: [257. 二叉树的所有路径](https://leetcode.cn/problems/binary-tree-paths/description/)
+
+[TOC]
+
+# 方法一：深度优先搜索
+
+## 思路
+
+这是一个树的遍历问题，我们可以使用深度优先遍历整棵树。在递归过程中，我们考虑当前结点和它的孩子结点。
+
+- 递归边界条件：结点为空。
+- 如果当前结点是**叶子结点**，得到了一条从根节点到叶子结点的路径，将结果加入到答案。
+- 如果当前结点**不是叶子结点**，则需要将在路径后加"->"，继续递归遍历它的孩子结点。
+
+## Code
+
+* []
+
+```C++
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<string> binaryTreePaths(TreeNode* root) {
+        vector<string> res;
+        function<void(TreeNode*, string)> dfs = [&](TreeNode* node, string path){
+            if(node == nullptr) {
+                return;
+            }
+            path += to_string(node->val);
+            if(node->left == nullptr && node->right == nullptr){
+                res.push_back(path);
+            }else{
+                path += "->";
+                dfs(node->left, path);
+                dfs(node->right, path);
+            }
+        };
+        dfs(root, "");
+        return res;
+    }
+};
+```
+
+## 复杂度
+
+- 时间复杂度: $O(n^2)$，其中n为结点数目，字符串拷贝操作时间代价为$O(n)$
+
+- 空间复杂度: $O(n^2)$
+

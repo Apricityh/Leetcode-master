@@ -1,0 +1,54 @@
+### 解题思路
+
+此处撰写解题思路
+![0185335d11bdfaa801213ec2e29132.jpg@1280w_1l_2o_100sh.jpg](https://pic.leetcode-cn.com/1657196506-sloWAb-0185335d11bdfaa801213ec2e29132.jpg@1280w_1l_2o_100sh.jpg)
+![image.png](https://pic.leetcode-cn.com/1657196510-aYWaZM-image.png)
+
+### 代码
+
+* c
+
+```c
+//深度优先算法（DFS）
+//construct_paths  构建路径函数
+void construct_paths(struct TreeNode* root, char** paths, int* returnSize, int* sta, int top) 
+{
+    if(root != NULL)
+    {
+        if(root->left == NULL && root->right == NULL)//左也空，右也空，那就是 “叶子” 结点
+        {
+            char* tmp = (char*)malloc(1001);//用malloc函数申请一个空间，但是返回值是这个空间的“首地址”
+            int len = 0;//len 用来循环累计字符串的长度，使得 tmp指针 向后移动合适的距离
+            for(int i = 0; i < top; i++)
+            {
+                //sprintf函数我刚认真了解:加强版的printf，
+                //（这道题里它的作用是向数组中输出一系列带 “->” 的字符串）
+                //他和“数组”联合起来，输出的字符串是保存在数组中的
+                    //如果返回成功，则返回写入的字符总数，不包括字符串追加在字符串末尾的空字符。
+                    //如果返回失败，则返回一个负数。
+                //tmp + len，指针向后移动
+                //sta[i]，是填充 %d 处的值用的
+                len += sprintf(tmp + len, "%d->", sta[i]);
+            }
+                sprintf(tmp + len, "%d", root->val);//用来输出最后一个数字(因为它不带“->”)
+                paths[(*returnSize)++] = tmp;//返回 tmp 数组中的值,作为答案输出
+        }
+        else//当前不是叶子结点，则在当前的路径末尾添加该节点，并继续递归遍历该节点的每一个孩子节点
+        {
+            sta[top++] = root->val;
+            construct_paths(root->left, paths, returnSize, sta, top);
+            construct_paths(root->right, paths, returnSize, sta, top);
+        }
+    }
+}
+//
+char** binaryTreePaths(struct TreeNode* root, int* returnSize)
+{
+    char** paths = (char**)malloc(sizeof(char*) * 1001);//请求一个path数组空间用来存储值“1->2”这类字符串
+    *returnSize = 0; //给“returnSize”这个值赋初值
+    int sta[1001]; //定义一个数组
+    construct_paths(root, paths, returnSize, sta, 0);//调用构建路径函数
+    return paths;//最后输出 路径
+}
+```
+
