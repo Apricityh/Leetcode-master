@@ -58,24 +58,24 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> levelOrderBottom(TreeNode *root) {
-        queue<TreeNode*> que;
-        if (root != NULL) { que.push(root); }
-        vector<vector<int>> result;
-        while(!que.empty()){
-            vector<int> vec;
-            int size = que.size();
-            for (int i = 0; i < size; ++i) {
-                TreeNode *node = que.front();
-                vec.push_back(node->val);
-                que.pop();
-                if (node->left) que.push(node->left);
-                if (node->right) que.push(node->right);
-            }
-            result.push_back(vec);
-
-        }
-        reverse(result.begin(),result.end());
-        return result;
+//        queue<TreeNode*> que;
+//        if (root != NULL) { que.push(root); }
+//        vector<vector<int>> result;
+//        while(!que.empty()){
+//            vector<int> vec;
+//            int size = que.size();
+//            for (int i = 0; i < size; ++i) {
+//                TreeNode *node = que.front();
+//                vec.push_back(node->val);
+//                que.pop();
+//                if (node->left) que.push(node->left);
+//                if (node->right) que.push(node->right);
+//            }
+//            result.push_back(vec);
+//
+//        }
+//        reverse(result.begin(),result.end());
+//        return result;
 
     }
 };

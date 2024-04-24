@@ -64,10 +64,11 @@ public:
         bool inside = compare(left->right,right->left);//内侧
         return outside&&inside;
     }
+
     bool isSymmetric(TreeNode* root) {
         bool result = compare(root->left,root->right);
-        return result;
-    }
+        return result;}
+
 };
 //leetcode submit region end(Prohibit modification and deletion)
 

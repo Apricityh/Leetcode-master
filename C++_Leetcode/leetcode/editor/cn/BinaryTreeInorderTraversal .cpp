@@ -62,17 +62,19 @@ using namespace std;
  */
 class Solution {
 public:
-    void Travers(TreeNode *cur, vector<int> &result) {
-        if (cur == nullptr) return;
-        Travers(cur->left, result);
-        result.push_back(cur->val);
-        Travers(cur->right, result);
+//    void Travers(TreeNode *cur, vector<int> &result) {
+//        if (cur == nullptr) return;
+//        Travers(cur->left, result);
+//        result.push_back(cur->val);
+//        Travers(cur->right, result);
+//
+//    }
+//迭代
 
-    }
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> result;
-        Travers(root,result);
-        return result;
+//        vector<int> result;
+//        Travers(root,result);
+//        return result;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

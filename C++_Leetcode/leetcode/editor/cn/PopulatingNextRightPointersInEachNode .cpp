@@ -111,6 +111,25 @@ public:
             }
             preNode->next= nullptr;
         }
+//        while (!que.empty()){
+//            int size = que.size();
+//            for(int i = 0;i<size;i++){
+//                if (i==size-1){
+//                     Node* node = que.front();
+//                     que.pop();
+//                     node->next = nullptr;
+//                    if (node->left){que.push(node->left);}
+//                    if (node->right){que.push(node->right);}
+//                }else{
+//                    Node* node = que.front();
+//                    que.pop();
+//                    node->next = que.front();
+//                    if (node->left){que.push(node->left);}
+//                    if (node->right){que.push(node->right);}
+//                }
+//
+//                }
+//            }
         return root;//返回整个树
     }
 };
