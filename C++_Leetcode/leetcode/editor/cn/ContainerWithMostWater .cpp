@@ -47,18 +47,14 @@ using namespace std;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution { //移动短版  而长版不动  可获取更大值，双指针 从前 往前
 public:
-    int maxArea(vector<int> &height) {
-        int i = 0, j = height.size() - 1, value = 0;
-        int temp ;
+    int res = 0;
+    int maxArea(vector<int>& height) {
+        int i = 0, j = height.size() - 1, res = 0;
         while (i < j) {
-            temp = (j - i) * min(height[i], height[j]);
-            value = max(value, temp);
-            if (height[i] > height[j])
-                j--;
-            else
-                i++;
+            res = height[i] < height[j] ? max(res, (j - i) * height[i++])
+                                        : max(res,(j - i) * height[j--]);
         }
-    return value;
+        return res;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)
