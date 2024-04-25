@@ -105,16 +105,15 @@ public:
             }
             //左右孩子都不为空。左孩子作为右孩子最左端的孩子
             else{
-                auto *node = root->right;
-                while(node->left){
-                    node = node->left;
-                }
-                //注意避免空指针异常
-                node->left = root->left;
-                auto *temp = root;
-                root = root->right;
-                delete temp;
-                return root;
+               auto node = root->right;
+               while(node->left!=nullptr){
+                   node = node->left;
+               }
+               node->left = root->left;
+               auto *temp = root;
+               root = root->right;
+               delete temp;
+               return root;
             }
         }
         if (root->val>key){

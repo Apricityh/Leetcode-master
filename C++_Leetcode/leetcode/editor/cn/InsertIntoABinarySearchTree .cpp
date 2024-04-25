@@ -1,8 +1,6 @@
 
 
 
-
-
 //给定二叉搜索树（BST）的根节点
 // root 和要插入树中的值
 // value ，将值插入二叉搜索树。 返回插入后二叉搜索树的根节点。 输入数据 保证 ，新值和原始二叉搜索树中的任意节点值都不同。 
@@ -58,7 +56,7 @@ using namespace std;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 
- // Definition for a binary tree node.
+// Definition for a binary tree node.
 //  struct TreeNode {
 //      int val;
 //      TreeNode *left;
@@ -66,25 +64,24 @@ using namespace std;
 //      TreeNode() : val(0), left(nullptr), right(nullptr) {}
 //      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 //      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-//
+
 class Solution {
 public:
-    TreeNode* insertIntoBST(TreeNode* root, int val) {
+    TreeNode *insertIntoBST(TreeNode *root, int val) {
         //找到空结点进行插入即可
-        if (root== nullptr) {
-        TreeNode *node = new TreeNode(val);
+        if (root == nullptr) {
+            TreeNode *node = new TreeNode(val);
             return node;
         }
-        if (root->val>val){
-            root->left = insertIntoBST(root->left,val);
+        if (root->val > val) {
+           root->left = insertIntoBST(root->left, val);
         }
-        if (root->val<val){
-            root->right = insertIntoBST(root->right,val);
-        }
-        return root;
+        if (root->val < val) {
+            root->right = insertIntoBST(root->right, val);
 
-        }
+        } return root;
+
     }
-;
+};
 //leetcode submit region end(Prohibit modification and deletion)
 

@@ -80,7 +80,15 @@ public:
             return node;
         }
         //返回最大数的下标
-        int maxPosition = max_element(nums.begin(),nums.end()) - nums.begin();
+        int maxPosition ;
+        int max= INT32_MIN;
+        for (int index = 0; index < nums.size(); ++index) {
+            if (nums[index]>max ){
+                max = nums[index];
+                maxPosition = index;
+            }
+        }
+
         node->val = nums[maxPosition];
         //左数组
         vector<int> leftNums(nums.begin(),nums.begin()+maxPosition);
