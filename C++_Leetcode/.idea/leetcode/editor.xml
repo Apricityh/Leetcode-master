@@ -1224,6 +1224,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/PathSumIii .cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/PathSumIii .md" />
+              <option name="frontendQuestionId" value="leetcode.cn437" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/PathSumIii .cpp" />
+              <option name="titleSlug" value="path-sum-iii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/PerfectSquares .cpp">
           <value>
             <LeetcodeEditor>

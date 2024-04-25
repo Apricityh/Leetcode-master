@@ -79,16 +79,12 @@ class Solution {
 public:
     int pre = 0;
     TreeNode* traversal(TreeNode* root){
-        if (root== nullptr){
-            return root;
-        }
-        //一直找到最右端的数据，以此为基础进行累加
+        if (root== nullptr)return nullptr;
         traversal(root->right);
-        root->val += pre;
+        root->val+=pre;
         pre = root->val;
         traversal(root->left);
         return root;
-
     }
 
     TreeNode* convertBST(TreeNode* root) {
