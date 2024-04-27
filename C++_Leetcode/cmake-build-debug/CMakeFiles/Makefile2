@@ -69,6 +69,7 @@ all: CMakeFiles/0.1_bug.dir/all
 all: CMakeFiles/AnyConvert.dir/all
 all: CMakeFiles/set.dir/all
 all: CMakeFiles/Single.dir/all
+all: CMakeFiles/Auto_ptr.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -83,6 +84,7 @@ clean: CMakeFiles/0.1_bug.dir/clean
 clean: CMakeFiles/AnyConvert.dir/clean
 clean: CMakeFiles/set.dir/clean
 clean: CMakeFiles/Single.dir/clean
+clean: CMakeFiles/Auto_ptr.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -92,7 +94,7 @@ clean: CMakeFiles/Single.dir/clean
 CMakeFiles/C___Leetcode.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\C___Leetcode.dir\build.make CMakeFiles/C___Leetcode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target C___Leetcode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target C___Leetcode"
 .PHONY : CMakeFiles/C___Leetcode.dir/all
 
 # Build rule for subdir invocation for target.
@@ -118,7 +120,7 @@ CMakeFiles/C___Leetcode.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -144,7 +146,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/TheMax1000.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target TheMax1000"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target TheMax1000"
 .PHONY : CMakeFiles/TheMax1000.dir/all
 
 # Build rule for subdir invocation for target.
@@ -222,7 +224,7 @@ CMakeFiles/AnyConvert.dir/clean:
 CMakeFiles/set.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target set"
 .PHONY : CMakeFiles/set.dir/all
 
 # Build rule for subdir invocation for target.
@@ -248,7 +250,7 @@ CMakeFiles/set.dir/clean:
 CMakeFiles/Single.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=7,8 "Built target Single"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target Single"
 .PHONY : CMakeFiles/Single.dir/all
 
 # Build rule for subdir invocation for target.
@@ -266,6 +268,32 @@ Single: CMakeFiles/Single.dir/rule
 CMakeFiles/Single.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/clean
 .PHONY : CMakeFiles/Single.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Auto_ptr.dir
+
+# All Build rule for target.
+CMakeFiles/Auto_ptr.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target Auto_ptr"
+.PHONY : CMakeFiles/Auto_ptr.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Auto_ptr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Auto_ptr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/Auto_ptr.dir/rule
+
+# Convenience name for target.
+Auto_ptr: CMakeFiles/Auto_ptr.dir/rule
+.PHONY : Auto_ptr
+
+# clean rule for target.
+CMakeFiles/Auto_ptr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/clean
+.PHONY : CMakeFiles/Auto_ptr.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

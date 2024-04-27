@@ -15,3 +15,4 @@ add_executable(AnyConvert NiuKe/AnyConvert.cpp)
 add_executable(set NiuKe/set.cpp)
 
 add_executable(Single NiuKe/Single.cpp)
+add_executable(Auto_ptr Review_code/Auto_ptr.cpp)

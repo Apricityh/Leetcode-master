@@ -206,6 +206,19 @@ Single/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/build
 .PHONY : Single/fast
 
+#=============================================================================
+# Target rules for targets named Auto_ptr
+
+# Build rule for target.
+Auto_ptr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Auto_ptr
+.PHONY : Auto_ptr
+
+# fast build rule for target.
+Auto_ptr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/build
+.PHONY : Auto_ptr/fast
+
 NiuKe/AnyConvert.obj: NiuKe/AnyConvert.cpp.obj
 .PHONY : NiuKe/AnyConvert.obj
 
@@ -302,6 +315,30 @@ NiuKe/set.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/NiuKe/set.cpp.s
 .PHONY : NiuKe/set.cpp.s
 
+Review_code/Auto_ptr.obj: Review_code/Auto_ptr.cpp.obj
+.PHONY : Review_code/Auto_ptr.obj
+
+# target to build an object file
+Review_code/Auto_ptr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/Review_code/Auto_ptr.cpp.obj
+.PHONY : Review_code/Auto_ptr.cpp.obj
+
+Review_code/Auto_ptr.i: Review_code/Auto_ptr.cpp.i
+.PHONY : Review_code/Auto_ptr.i
+
+# target to preprocess a source file
+Review_code/Auto_ptr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/Review_code/Auto_ptr.cpp.i
+.PHONY : Review_code/Auto_ptr.cpp.i
+
+Review_code/Auto_ptr.s: Review_code/Auto_ptr.cpp.s
+.PHONY : Review_code/Auto_ptr.s
+
+# target to generate assembly for a file
+Review_code/Auto_ptr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/Review_code/Auto_ptr.cpp.s
+.PHONY : Review_code/Auto_ptr.cpp.s
+
 leetcode/editor/cn/0.1_bug.obj: leetcode/editor/cn/0.1_bug.cpp.obj
 .PHONY : leetcode/editor/cn/0.1_bug.obj
 
@@ -363,6 +400,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... 0.1_bug
 	@echo ... AnyConvert
+	@echo ... Auto_ptr
 	@echo ... C___Leetcode
 	@echo ... Single
 	@echo ... TheMax1000
@@ -380,6 +418,9 @@ help:
 	@echo ... NiuKe/set.obj
 	@echo ... NiuKe/set.i
 	@echo ... NiuKe/set.s
+	@echo ... Review_code/Auto_ptr.obj
+	@echo ... Review_code/Auto_ptr.i
+	@echo ... Review_code/Auto_ptr.s
 	@echo ... leetcode/editor/cn/0.1_bug.obj
 	@echo ... leetcode/editor/cn/0.1_bug.i
 	@echo ... leetcode/editor/cn/0.1_bug.s

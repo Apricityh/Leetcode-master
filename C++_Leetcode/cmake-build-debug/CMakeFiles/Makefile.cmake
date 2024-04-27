@@ -58,4 +58,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/AnyConvert.dir/DependInfo.cmake"
   "CMakeFiles/set.dir/DependInfo.cmake"
   "CMakeFiles/Single.dir/DependInfo.cmake"
+  "CMakeFiles/Auto_ptr.dir/DependInfo.cmake"
   )
