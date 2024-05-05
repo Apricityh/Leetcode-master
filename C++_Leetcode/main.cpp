@@ -37,3 +37,44 @@
 //}
 
 
+#include<bits/stdc++.h>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int countSubstrings(const string& str) {
+    int count = 0;
+    int len = str.length();
+
+    for (int i = 0; i < len; ++i) {
+        if (str[i] == 'd') continue;
+
+        int j = i;
+        bool hasR = false;
+        bool hasE = false;
+
+        while (j < len && str[j] != 'd') {
+            if (str[j] == 'r') {
+                hasR = true;
+            } else if (str[j] == 'e') {
+                hasE = true;
+            }
+
+            if (hasR && hasE) {
+                ++count;
+            }
+
+            ++j;
+        }
+    }
+
+    return count;
+}
+
+int main() {
+    string str = "abcdefghierjkerlskemrnlest";
+    int result = countSubstrings(str);
+    cout << "Number of substrings: " << result << endl;
+    return 0;
+}
