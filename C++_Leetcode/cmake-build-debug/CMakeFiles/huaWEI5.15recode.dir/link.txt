@@ -1,0 +1,3 @@
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\huaWEI5.15recode.dir/objects.a
+F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\huaWEI5.15recode.dir/objects.a @CMakeFiles\huaWEI5.15recode.dir\objects1.rsp
+F:\MinGW\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\huaWEI5.15recode.dir/objects.a -Wl,--no-whole-archive -o huaWEI5.15recode.exe -Wl,--out-implib,libhuaWEI5.15recode.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\huaWEI5.15recode.dir\linklibs.rsp

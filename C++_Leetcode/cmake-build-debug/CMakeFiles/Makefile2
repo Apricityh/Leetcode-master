@@ -70,6 +70,9 @@ all: CMakeFiles/AnyConvert.dir/all
 all: CMakeFiles/set.dir/all
 all: CMakeFiles/Single.dir/all
 all: CMakeFiles/Auto_ptr.dir/all
+all: CMakeFiles/HUAWEI5.15.dir/all
+all: CMakeFiles/huaWEI5.15recode.dir/all
+all: CMakeFiles/code.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -85,6 +88,9 @@ clean: CMakeFiles/AnyConvert.dir/clean
 clean: CMakeFiles/set.dir/clean
 clean: CMakeFiles/Single.dir/clean
 clean: CMakeFiles/Auto_ptr.dir/clean
+clean: CMakeFiles/HUAWEI5.15.dir/clean
+clean: CMakeFiles/huaWEI5.15recode.dir/clean
+clean: CMakeFiles/code.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -120,7 +126,7 @@ CMakeFiles/C___Leetcode.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -146,7 +152,7 @@ CMakeFiles/main.dir/clean:
 CMakeFiles/TheMax1000.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheMax1000.dir\build.make CMakeFiles/TheMax1000.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target TheMax1000"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=13,14 "Built target TheMax1000"
 .PHONY : CMakeFiles/TheMax1000.dir/all
 
 # Build rule for subdir invocation for target.
@@ -224,7 +230,7 @@ CMakeFiles/AnyConvert.dir/clean:
 CMakeFiles/set.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\set.dir\build.make CMakeFiles/set.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target set"
 .PHONY : CMakeFiles/set.dir/all
 
 # Build rule for subdir invocation for target.
@@ -250,7 +256,7 @@ CMakeFiles/set.dir/clean:
 CMakeFiles/Single.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Single.dir\build.make CMakeFiles/Single.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target Single"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=11,12 "Built target Single"
 .PHONY : CMakeFiles/Single.dir/all
 
 # Build rule for subdir invocation for target.
@@ -294,6 +300,84 @@ Auto_ptr: CMakeFiles/Auto_ptr.dir/rule
 CMakeFiles/Auto_ptr.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/clean
 .PHONY : CMakeFiles/Auto_ptr.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/HUAWEI5.15.dir
+
+# All Build rule for target.
+CMakeFiles/HUAWEI5.15.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=9,10 "Built target HUAWEI5.15"
+.PHONY : CMakeFiles/HUAWEI5.15.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/HUAWEI5.15.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/HUAWEI5.15.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/HUAWEI5.15.dir/rule
+
+# Convenience name for target.
+HUAWEI5.15: CMakeFiles/HUAWEI5.15.dir/rule
+.PHONY : HUAWEI5.15
+
+# clean rule for target.
+CMakeFiles/HUAWEI5.15.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/clean
+.PHONY : CMakeFiles/HUAWEI5.15.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/huaWEI5.15recode.dir
+
+# All Build rule for target.
+CMakeFiles/huaWEI5.15recode.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target huaWEI5.15recode"
+.PHONY : CMakeFiles/huaWEI5.15recode.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/huaWEI5.15recode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/huaWEI5.15recode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/huaWEI5.15recode.dir/rule
+
+# Convenience name for target.
+huaWEI5.15recode: CMakeFiles/huaWEI5.15recode.dir/rule
+.PHONY : huaWEI5.15recode
+
+# clean rule for target.
+CMakeFiles/huaWEI5.15recode.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/clean
+.PHONY : CMakeFiles/huaWEI5.15recode.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/code.dir
+
+# All Build rule for target.
+CMakeFiles/code.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target code"
+.PHONY : CMakeFiles/code.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/code.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/code.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start G:\Deeping_Learing\Leetcode-master\C++_Leetcode\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/code.dir/rule
+
+# Convenience name for target.
+code: CMakeFiles/code.dir/rule
+.PHONY : code
+
+# clean rule for target.
+CMakeFiles/code.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/clean
+.PHONY : CMakeFiles/code.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

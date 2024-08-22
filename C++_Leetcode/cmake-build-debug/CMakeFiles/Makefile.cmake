@@ -59,4 +59,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/set.dir/DependInfo.cmake"
   "CMakeFiles/Single.dir/DependInfo.cmake"
   "CMakeFiles/Auto_ptr.dir/DependInfo.cmake"
+  "CMakeFiles/HUAWEI5.15.dir/DependInfo.cmake"
+  "CMakeFiles/huaWEI5.15recode.dir/DependInfo.cmake"
+  "CMakeFiles/code.dir/DependInfo.cmake"
   )

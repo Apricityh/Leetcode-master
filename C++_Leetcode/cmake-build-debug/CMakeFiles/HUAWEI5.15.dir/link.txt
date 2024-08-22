@@ -1,0 +1,3 @@
+"F:\Clion\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\HUAWEI5.15.dir/objects.a
+F:\MinGW\mingw32\bin\ar.exe qc CMakeFiles\HUAWEI5.15.dir/objects.a @CMakeFiles\HUAWEI5.15.dir\objects1.rsp
+F:\MinGW\mingw32\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\HUAWEI5.15.dir/objects.a -Wl,--no-whole-archive -o HUAWEI5.15.exe -Wl,--out-implib,libHUAWEI5.15.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\HUAWEI5.15.dir\linklibs.rsp

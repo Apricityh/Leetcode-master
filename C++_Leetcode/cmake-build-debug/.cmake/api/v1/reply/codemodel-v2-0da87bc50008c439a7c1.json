@@ -22,7 +22,10 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8,
+						9,
+						10
 					]
 				}
 			],
@@ -44,7 +47,10 @@
 						4,
 						5,
 						6,
-						7
+						7,
+						8,
+						9,
+						10
 					]
 				}
 			],
@@ -80,6 +86,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "HUAWEI5.15::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HUAWEI5.15-Debug-0a385417162d99840f31.json",
+					"name" : "HUAWEI5.15",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Single::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Single-Debug-988d4e64f56fedf8af53.json",
 					"name" : "Single",
@@ -90,6 +103,20 @@
 					"id" : "TheMax1000::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-TheMax1000-Debug-f56b819f72752751097c.json",
 					"name" : "TheMax1000",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "code::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-code-Debug-83ca62bd2b32d9776472.json",
+					"name" : "code",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "huaWEI5.15recode::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-huaWEI5.15recode-Debug-90af7818cc6ece98d696.json",
+					"name" : "huaWEI5.15recode",
 					"projectIndex" : 0
 				},
 				{

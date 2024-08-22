@@ -16,3 +16,6 @@ add_executable(set NiuKe/set.cpp)
 
 add_executable(Single NiuKe/Single.cpp)
 add_executable(Auto_ptr Review_code/Auto_ptr.cpp)
+add_executable(HUAWEI5.15 Review_code/HUAWEI5.15.cpp)
+add_executable(huaWEI5.15recode Review_code/huaWEI5.15recode.cpp)
+add_executable(code Review_code/code.cpp)

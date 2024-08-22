@@ -219,6 +219,45 @@ Auto_ptr/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/build
 .PHONY : Auto_ptr/fast
 
+#=============================================================================
+# Target rules for targets named HUAWEI5.15
+
+# Build rule for target.
+HUAWEI5.15: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HUAWEI5.15
+.PHONY : HUAWEI5.15
+
+# fast build rule for target.
+HUAWEI5.15/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/build
+.PHONY : HUAWEI5.15/fast
+
+#=============================================================================
+# Target rules for targets named huaWEI5.15recode
+
+# Build rule for target.
+huaWEI5.15recode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 huaWEI5.15recode
+.PHONY : huaWEI5.15recode
+
+# fast build rule for target.
+huaWEI5.15recode/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/build
+.PHONY : huaWEI5.15recode/fast
+
+#=============================================================================
+# Target rules for targets named code
+
+# Build rule for target.
+code: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 code
+.PHONY : code
+
+# fast build rule for target.
+code/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/build
+.PHONY : code/fast
+
 NiuKe/AnyConvert.obj: NiuKe/AnyConvert.cpp.obj
 .PHONY : NiuKe/AnyConvert.obj
 
@@ -339,6 +378,78 @@ Review_code/Auto_ptr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Auto_ptr.dir\build.make CMakeFiles/Auto_ptr.dir/Review_code/Auto_ptr.cpp.s
 .PHONY : Review_code/Auto_ptr.cpp.s
 
+Review_code/HUAWEI5.15.obj: Review_code/HUAWEI5.15.cpp.obj
+.PHONY : Review_code/HUAWEI5.15.obj
+
+# target to build an object file
+Review_code/HUAWEI5.15.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/Review_code/HUAWEI5.15.cpp.obj
+.PHONY : Review_code/HUAWEI5.15.cpp.obj
+
+Review_code/HUAWEI5.15.i: Review_code/HUAWEI5.15.cpp.i
+.PHONY : Review_code/HUAWEI5.15.i
+
+# target to preprocess a source file
+Review_code/HUAWEI5.15.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/Review_code/HUAWEI5.15.cpp.i
+.PHONY : Review_code/HUAWEI5.15.cpp.i
+
+Review_code/HUAWEI5.15.s: Review_code/HUAWEI5.15.cpp.s
+.PHONY : Review_code/HUAWEI5.15.s
+
+# target to generate assembly for a file
+Review_code/HUAWEI5.15.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HUAWEI5.15.dir\build.make CMakeFiles/HUAWEI5.15.dir/Review_code/HUAWEI5.15.cpp.s
+.PHONY : Review_code/HUAWEI5.15.cpp.s
+
+Review_code/code.obj: Review_code/code.cpp.obj
+.PHONY : Review_code/code.obj
+
+# target to build an object file
+Review_code/code.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/Review_code/code.cpp.obj
+.PHONY : Review_code/code.cpp.obj
+
+Review_code/code.i: Review_code/code.cpp.i
+.PHONY : Review_code/code.i
+
+# target to preprocess a source file
+Review_code/code.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/Review_code/code.cpp.i
+.PHONY : Review_code/code.cpp.i
+
+Review_code/code.s: Review_code/code.cpp.s
+.PHONY : Review_code/code.s
+
+# target to generate assembly for a file
+Review_code/code.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\code.dir\build.make CMakeFiles/code.dir/Review_code/code.cpp.s
+.PHONY : Review_code/code.cpp.s
+
+Review_code/huaWEI5.15recode.obj: Review_code/huaWEI5.15recode.cpp.obj
+.PHONY : Review_code/huaWEI5.15recode.obj
+
+# target to build an object file
+Review_code/huaWEI5.15recode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/Review_code/huaWEI5.15recode.cpp.obj
+.PHONY : Review_code/huaWEI5.15recode.cpp.obj
+
+Review_code/huaWEI5.15recode.i: Review_code/huaWEI5.15recode.cpp.i
+.PHONY : Review_code/huaWEI5.15recode.i
+
+# target to preprocess a source file
+Review_code/huaWEI5.15recode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/Review_code/huaWEI5.15recode.cpp.i
+.PHONY : Review_code/huaWEI5.15recode.cpp.i
+
+Review_code/huaWEI5.15recode.s: Review_code/huaWEI5.15recode.cpp.s
+.PHONY : Review_code/huaWEI5.15recode.s
+
+# target to generate assembly for a file
+Review_code/huaWEI5.15recode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\huaWEI5.15recode.dir\build.make CMakeFiles/huaWEI5.15recode.dir/Review_code/huaWEI5.15recode.cpp.s
+.PHONY : Review_code/huaWEI5.15recode.cpp.s
+
 leetcode/editor/cn/0.1_bug.obj: leetcode/editor/cn/0.1_bug.cpp.obj
 .PHONY : leetcode/editor/cn/0.1_bug.obj
 
@@ -402,8 +513,11 @@ help:
 	@echo ... AnyConvert
 	@echo ... Auto_ptr
 	@echo ... C___Leetcode
+	@echo ... HUAWEI5.15
 	@echo ... Single
 	@echo ... TheMax1000
+	@echo ... code
+	@echo ... huaWEI5.15recode
 	@echo ... main
 	@echo ... set
 	@echo ... NiuKe/AnyConvert.obj
@@ -421,6 +535,15 @@ help:
 	@echo ... Review_code/Auto_ptr.obj
 	@echo ... Review_code/Auto_ptr.i
 	@echo ... Review_code/Auto_ptr.s
+	@echo ... Review_code/HUAWEI5.15.obj
+	@echo ... Review_code/HUAWEI5.15.i
+	@echo ... Review_code/HUAWEI5.15.s
+	@echo ... Review_code/code.obj
+	@echo ... Review_code/code.i
+	@echo ... Review_code/code.s
+	@echo ... Review_code/huaWEI5.15recode.obj
+	@echo ... Review_code/huaWEI5.15recode.i
+	@echo ... Review_code/huaWEI5.15recode.s
 	@echo ... leetcode/editor/cn/0.1_bug.obj
 	@echo ... leetcode/editor/cn/0.1_bug.i
 	@echo ... leetcode/editor/cn/0.1_bug.s
